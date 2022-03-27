@@ -10,7 +10,7 @@ const body = document.getElementById('body');
 const reset = document.getElementById('btnreset');
 const del = document.getElementById('btndelete');
 const equal = document.getElementById('btnequal');
-
+const OutPutBar = document.getElementById('outputBar');
 form.addEventListener('click', function(event) {
   event.preventDefault();
 })
@@ -93,6 +93,7 @@ function theme2() {
 function theme1() {
   body.style.backgroundColor = backgroundMainOne; 
   output.style.backgroundColor = backgroundSecondaryOne;
+  OutPutBar.style.color =  keypadBgOne
   calcBody.style.backgroundColor = backgroundMainOne;
   head.style.color = fontColorOne; 
   for (let i = 0; i < nodeList.length; i++) {
