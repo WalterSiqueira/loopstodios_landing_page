@@ -1,33 +1,38 @@
 @mixin btn_style {
-    margin: 5px; 
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: hsl(45, 7%, 89%);
 }
-@media screen and (min-width: 801px) and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
     * {
         margin: 0;
         padding: 0;
         border: none; 
     }
     body {
+        background-color: hsl(0, 0%, 90%);
         display: grid;
         grid-template-areas: 
             ". . ."
             ". main ."
             ". bottom .";
-        grid-template-columns: 200px 612px 200px;
-        grid-template-rows: 20px 450px 30px;
+        grid-template-columns: 2fr 10fr 2fr;
+        grid-template-rows: 0.2fr 6fr 0.2fr;
     }
     .calc_body {
-        grid-gap: 10px;
+        grid-gap: 2%;
         grid-area: main;
         display: grid;
         grid-template-areas: 
             ". . ."
             ". head ."
+            ". . ."
             ". output ."
+            ". . ."
             ". buttons ."
             ". . .";
-        grid-template-columns: 10px 588px 10px;
-        grid-template-rows: 10px 50px 50px 280px 10px;
+        grid-template-columns: 0.1fr 9fr 0.1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.2fr 2fr 0.2fr 6fr 0.1fr;
     }
         .calc_header {
             grid-area: head; 
@@ -35,21 +40,21 @@
             grid-template-areas:
                 "logo . . first second third"
                 "logo . theme slider slider slider";
-            grid-template-columns: 120px 200px 100px 56px 56px 56px;
-            grid-template-rows: 20px 30px;
+            grid-template-columns: 1.2fr 4fr 1fr 1.2fr 1.2fr 1.2fr;
+            grid-template-rows: 0.2fr 0.2fr;
             .title {
                 grid-area: logo;
-                font-size: 35px;
-                padding: 10px 0 0 15px;
+                font-size: 2.3em;
+                padding: 2% 0 0 3%;
             }
             .first_theme {
                 grid-area: first;
-                margin: 0 5px 0 0;
+                margin: 0 2% 0 0;
                 text-align: center;
             }
             .second_theme {
                 grid-area: second;
-                margin: 0 5px 0 0;
+                margin: 0 2% 0 0;
                 text-align: center;
             }
             .third_theme {
@@ -61,37 +66,42 @@
             }
             .theme_selector {
                 grid-area: theme;
-                font-size: 18px;
-                padding: 10px 0 0 0;
+                font-size: 1.4em;
+                padding: 2% 0 0 0;
             }
         } 
             .slider input{
-                width: 90%;
-                height: 40px;
+                width: 70%;
+                height: 100%;
+                margin-left: 15%;
             }
         .number_output {
+            background-color: hsl(0, 0%, 93%);
             grid-area: output;
             .output_bar {
                 text-align: right;
-                padding: 5px 10px 0 0;
-                font-size: 25px;
+                padding: 1% 2% 0 0;
+                font-size: 2em;
                 width: 90%;
                 height: 70%;
-                margin: 10px;
+                margin: 2%;
             }
         }
         .buttons {
+            background-color: hsl(0, 5%, 81%);
             grid-area: buttons;
             display: grid;
             grid-template-areas: 
-                "seven eight nine del"
-                "four five six plus"
-                "one two three minus"
-                "dot zero slash times"
-                " reset reset equal equal";
-            grid-template-columns: 147px 147px 147px 136px;
-            grid-template-rows: 55px 55px 55px 55px 55px;
-            grid-gap: 5px;
+                ". . . . . ."
+                ". seven eight nine del ."
+                ". four five six plus ."
+                ". one two three minus ."
+                ". dot zero slash times ."
+                ". reset reset equal equal ."
+                ". . . . . .";
+            grid-template-columns: 0.2fr 3fr 3fr 3fr 3fr 0.2fr;
+            grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+            grid-gap: 1%;
             .number_nine {
                 grid-area: nine;
                 @include btn_style();
@@ -135,6 +145,8 @@
             .number_delete {
                 grid-area: del;
                 @include btn_style();
+                background-color: hsl(185, 42%, 37%);
+                color: white;
             }
             .number_plus {
                 grid-area: plus;
@@ -151,10 +163,14 @@
             .number_reset {
                 grid-area: reset;
                 @include btn_style();
+                background-color: hsl(185, 42%, 37%);
+                color: white;
             }
             .number_equal {
                 grid-area: equal;
                 @include btn_style();
+                background-color: hsl(25, 98%, 40%);
+                color: white;
             }
             .number_slash {
                 grid-area: slash;

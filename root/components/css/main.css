@@ -1,970 +1,1189 @@
 @media screen and (max-width: 320px) {
-  /* line 5, ../scss/mobileSM.scss */
+  /* line 7, ../scss/mobileSM.scss */
   * {
     margin: 0;
     padding: 0;
     border: none;
   }
 
-  /* line 10, ../scss/mobileSM.scss */
+  /* line 12, ../scss/mobileSM.scss */
   body {
+    background-color: #e6e6e6;
     display: grid;
     grid-template-areas: ". . ." ". main ." ". bottom .";
-    grid-template-columns: 20px 280px 20px;
-    grid-template-rows: 20px 450px 30px;
+    grid-template-columns: 0.1fr 2fr 0.1fr;
+    grid-template-rows: 0.2fr 4fr 0.2fr;
   }
 
-  /* line 19, ../scss/mobileSM.scss */
+  /* line 22, ../scss/mobileSM.scss */
   .calc_body {
-    grid-gap: 10px;
+    grid-gap: 3%;
     grid-area: main;
     display: grid;
-    grid-template-areas: ". . ." ". head ." ". output ." ". buttons ." ". . .";
-    grid-template-columns: 10px 260px 10px;
-    grid-template-rows: 10px 50px 50px 280px 10px;
+    grid-template-areas: ". . ." ". head ." ". . ." ". output ." ". . ." ". buttons ." ". . .";
+    grid-template-columns: 0.2fr 2fr 0.2fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 0.2fr 4fr 0.2fr;
   }
 
-  /* line 32, ../scss/mobileSM.scss */
+  /* line 37, ../scss/mobileSM.scss */
   .calc_header {
     grid-area: head;
     display: grid;
     grid-template-areas: "logo . . first second third" "logo . theme slider slider slider";
-    grid-template-columns: 60px 50px 60px 20px 20px 20px;
-    grid-template-rows: 20px 30px;
-  }
-  /* line 40, ../scss/mobileSM.scss */
-  .calc_header .title {
-    grid-area: logo;
-    font-size: 25px;
-    padding: 10px 0 0 0;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.3fr;
   }
   /* line 45, ../scss/mobileSM.scss */
-  .calc_header .first_theme {
-    grid-area: first;
-    margin: 0 5px 0 0;
-    text-align: center;
+  .calc_header .title {
+    grid-area: logo;
+    font-size: 1.5em;
+    padding: 5% 0 0 0;
   }
   /* line 50, ../scss/mobileSM.scss */
-  .calc_header .second_theme {
-    grid-area: second;
-    margin: 0 5px 0 0;
+  .calc_header .first_theme {
+    grid-area: first;
+    margin: 0 1% 0 0;
     text-align: center;
   }
   /* line 55, ../scss/mobileSM.scss */
+  .calc_header .second_theme {
+    grid-area: second;
+    margin: 0 5% 0 0;
+    text-align: center;
+  }
+  /* line 60, ../scss/mobileSM.scss */
   .calc_header .third_theme {
     grid-area: third;
     text-align: center;
   }
-  /* line 59, ../scss/mobileSM.scss */
+  /* line 64, ../scss/mobileSM.scss */
   .calc_header .slider {
     grid-area: slider;
   }
-  /* line 62, ../scss/mobileSM.scss */
+  /* line 67, ../scss/mobileSM.scss */
   .calc_header .theme_selector {
     grid-area: theme;
-    font-size: 14px;
-    padding: 13px 0 0 0;
+    font-size: 0.8em;
+    padding: 2% 0 0 0;
   }
 
-  /* line 68, ../scss/mobileSM.scss */
+  /* line 73, ../scss/mobileSM.scss */
   .slider input {
-    width: 60px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
   }
 
-  /* line 72, ../scss/mobileSM.scss */
+  /* line 77, ../scss/mobileSM.scss */
   .number_output {
+    background-color: #ededed;
     grid-area: output;
   }
-  /* line 74, ../scss/mobileSM.scss */
+  /* line 80, ../scss/mobileSM.scss */
   .number_output .output_bar {
     text-align: right;
-    padding: 5px 10px 0 0;
-    font-size: 25px;
+    padding: 1% 2% 0 0;
+    font-size: 2em;
     width: 90%;
     height: 70%;
-    margin: 10px;
+    margin: 2%;
   }
 
-  /* line 83, ../scss/mobileSM.scss */
+  /* line 89, ../scss/mobileSM.scss */
   .buttons {
     grid-area: buttons;
     display: grid;
     grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dot zero slash times" " reset reset equal equal";
-    grid-template-columns: 56px 56px 56px 56px;
-    grid-template-rows: 55px 55px 55px 55px 55px;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 3%;
   }
-  /* line 95, ../scss/mobileSM.scss */
+  /* line 101, ../scss/mobileSM.scss */
   .buttons .number_nine {
     grid-area: nine;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 99, ../scss/mobileSM.scss */
+  /* line 105, ../scss/mobileSM.scss */
   .buttons .number_eight {
     grid-area: eight;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 103, ../scss/mobileSM.scss */
+  /* line 109, ../scss/mobileSM.scss */
   .buttons .number_seven {
     grid-area: seven;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 107, ../scss/mobileSM.scss */
+  /* line 113, ../scss/mobileSM.scss */
   .buttons .number_six {
     grid-area: six;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 111, ../scss/mobileSM.scss */
+  /* line 117, ../scss/mobileSM.scss */
   .buttons .number_five {
     grid-area: five;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 115, ../scss/mobileSM.scss */
+  /* line 121, ../scss/mobileSM.scss */
   .buttons .number_four {
     grid-area: four;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 119, ../scss/mobileSM.scss */
+  /* line 125, ../scss/mobileSM.scss */
   .buttons .number_three {
     grid-area: three;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 123, ../scss/mobileSM.scss */
+  /* line 129, ../scss/mobileSM.scss */
   .buttons .number_two {
     grid-area: two;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 127, ../scss/mobileSM.scss */
+  /* line 133, ../scss/mobileSM.scss */
   .buttons .number_one {
     grid-area: one;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 131, ../scss/mobileSM.scss */
+  /* line 137, ../scss/mobileSM.scss */
   .buttons .number_dot {
     grid-area: dot;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 135, ../scss/mobileSM.scss */
+  /* line 141, ../scss/mobileSM.scss */
   .buttons .number_delete {
     grid-area: del;
-    margin: 5px;
-  }
-  /* line 139, ../scss/mobileSM.scss */
-  .buttons .number_plus {
-    grid-area: plus;
-    margin: 5px;
-  }
-  /* line 143, ../scss/mobileSM.scss */
-  .buttons .number_times {
-    grid-area: times;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
   /* line 147, ../scss/mobileSM.scss */
-  .buttons .number_minus {
-    grid-area: minus;
-    margin: 5px;
+  .buttons .number_plus {
+    grid-area: plus;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
   /* line 151, ../scss/mobileSM.scss */
-  .buttons .number_reset {
-    grid-area: reset;
-    margin: 5px;
+  .buttons .number_times {
+    grid-area: times;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
   /* line 155, ../scss/mobileSM.scss */
-  .buttons .number_equal {
-    grid-area: equal;
-    margin: 5px;
+  .buttons .number_minus {
+    grid-area: minus;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
   /* line 159, ../scss/mobileSM.scss */
+  .buttons .number_reset {
+    grid-area: reset;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
+  }
+  /* line 165, ../scss/mobileSM.scss */
+  .buttons .number_equal {
+    grid-area: equal;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #ca5502;
+    color: white;
+  }
+  /* line 171, ../scss/mobileSM.scss */
   .buttons .number_slash {
     grid-area: slash;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 163, ../scss/mobileSM.scss */
+  /* line 175, ../scss/mobileSM.scss */
   .buttons .number_zero {
     grid-area: zero;
-    margin: 5px;
+    margin: 2%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
 
-  /* line 169, ../scss/mobileSM.scss */
+  /* line 181, ../scss/mobileSM.scss */
   .attribution {
     grid-area: bottom;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
-  /* line 5, ../scss/mobileL.scss */
+  /* line 7, ../scss/mobileL.scss */
   * {
     margin: 0;
     padding: 0;
     border: none;
   }
 
-  /* line 10, ../scss/mobileL.scss */
+  /* line 12, ../scss/mobileL.scss */
   body {
+    background-color: #e6e6e6;
     display: grid;
     grid-template-areas: ". . ." ". main ." ". bottom .";
-    grid-template-columns: 20px 440px 20px;
-    grid-template-rows: 20px 450px 30px;
+    grid-template-columns: 0.1fr 4fr 0.1fr;
+    grid-template-rows: 0.2fr 4fr 0.2fr;
   }
 
-  /* line 19, ../scss/mobileL.scss */
+  /* line 22, ../scss/mobileL.scss */
   .calc_body {
-    grid-gap: 10px;
+    grid-gap: 2%;
     grid-area: main;
     display: grid;
-    grid-template-areas: " . " " head " " output " " buttons" " . ";
-    grid-template-columns: 420px;
-    grid-template-rows: 10px 50px 50px 280px 10px;
+    grid-template-areas: " . " " head " " . " " output " " . " " buttons" " . ";
+    grid-template-columns: 4fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 2fr 0.2fr 4fr 0.1fr;
   }
 
-  /* line 32, ../scss/mobileL.scss */
+  /* line 37, ../scss/mobileL.scss */
   .calc_header {
     grid-area: head;
     display: grid;
     grid-template-areas: "logo . . first second third" "logo . theme slider slider slider";
-    grid-template-columns: 120px 120px 100px 20px 20px 20px;
-    grid-template-rows: 20px 30px;
-  }
-  /* line 40, ../scss/mobileL.scss */
-  .calc_header .title {
-    grid-area: logo;
-    font-size: 35px;
-    padding: 10px 0 0 15px;
+    grid-template-columns: 1.2fr 1.2fr 1fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr;
   }
   /* line 45, ../scss/mobileL.scss */
-  .calc_header .first_theme {
-    grid-area: first;
-    margin: 0 5px 0 0;
-    text-align: center;
+  .calc_header .title {
+    grid-area: logo;
+    font-size: 3em;
+    padding: 2% 0 0 4%;
   }
   /* line 50, ../scss/mobileL.scss */
-  .calc_header .second_theme {
-    grid-area: second;
-    margin: 0 5px 0 0;
+  .calc_header .first_theme {
+    grid-area: first;
+    margin: 0 2% 0 0;
     text-align: center;
   }
   /* line 55, ../scss/mobileL.scss */
+  .calc_header .second_theme {
+    grid-area: second;
+    margin: 0 2% 0 0;
+    text-align: center;
+  }
+  /* line 60, ../scss/mobileL.scss */
   .calc_header .third_theme {
     grid-area: third;
     text-align: center;
   }
-  /* line 59, ../scss/mobileL.scss */
+  /* line 64, ../scss/mobileL.scss */
   .calc_header .slider {
     grid-area: slider;
   }
-  /* line 62, ../scss/mobileL.scss */
+  /* line 67, ../scss/mobileL.scss */
   .calc_header .theme_selector {
     grid-area: theme;
-    font-size: 18px;
-    padding: 10px 0 0 0;
+    font-size: 1.1em;
+    padding: 4% 0 0 0;
   }
 
-  /* line 68, ../scss/mobileL.scss */
+  /* line 73, ../scss/mobileL.scss */
   .slider input {
-    width: 60px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
   }
 
-  /* line 72, ../scss/mobileL.scss */
+  /* line 77, ../scss/mobileL.scss */
   .number_output {
+    background-color: #ededed;
     grid-area: output;
   }
-  /* line 74, ../scss/mobileL.scss */
+  /* line 80, ../scss/mobileL.scss */
   .number_output .output_bar {
     text-align: right;
-    padding: 5px 10px 0 0;
-    font-size: 25px;
+    padding: 2% 0 0 0;
+    font-size: 2.3em;
     width: 90%;
     height: 70%;
-    margin: 10px;
+    margin: 1%;
   }
 
-  /* line 83, ../scss/mobileL.scss */
+  /* line 89, ../scss/mobileL.scss */
   .buttons {
+    background-color: #d1cccc;
     grid-area: buttons;
     display: grid;
-    grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dot zero slash times" " reset reset equal equal";
-    grid-template-columns: 105px 105px 105px 80px;
-    grid-template-rows: 55px 55px 55px 55px 55px;
-    grid-gap: 5px;
+    grid-template-areas: ". . . . . ." ". seven eight nine del ." ". four five six plus ." ". one two three minus ." ". dot zero slash times ." ". reset reset equal equal ." ". . . . . .";
+    grid-template-columns: 0.2fr 1fr 1fr 1fr 0.8fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-gap: 2%;
   }
-  /* line 95, ../scss/mobileL.scss */
+  /* line 104, ../scss/mobileL.scss */
   .buttons .number_nine {
     grid-area: nine;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 99, ../scss/mobileL.scss */
+  /* line 108, ../scss/mobileL.scss */
   .buttons .number_eight {
     grid-area: eight;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 103, ../scss/mobileL.scss */
+  /* line 112, ../scss/mobileL.scss */
   .buttons .number_seven {
     grid-area: seven;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 107, ../scss/mobileL.scss */
+  /* line 116, ../scss/mobileL.scss */
   .buttons .number_six {
     grid-area: six;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 111, ../scss/mobileL.scss */
+  /* line 120, ../scss/mobileL.scss */
   .buttons .number_five {
     grid-area: five;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 115, ../scss/mobileL.scss */
+  /* line 124, ../scss/mobileL.scss */
   .buttons .number_four {
     grid-area: four;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 119, ../scss/mobileL.scss */
+  /* line 128, ../scss/mobileL.scss */
   .buttons .number_three {
     grid-area: three;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 123, ../scss/mobileL.scss */
+  /* line 132, ../scss/mobileL.scss */
   .buttons .number_two {
     grid-area: two;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 127, ../scss/mobileL.scss */
+  /* line 136, ../scss/mobileL.scss */
   .buttons .number_one {
     grid-area: one;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 131, ../scss/mobileL.scss */
+  /* line 140, ../scss/mobileL.scss */
   .buttons .number_dot {
     grid-area: dot;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 135, ../scss/mobileL.scss */
+  /* line 144, ../scss/mobileL.scss */
   .buttons .number_delete {
     grid-area: del;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
-  /* line 139, ../scss/mobileL.scss */
+  /* line 150, ../scss/mobileL.scss */
   .buttons .number_plus {
     grid-area: plus;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 143, ../scss/mobileL.scss */
+  /* line 154, ../scss/mobileL.scss */
   .buttons .number_times {
     grid-area: times;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 147, ../scss/mobileL.scss */
+  /* line 158, ../scss/mobileL.scss */
   .buttons .number_minus {
     grid-area: minus;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 151, ../scss/mobileL.scss */
+  /* line 162, ../scss/mobileL.scss */
   .buttons .number_reset {
     grid-area: reset;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
-  /* line 155, ../scss/mobileL.scss */
+  /* line 168, ../scss/mobileL.scss */
   .buttons .number_equal {
     grid-area: equal;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #ca5502;
+    color: white;
   }
-  /* line 159, ../scss/mobileL.scss */
+  /* line 174, ../scss/mobileL.scss */
   .buttons .number_slash {
     grid-area: slash;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 163, ../scss/mobileL.scss */
+  /* line 178, ../scss/mobileL.scss */
   .buttons .number_zero {
     grid-area: zero;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
 
-  /* line 169, ../scss/mobileL.scss */
+  /* line 184, ../scss/mobileL.scss */
   .attribution {
     grid-area: bottom;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
-  /* line 5, ../scss/tablet.scss */
+  /* line 7, ../scss/tablet.scss */
   * {
     margin: 0;
     padding: 0;
     border: none;
   }
 
-  /* line 10, ../scss/tablet.scss */
+  /* line 12, ../scss/tablet.scss */
   body {
+    background-color: #e6e6e6;
     display: grid;
     grid-template-areas: ". . ." ". main ." ". bottom .";
-    grid-template-columns: 200px 400px 200px;
-    grid-template-rows: 20px 450px 30px;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 0.2fr 6fr 0.2fr;
   }
 
-  /* line 19, ../scss/tablet.scss */
+  /* line 22, ../scss/tablet.scss */
   .calc_body {
-    grid-gap: 10px;
+    grid-gap: 2%;
     grid-area: main;
     display: grid;
-    grid-template-areas: " . " "head" "output" "buttons" ".";
-    grid-template-columns: 400px;
-    grid-template-rows: 10px 50px 50px 280px 10px;
+    grid-template-areas: " . " "head" " . " "output" " . " "buttons" ".";
+    grid-template-columns: 4fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 2fr 0.2fr 8fr 0.1fr;
   }
 
-  /* line 32, ../scss/tablet.scss */
+  /* line 37, ../scss/tablet.scss */
   .calc_header {
     grid-area: head;
     display: grid;
     grid-template-areas: "logo . . first second third" "logo . theme slider slider slider";
-    grid-template-columns: 120px 120px 100px 20px 20px 20px;
-    grid-template-rows: 20px 30px;
-  }
-  /* line 40, ../scss/tablet.scss */
-  .calc_header .title {
-    grid-area: logo;
-    font-size: 35px;
-    padding: 10px 0 0 15px;
+    grid-template-columns: 1.2fr 1.2fr 1fr 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 0.2fr;
   }
   /* line 45, ../scss/tablet.scss */
-  .calc_header .first_theme {
-    grid-area: first;
-    margin: 0 5px 0 0;
-    text-align: center;
+  .calc_header .title {
+    grid-area: logo;
+    font-size: 2.5em;
+    padding: 2% 0 0 3%;
   }
   /* line 50, ../scss/tablet.scss */
-  .calc_header .second_theme {
-    grid-area: second;
-    margin: 0 5px 0 0;
+  .calc_header .first_theme {
+    grid-area: first;
+    margin: 0 2% 0 0;
     text-align: center;
   }
   /* line 55, ../scss/tablet.scss */
-  .calc_header .third_theme {
-    grid-area: third;
-    text-align: center;
-  }
-  /* line 59, ../scss/tablet.scss */
-  .calc_header .slider {
-    grid-area: slider;
-  }
-  /* line 62, ../scss/tablet.scss */
-  .calc_header .theme_selector {
-    grid-area: theme;
-    font-size: 18px;
-    padding: 10px 0 0 0;
-  }
-
-  /* line 68, ../scss/tablet.scss */
-  .slider input {
-    width: 60px;
-    height: 40px;
-  }
-
-  /* line 72, ../scss/tablet.scss */
-  .number_output {
-    grid-area: output;
-  }
-  /* line 74, ../scss/tablet.scss */
-  .number_output .output_bar {
-    text-align: right;
-    padding: 5px 10px 0 0;
-    font-size: 25px;
-    width: 90%;
-    height: 70%;
-    margin: 10px;
-  }
-
-  /* line 83, ../scss/tablet.scss */
-  .buttons {
-    grid-area: buttons;
-    display: grid;
-    grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dot zero slash times" " reset reset equal equal";
-    grid-template-columns: 95px 100px 100px 80px;
-    grid-template-rows: 55px 55px 55px 55px 55px;
-    grid-gap: 5px;
-  }
-  /* line 95, ../scss/tablet.scss */
-  .buttons .number_nine {
-    grid-area: nine;
-    margin: 5px;
-  }
-  /* line 99, ../scss/tablet.scss */
-  .buttons .number_eight {
-    grid-area: eight;
-    margin: 5px;
-  }
-  /* line 103, ../scss/tablet.scss */
-  .buttons .number_seven {
-    grid-area: seven;
-    margin: 5px;
-    margin-left: 15px;
-  }
-  /* line 108, ../scss/tablet.scss */
-  .buttons .number_six {
-    grid-area: six;
-    margin: 5px;
-  }
-  /* line 112, ../scss/tablet.scss */
-  .buttons .number_five {
-    grid-area: five;
-    margin: 5px;
-  }
-  /* line 116, ../scss/tablet.scss */
-  .buttons .number_four {
-    grid-area: four;
-    margin: 5px;
-    margin-left: 15px;
-  }
-  /* line 121, ../scss/tablet.scss */
-  .buttons .number_three {
-    grid-area: three;
-    margin: 5px;
-  }
-  /* line 125, ../scss/tablet.scss */
-  .buttons .number_two {
-    grid-area: two;
-    margin: 5px;
-  }
-  /* line 129, ../scss/tablet.scss */
-  .buttons .number_one {
-    grid-area: one;
-    margin: 5px;
-    margin-left: 15px;
-  }
-  /* line 134, ../scss/tablet.scss */
-  .buttons .number_dot {
-    grid-area: dot;
-    margin: 5px;
-    margin-left: 15px;
-  }
-  /* line 139, ../scss/tablet.scss */
-  .buttons .number_delete {
-    grid-area: del;
-    margin: 5px;
-  }
-  /* line 143, ../scss/tablet.scss */
-  .buttons .number_plus {
-    grid-area: plus;
-    margin: 5px;
-  }
-  /* line 147, ../scss/tablet.scss */
-  .buttons .number_times {
-    grid-area: times;
-    margin: 5px;
-  }
-  /* line 151, ../scss/tablet.scss */
-  .buttons .number_minus {
-    grid-area: minus;
-    margin: 5px;
-  }
-  /* line 155, ../scss/tablet.scss */
-  .buttons .number_reset {
-    grid-area: reset;
-    margin: 5px;
-    margin-left: 15px;
-  }
-  /* line 160, ../scss/tablet.scss */
-  .buttons .number_equal {
-    grid-area: equal;
-    margin: 5px;
-  }
-  /* line 164, ../scss/tablet.scss */
-  .buttons .number_slash {
-    grid-area: slash;
-    margin: 5px;
-  }
-  /* line 168, ../scss/tablet.scss */
-  .buttons .number_zero {
-    grid-area: zero;
-    margin: 5px;
-  }
-
-  /* line 174, ../scss/tablet.scss */
-  .attribution {
-    grid-area: bottom;
-  }
-}
-@media screen and (min-width: 1025px) {
-  /* line 5, ../scss/laptopSM.scss */
-  * {
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-
-  /* line 10, ../scss/laptopSM.scss */
-  body {
-    display: grid;
-    grid-template-areas: ". . ." ". main ." ". bottom .";
-    grid-template-columns: 220px 1000px 220px;
-    grid-template-rows: 20px 450px 30px;
-  }
-
-  /* line 19, ../scss/laptopSM.scss */
-  .calc_body {
-    grid-gap: 10px;
-    grid-area: main;
-    display: grid;
-    grid-template-areas: ". . ." ". head ." ". output ." ". buttons ." ". . .";
-    grid-template-columns: 10px 980px 10px;
-    grid-template-rows: 10px 50px 50px 280px 10px;
-  }
-
-  /* line 32, ../scss/laptopSM.scss */
-  .calc_header {
-    grid-area: head;
-    display: grid;
-    grid-template-areas: "logo . . first second third" "logo . theme slider slider slider";
-    grid-template-columns: 120px 400px 100px 123px 123px 123px;
-    grid-template-rows: 20px 30px;
-  }
-  /* line 40, ../scss/laptopSM.scss */
-  .calc_header .title {
-    grid-area: logo;
-    font-size: 35px;
-    padding: 10px 0 0 15px;
-  }
-  /* line 45, ../scss/laptopSM.scss */
-  .calc_header .first_theme {
-    grid-area: first;
-    margin: 0 8px 0 0;
-    text-align: center;
-  }
-  /* line 50, ../scss/laptopSM.scss */
   .calc_header .second_theme {
     grid-area: second;
-    margin: 0 8px 0 0;
+    margin: 0 2% 0 0;
     text-align: center;
   }
-  /* line 55, ../scss/laptopSM.scss */
+  /* line 60, ../scss/tablet.scss */
   .calc_header .third_theme {
     grid-area: third;
     text-align: center;
   }
-  /* line 59, ../scss/laptopSM.scss */
+  /* line 64, ../scss/tablet.scss */
   .calc_header .slider {
     grid-area: slider;
   }
-  /* line 62, ../scss/laptopSM.scss */
+  /* line 67, ../scss/tablet.scss */
   .calc_header .theme_selector {
     grid-area: theme;
-    font-size: 18px;
-    padding: 10px 0 0 0;
+    font-size: 1.1em;
+    padding: 2% 0 0 0;
   }
 
-  /* line 68, ../scss/laptopSM.scss */
+  /* line 73, ../scss/tablet.scss */
   .slider input {
-    width: 70%;
-    height: 40px;
-    margin-left: 53px;
+    width: 100%;
+    height: 100%;
   }
 
-  /* line 73, ../scss/laptopSM.scss */
+  /* line 77, ../scss/tablet.scss */
   .number_output {
+    background-color: #ededed;
     grid-area: output;
   }
-  /* line 75, ../scss/laptopSM.scss */
+  /* line 80, ../scss/tablet.scss */
   .number_output .output_bar {
     text-align: right;
-    padding: 5px 10px 0 0;
-    font-size: 25px;
+    padding: 1% 2% 0 0;
+    font-size: 2em;
     width: 90%;
     height: 70%;
-    margin: 10px;
+    margin: 1%;
   }
 
-  /* line 84, ../scss/laptopSM.scss */
+  /* line 89, ../scss/tablet.scss */
   .buttons {
+    background-color: #d1cccc;
     grid-area: buttons;
     display: grid;
-    grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dot zero slash times" " reset reset equal equal";
-    grid-template-columns: 247px 247px 247px 236px;
-    grid-template-rows: 55px 55px 55px 55px 55px;
-    grid-gap: 5px;
+    grid-template-areas: ". . . . . ." ". seven eight nine del ." ". four five six plus ." ". one two three minus ." ". dot zero slash times ." ". reset reset equal equal ." ". . . . . .";
+    grid-template-columns: 0.2fr 2fr 2fr 2fr 2fr  0.2fr;
+    grid-template-rows: 0.2fr 2fr 2fr 2fr 2fr 2fr 0.2fr;
+    grid-gap: 3%;
   }
-  /* line 96, ../scss/laptopSM.scss */
+  /* line 104, ../scss/tablet.scss */
   .buttons .number_nine {
     grid-area: nine;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 100, ../scss/laptopSM.scss */
+  /* line 108, ../scss/tablet.scss */
   .buttons .number_eight {
     grid-area: eight;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 104, ../scss/laptopSM.scss */
+  /* line 112, ../scss/tablet.scss */
   .buttons .number_seven {
     grid-area: seven;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 108, ../scss/laptopSM.scss */
+  /* line 117, ../scss/tablet.scss */
   .buttons .number_six {
     grid-area: six;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 112, ../scss/laptopSM.scss */
+  /* line 121, ../scss/tablet.scss */
   .buttons .number_five {
     grid-area: five;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 116, ../scss/laptopSM.scss */
+  /* line 125, ../scss/tablet.scss */
   .buttons .number_four {
     grid-area: four;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 120, ../scss/laptopSM.scss */
+  /* line 130, ../scss/tablet.scss */
   .buttons .number_three {
     grid-area: three;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 124, ../scss/laptopSM.scss */
+  /* line 134, ../scss/tablet.scss */
   .buttons .number_two {
     grid-area: two;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 128, ../scss/laptopSM.scss */
+  /* line 138, ../scss/tablet.scss */
   .buttons .number_one {
     grid-area: one;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 132, ../scss/laptopSM.scss */
+  /* line 143, ../scss/tablet.scss */
   .buttons .number_dot {
     grid-area: dot;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 136, ../scss/laptopSM.scss */
+  /* line 147, ../scss/tablet.scss */
   .buttons .number_delete {
     grid-area: del;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
-  /* line 140, ../scss/laptopSM.scss */
+  /* line 153, ../scss/tablet.scss */
   .buttons .number_plus {
     grid-area: plus;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 144, ../scss/laptopSM.scss */
+  /* line 157, ../scss/tablet.scss */
   .buttons .number_times {
     grid-area: times;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 148, ../scss/laptopSM.scss */
+  /* line 161, ../scss/tablet.scss */
   .buttons .number_minus {
     grid-area: minus;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 152, ../scss/laptopSM.scss */
+  /* line 165, ../scss/tablet.scss */
   .buttons .number_reset {
     grid-area: reset;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
-  /* line 156, ../scss/laptopSM.scss */
+  /* line 171, ../scss/tablet.scss */
   .buttons .number_equal {
     grid-area: equal;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #ca5502;
+    color: white;
   }
-  /* line 160, ../scss/laptopSM.scss */
+  /* line 177, ../scss/tablet.scss */
   .buttons .number_slash {
     grid-area: slash;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
-  /* line 164, ../scss/laptopSM.scss */
+  /* line 181, ../scss/tablet.scss */
   .buttons .number_zero {
     grid-area: zero;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
   }
 
-  /* line 170, ../scss/laptopSM.scss */
+  /* line 187, ../scss/tablet.scss */
   .attribution {
     grid-area: bottom;
   }
 }
 @media screen and (min-width: 801px) and (max-width: 1024px) {
-  /* line 5, ../scss/laptopL.scss */
+  /* line 7, ../scss/laptopSM.scss */
   * {
     margin: 0;
     padding: 0;
     border: none;
   }
 
-  /* line 10, ../scss/laptopL.scss */
+  /* line 12, ../scss/laptopSM.scss */
   body {
+    background-color: #e6e6e6;
     display: grid;
     grid-template-areas: ". . ." ". main ." ". bottom .";
-    grid-template-columns: 200px 612px 200px;
-    grid-template-rows: 20px 450px 30px;
+    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-rows: 0.2fr 4fr 0.2fr;
   }
 
-  /* line 19, ../scss/laptopL.scss */
+  /* line 22, ../scss/laptopSM.scss */
   .calc_body {
-    grid-gap: 10px;
+    grid-gap: 2%;
     grid-area: main;
     display: grid;
-    grid-template-areas: ". . ." ". head ." ". output ." ". buttons ." ". . .";
-    grid-template-columns: 10px 588px 10px;
-    grid-template-rows: 10px 50px 50px 280px 10px;
+    grid-template-areas: ". . ." ". head ." ". . ." ". output ." ". . ." ". buttons ." ". . .";
+    grid-template-columns: 0.1fr 6fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 2fr 0.2fr 6fr 0.1fr;
   }
 
-  /* line 32, ../scss/laptopL.scss */
+  /* line 37, ../scss/laptopSM.scss */
   .calc_header {
     grid-area: head;
     display: grid;
     grid-template-areas: "logo . . first second third" "logo . theme slider slider slider";
-    grid-template-columns: 120px 200px 100px 56px 56px 56px;
-    grid-template-rows: 20px 30px;
+    grid-template-columns: 1.2fr 2fr 1fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr;
   }
-  /* line 40, ../scss/laptopL.scss */
+  /* line 45, ../scss/laptopSM.scss */
   .calc_header .title {
     grid-area: logo;
-    font-size: 35px;
-    padding: 10px 0 0 15px;
+    font-size: 2.3em;
+    padding: 2% 0 0 3%;
   }
-  /* line 45, ../scss/laptopL.scss */
+  /* line 50, ../scss/laptopSM.scss */
   .calc_header .first_theme {
     grid-area: first;
-    margin: 0 5px 0 0;
+    margin: 0 1% 0 0;
     text-align: center;
   }
-  /* line 50, ../scss/laptopL.scss */
+  /* line 55, ../scss/laptopSM.scss */
   .calc_header .second_theme {
     grid-area: second;
-    margin: 0 5px 0 0;
+    margin: 0 1% 0 0;
     text-align: center;
   }
-  /* line 55, ../scss/laptopL.scss */
+  /* line 60, ../scss/laptopSM.scss */
   .calc_header .third_theme {
     grid-area: third;
     text-align: center;
   }
-  /* line 59, ../scss/laptopL.scss */
+  /* line 64, ../scss/laptopSM.scss */
   .calc_header .slider {
     grid-area: slider;
   }
-  /* line 62, ../scss/laptopL.scss */
+  /* line 67, ../scss/laptopSM.scss */
   .calc_header .theme_selector {
     grid-area: theme;
-    font-size: 18px;
-    padding: 10px 0 0 0;
+    font-size: 1.4em;
+    padding: 2% 0 0 0;
   }
 
-  /* line 68, ../scss/laptopL.scss */
+  /* line 73, ../scss/laptopSM.scss */
   .slider input {
     width: 90%;
-    height: 40px;
+    height: 100%;
   }
 
-  /* line 72, ../scss/laptopL.scss */
+  /* line 77, ../scss/laptopSM.scss */
   .number_output {
+    background-color: #ededed;
     grid-area: output;
   }
-  /* line 74, ../scss/laptopL.scss */
+  /* line 80, ../scss/laptopSM.scss */
   .number_output .output_bar {
     text-align: right;
-    padding: 5px 10px 0 0;
-    font-size: 25px;
+    padding: 1% 2% 0 0;
+    font-size: 2%;
     width: 90%;
     height: 70%;
-    margin: 10px;
+    margin: 2%;
   }
 
-  /* line 83, ../scss/laptopL.scss */
+  /* line 89, ../scss/laptopSM.scss */
   .buttons {
+    background-color: #d1cccc;
     grid-area: buttons;
     display: grid;
-    grid-template-areas: "seven eight nine del" "four five six plus" "one two three minus" "dot zero slash times" " reset reset equal equal";
-    grid-template-columns: 147px 147px 147px 136px;
-    grid-template-rows: 55px 55px 55px 55px 55px;
-    grid-gap: 5px;
+    grid-template-areas: ". . . . . ." ". seven eight nine del ." ". four five six plus ." ". one two three minus ." ". dot zero slash times ." ". reset reset equal equal ." ". . . . . .";
+    grid-template-columns: 0.2fr 2fr 2fr 2fr 2fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-gap: 1%;
   }
-  /* line 95, ../scss/laptopL.scss */
+  /* line 104, ../scss/laptopSM.scss */
   .buttons .number_nine {
     grid-area: nine;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 99, ../scss/laptopL.scss */
+  /* line 108, ../scss/laptopSM.scss */
   .buttons .number_eight {
     grid-area: eight;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 103, ../scss/laptopL.scss */
+  /* line 112, ../scss/laptopSM.scss */
   .buttons .number_seven {
     grid-area: seven;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 107, ../scss/laptopL.scss */
+  /* line 116, ../scss/laptopSM.scss */
   .buttons .number_six {
     grid-area: six;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 111, ../scss/laptopL.scss */
+  /* line 120, ../scss/laptopSM.scss */
   .buttons .number_five {
     grid-area: five;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 115, ../scss/laptopL.scss */
+  /* line 124, ../scss/laptopSM.scss */
   .buttons .number_four {
     grid-area: four;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 119, ../scss/laptopL.scss */
+  /* line 128, ../scss/laptopSM.scss */
   .buttons .number_three {
     grid-area: three;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 123, ../scss/laptopL.scss */
+  /* line 132, ../scss/laptopSM.scss */
   .buttons .number_two {
     grid-area: two;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 127, ../scss/laptopL.scss */
+  /* line 136, ../scss/laptopSM.scss */
   .buttons .number_one {
     grid-area: one;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 131, ../scss/laptopL.scss */
+  /* line 140, ../scss/laptopSM.scss */
   .buttons .number_dot {
     grid-area: dot;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 135, ../scss/laptopL.scss */
+  /* line 144, ../scss/laptopSM.scss */
   .buttons .number_delete {
     grid-area: del;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
-  /* line 139, ../scss/laptopL.scss */
+  /* line 150, ../scss/laptopSM.scss */
   .buttons .number_plus {
     grid-area: plus;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 143, ../scss/laptopL.scss */
+  /* line 154, ../scss/laptopSM.scss */
   .buttons .number_times {
     grid-area: times;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 147, ../scss/laptopL.scss */
+  /* line 158, ../scss/laptopSM.scss */
   .buttons .number_minus {
     grid-area: minus;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 151, ../scss/laptopL.scss */
+  /* line 162, ../scss/laptopSM.scss */
   .buttons .number_reset {
     grid-area: reset;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
   }
-  /* line 155, ../scss/laptopL.scss */
+  /* line 168, ../scss/laptopSM.scss */
   .buttons .number_equal {
     grid-area: equal;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
+    background-color: #ca5502;
+    color: white;
   }
-  /* line 159, ../scss/laptopL.scss */
+  /* line 174, ../scss/laptopSM.scss */
   .buttons .number_slash {
     grid-area: slash;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
-  /* line 163, ../scss/laptopL.scss */
+  /* line 178, ../scss/laptopSM.scss */
   .buttons .number_zero {
     grid-area: zero;
-    margin: 5px;
+    margin: 1%;
+    border-radius: 2vh;
+    background-color: #e5e4e1;
   }
 
+  /* line 184, ../scss/laptopSM.scss */
+  .attribution {
+    grid-area: bottom;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 7, ../scss/laptopL.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* line 12, ../scss/laptopL.scss */
+  body {
+    background-color: #e6e6e6;
+    display: grid;
+    grid-template-areas: ". . ." ". main ." ". bottom .";
+    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-rows: 0.2fr 6fr 0.2fr;
+  }
+
+  /* line 22, ../scss/laptopL.scss */
+  .calc_body {
+    grid-gap: 2%;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: ". . ." ". head ." ". . ." ". output ." ". . ." ". buttons ." ". . .";
+    grid-template-columns: 0.1fr 9fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.2fr 2fr 0.2fr 6fr 0.1fr;
+  }
+
+  /* line 37, ../scss/laptopL.scss */
+  .calc_header {
+    grid-area: head;
+    display: grid;
+    grid-template-areas: "logo . . first second third" "logo . theme slider slider slider";
+    grid-template-columns: 1.2fr 4fr 1fr 1.2fr 1.2fr 1.2fr;
+    grid-template-rows: 0.2fr 0.2fr;
+  }
+  /* line 45, ../scss/laptopL.scss */
+  .calc_header .title {
+    grid-area: logo;
+    font-size: 2.3em;
+    padding: 2% 0 0 3%;
+  }
+  /* line 50, ../scss/laptopL.scss */
+  .calc_header .first_theme {
+    grid-area: first;
+    margin: 0 2% 0 0;
+    text-align: center;
+  }
+  /* line 55, ../scss/laptopL.scss */
+  .calc_header .second_theme {
+    grid-area: second;
+    margin: 0 2% 0 0;
+    text-align: center;
+  }
+  /* line 60, ../scss/laptopL.scss */
+  .calc_header .third_theme {
+    grid-area: third;
+    text-align: center;
+  }
+  /* line 64, ../scss/laptopL.scss */
+  .calc_header .slider {
+    grid-area: slider;
+  }
+  /* line 67, ../scss/laptopL.scss */
+  .calc_header .theme_selector {
+    grid-area: theme;
+    font-size: 1.4em;
+    padding: 2% 0 0 0;
+  }
+
+  /* line 73, ../scss/laptopL.scss */
+  .slider input {
+    width: 70%;
+    height: 100%;
+    margin-left: 15%;
+  }
+
+  /* line 78, ../scss/laptopL.scss */
+  .number_output {
+    background-color: #ededed;
+    grid-area: output;
+  }
+  /* line 81, ../scss/laptopL.scss */
+  .number_output .output_bar {
+    text-align: right;
+    padding: 1% 2% 0 0;
+    font-size: 2em;
+    width: 90%;
+    height: 70%;
+    margin: 2%;
+  }
+
+  /* line 90, ../scss/laptopL.scss */
+  .buttons {
+    background-color: #d1cccc;
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas: ". . . . . ." ". seven eight nine del ." ". four five six plus ." ". one two three minus ." ". dot zero slash times ." ". reset reset equal equal ." ". . . . . .";
+    grid-template-columns: 0.2fr 3fr 3fr 3fr 3fr 0.2fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+    grid-gap: 1%;
+  }
+  /* line 105, ../scss/laptopL.scss */
+  .buttons .number_nine {
+    grid-area: nine;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 109, ../scss/laptopL.scss */
+  .buttons .number_eight {
+    grid-area: eight;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 113, ../scss/laptopL.scss */
+  .buttons .number_seven {
+    grid-area: seven;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 117, ../scss/laptopL.scss */
+  .buttons .number_six {
+    grid-area: six;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 121, ../scss/laptopL.scss */
+  .buttons .number_five {
+    grid-area: five;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 125, ../scss/laptopL.scss */
+  .buttons .number_four {
+    grid-area: four;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 129, ../scss/laptopL.scss */
+  .buttons .number_three {
+    grid-area: three;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 133, ../scss/laptopL.scss */
+  .buttons .number_two {
+    grid-area: two;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 137, ../scss/laptopL.scss */
+  .buttons .number_one {
+    grid-area: one;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 141, ../scss/laptopL.scss */
+  .buttons .number_dot {
+    grid-area: dot;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 145, ../scss/laptopL.scss */
+  .buttons .number_delete {
+    grid-area: del;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
+  }
+  /* line 151, ../scss/laptopL.scss */
+  .buttons .number_plus {
+    grid-area: plus;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 155, ../scss/laptopL.scss */
+  .buttons .number_times {
+    grid-area: times;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 159, ../scss/laptopL.scss */
+  .buttons .number_minus {
+    grid-area: minus;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 163, ../scss/laptopL.scss */
+  .buttons .number_reset {
+    grid-area: reset;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #377f86;
+    color: white;
+  }
   /* line 169, ../scss/laptopL.scss */
+  .buttons .number_equal {
+    grid-area: equal;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+    background-color: #ca5502;
+    color: white;
+  }
+  /* line 175, ../scss/laptopL.scss */
+  .buttons .number_slash {
+    grid-area: slash;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+  /* line 179, ../scss/laptopL.scss */
+  .buttons .number_zero {
+    grid-area: zero;
+    margin: 1%;
+    border-radius: 1vh;
+    background-color: #e5e4e1;
+  }
+
+  /* line 185, ../scss/laptopL.scss */
   .attribution {
     grid-area: bottom;
   }

@@ -10,6 +10,7 @@ const body = document.getElementById('body');
 const reset = document.getElementById('btnreset');
 const del = document.getElementById('btndelete');
 const equal = document.getElementById('btnequal');
+const btnBlockB = document.getElementById('buttons_block');
 const OutPutBar = document.getElementById('outputBar');
 form.addEventListener('click', function(event) {
   event.preventDefault();
@@ -29,18 +30,19 @@ slider.addEventListener('change', function() {
 console.log(slider.value);
 //theme 3 colors
 var backgroundMainThree = "#160628";
-var backgroundSecondaryThree = "#341C4F";
+var backgroundSecondaryThree = "#1D0934";
 var fontColorThree = "#FFE53D";
+var btnBgThree = "#341C4F";
 var toggleBackgroundThree = "#00E0D1";
 var cyanBgThreeS = "#6CF9F2";
 var delResetBgThree = "#58077D";
 var delResetBgThreeS = "#BC15F4";
 
-
-
 //theme 2 colors
 var backgroundMainSecond = "#E6E6E6";
-var backgroundSecondarySecond = "#D1CCCC";
+var backgroundSecondarySecond = "#EDEDED";
+var btnBg = "#E5E4E1";
+var btnBlockBg = "#D1CCCC";
 var fontColorSecond = "#35352C";
 var toggleBackgroundSecond = "#CA5502";
 var delResetBgSecond = "#377F86";
@@ -48,28 +50,29 @@ var delResetBgSecondS = "#1B5F65";
 
 //theme 1 colors
 var backgroundMainOne = "#3A4764";
-var backgroundSecondaryOne = "#232D43";
+var backgroundSecondaryOne = "#232C43";
 var fontColorOne = "#FFFFFF";
 var toggleBackgroundOne = "#D03F2F";
-var orangeBgOneS = "#93261A";
+var btnBgOne = "#EAE3DC";
+var btnBlockBgOne = "#182034";
 var delResetBgOne = "#637097";
-var delResetBgOneS = "#404E72";
-var keypadBgOne = "#EAE3DC"; 
-var keypadFColorOne = "#444B5A";
 
 
 function theme3() {
   body.style.backgroundColor = backgroundMainThree;
   output.style.backgroundColor = backgroundSecondaryThree;
   output.style.color = fontColorThree;
+  btnBlockB.style.backgroundColor = backgroundSecondaryThree;
   calcBody.style.backgroundColor = backgroundMainThree;
   head.style.color = fontColorThree;  
   for (let i = 0; i < nodeList.length; i++) {
-    nodeList[i].style.backgroundColor = backgroundSecondaryThree;
+    nodeList[i].style.backgroundColor = btnBgThree;
     nodeList[i].style.color = fontColorThree;
   }
   reset.style.backgroundColor = delResetBgThree;
+  reset.style.color = fontColorOne;
   del.style.backgroundColor = delResetBgThree;
+  del.style.color = fontColorOne;
   equal.style.backgroundColor = toggleBackgroundThree;
 }
 
@@ -78,31 +81,39 @@ function theme2() {
   body.style.backgroundColor = backgroundMainSecond;
   output.style.backgroundColor = backgroundSecondarySecond;
   output.style.color = fontColorSecond;
+  btnBlockB.style.backgroundColor = btnBlockBg;
   calcBody.style.backgroundColor = backgroundMainSecond;
   head.style.color = fontColorSecond;  
   for (let i = 0; i < nodeList.length; i++) {
-    nodeList[i].style.backgroundColor = backgroundSecondarySecond;
+    nodeList[i].style.backgroundColor = btnBg;
     nodeList[i].style.color = fontColorSecond;
   }
   reset.style.backgroundColor = delResetBgSecond;
+  reset.style.color = fontColorOne;
   del.style.backgroundColor = delResetBgSecond;
+  del.style.color = fontColorOne;
   equal.style.backgroundColor = toggleBackgroundSecond;
+  equal.style.color = fontColorOne
 }
 
 
 function theme1() {
   body.style.backgroundColor = backgroundMainOne; 
   output.style.backgroundColor = backgroundSecondaryOne;
-  OutPutBar.style.color =  keypadBgOne
+  OutPutBar.style.color = fontColorOne 
+  btnBlockB.style.backgroundColor = btnBlockBgOne;
   calcBody.style.backgroundColor = backgroundMainOne;
   head.style.color = fontColorOne; 
   for (let i = 0; i < nodeList.length; i++) {
-    nodeList[i].style.backgroundColor = keypadBgOne;
-    nodeList[i].style.color = keypadFColorOne;
+    nodeList[i].style.backgroundColor = btnBgOne;
+    nodeList[i].style.color = backgroundMainOne;
   }
   reset.style.backgroundColor = delResetBgOne;
+  reset.style.color = fontColorOne;
   del.style.backgroundColor = delResetBgOne;
+  del.style.color = fontColorOne;
   equal.style.backgroundColor = toggleBackgroundOne;
+  equal.style.color = fontColorOne;
 }
 
 
