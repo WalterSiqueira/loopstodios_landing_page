@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./components/css/main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Calculator app</title>
+  <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,47 +14,104 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body id="body">
-  <div class="calc_body" id="calc_body">
-      <div class="calc_header" id="header">
-        <h2 class="title">Calc</h2>
-        <p class="first_theme"> 1</p>
-        <p class="second_theme"> 2</p>
-        <p class="third_theme"> 3</p>
-        <form class="slider" id="form">
-          <input type="range" min="1" max="3" step="1" id="sliderInput">
-        </form>
-        <h3 class="theme_selector"> THEME </h3>
+<body>
+  <main class="main_block">
+    <header class="header_block">
+      <div class="mobile_headeroff">
+        <img src="./images/logo.svg" class="logo_mobile"> 
+        <img src="./images/icon-hamburger.svg" class="menu_icon">
       </div>
-      <div class="number_output" id="output">
-        <p class="output_bar" id='outputBar'> </p>
+      <div class="desktop_header">
+        <img src="./images/logo.svg" class="desktop_logo">  
+        <h2 class="home_option">Home</h2>
+        <h2 class="shop_option">Shop</h2>
+        <h2 class="about_option">About</h2>
+        <h2 class="contact_option">Contact</h2>
       </div>
-      <div class="buttons" id="buttons_block">
-        <button class="btn number_zero" id="btnzero" value=0>0</button>
-        <button class="btn number_nine" id="btnnine" value=9>9</button>
-        <button class="btn number_eight" id="btneight" value=8>8</button>
-        <button class="btn number_seven" id="btnseven" value=7>7</button>
-        <button class="btn number_six" id="btnsix" value=6>6</button>
-        <button class="btn number_five" id="btnfive" value=5>5</button>
-        <button class="btn number_four" id="btnfour" value=4>4</button>
-        <button class="btn number_three" id="btnthree" value=3>3</button>
-        <button class="btn number_two" id="btntwo" value=2>2</button>
-        <button class="btn number_one" id="btnone" value=1>1</button>
-        <button class="btn number_dot" id="btndot" value='.'>.</button>
-        <button class="btn number_slash" id="btnslash" value='/'>/</button>
-        <button class="btn number_plus" id="btnplus" value='+'>+</button>
-        <button class="btn number_times" id="btntimes" value='*'>x</button>
-        <button class="btn number_minus" id="btnminus" value='-'>-</button>
-        <button class="btn number_delete" id="btndelete">DEL</button>
-        <button class="btn number_reset" id="btnreset">RESET</button>
-        <button class="btn number_equal" id="btnequal">=</button>
+      <div class="mobile_headerOn">
+        <img src="./images/icon-close.svg" class="close_icon_mobile">
+        <h2 class="home_option_mobile">Home</h2>
+        <h2 class="shop_option_mobile">Shop</h2>
+        <h2 class="about_option_mobile">About</h2>
+        <h2 class="contact_option_mobile">Contact</h2>
       </div>
-  </div>
-  <div class="attribution">
+    </header>
+    <section class="item_show_block">
+      <div class="first_item">
+        <img src="./images/desktop-image-hero-1.jpg" class="first_item_desktop">
+        <img src="./images/mobile-image-hero-1.jpg" class="first_item_mobile">
+        <h1 class="first_item_title">Discover innovative ways to decorate</h1>
+
+        <p class="first_item_description">We provide unmatched quality, comfort, and style for property owners across the country. 
+        Our experts combine form and function in bringing your vision to life. Create a room in your 
+        own style with our collection and make your property a reflection of you and what you love.</p>
+        <div class="arrows_block_first">
+          <img src="./images/icon-angle-left.svg" class="first_item_selector_left" id="left_arrow">
+          <img src="./images/icon-angle-right.svg" class="first_item_selector_right" id="right_arrow">
+        </div>
+        <div class="btn_block">
+          <button class="first_item_button">Shop now</button> 
+          <img src="./images/icon-arrow.svg" class="first_item_arrow_icon">
+        </div>
+      </div>
+      <div class="second_item_block"> 
+        <img src="./images/desktop-image-hero-2.jpg" class="second_item_desktop_img">
+        <img src="./images/mobile-image-hero-2.jpg" class="second_item_mobile_img">
+        <h1 class="second_item_title">We are available all across the globe</h1>
+
+        <p class="second_item_description">With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+        store locator. Any questions? Don't hesitate to contact us today.</p>
+        <div class="arrows_block_second">
+          <img src="./images/icon-angle-left.svg" class="second_item_selector_left">
+          <img src="./images/icon-angle-right.svg" class="second_item_selector_right">
+        </div>
+        <button class="second_item_button">Shop now</button>
+        <img src="./images/icon-arrow.svg" class="second_item_arrow_icon">
+      </div>
+      <div class="third_item_block">
+        <img src="./images/desktop-image-hero-3.jpg" class="third_item_desktop_img">
+        <img src="./images/mobile-image-hero-3.jpg" class="third_item_mobile_img">
+        <h1 class="third_item_title">Manufactured with the best materials</h1>
+
+        <p class="third_item_description">Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+        to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+        experience in this industry, we understand what customers want for their home and office.</p>
+        <div class="arrows_block_third">
+          <img src="./images/icon-angle-left.svg" class="thid_item_selection_left">
+          <img src="./images/icon-angle-right.svg" class="third_item_selection_right">
+        </div>
+        <button class="third_item_button">Shop now</button>
+        <img src="./images/icon-arrow.svg" class="third_item_arrow_icon">
+      </div>
+    </section>
+    <section class="about_block">
+      <img src="./images/image-about-dark.jpg" class="about_dark_img">
+      <img src="./images/image-about-light.jpg" class="about_light_img">
+      <h1 class="about_title">About our furniture</h1>
+
+      <p class="about_description">Our multifunctional collection blends design and function to suit your individual taste.
+      Make each room unique, or pick a cohesive theme that best express your interests and what
+      inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+      or anything in between. Product specialists are available to help you create your dream space.</p>
+    </section>
+  
+  </main>
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/WalterSiqueira">Walter Siqueira</a>.
+    Coded by <a href="#">Your Name Here</a>.
   </div>
-  <script src="./components/js/main.js"></script>
-  <script src="./components/js/themes.js"></script>
+  <script>
+      var leftA = document.getElementById('left_arrow');
+      var rightA = document.getElementById('right_arrow');
+      
+      leftA.addEventListener("click", function() {
+          console.log("ĺeft working")
+      });
+      rightA.addEventListener("click", function() {
+          console.log("right working");
+      });
+
+  </script>
 </body>
 </html>
