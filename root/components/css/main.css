@@ -486,5 +486,258 @@
             order: 4;
   }
 }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  /* line 2, ../scss/tablet.scss */
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  /* line 7, ../scss/tablet.scss */
+  body {
+    display: grid;
+    grid-template-areas: "main";
+    grid-template-columns: 800px;
+    grid-template-rows: 550px;
+  }
+
+  /* line 14, ../scss/tablet.scss */
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* line 15, ../scss/tablet.scss */
+  .main_block {
+    grid-area: main;
+    width: 100%;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    z-index: 0;
+  }
+
+  /* line 23, ../scss/tablet.scss */
+  .header_block {
+    width: 100%;
+    height: 100px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    z-index: 3;
+  }
+
+  /* line 30, ../scss/tablet.scss */
+  .mobile_headeroff {
+    display: none;
+  }
+
+  /* line 33, ../scss/tablet.scss */
+  .desktop_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    justify-items: space-around;
+    width: 400px;
+    height: 50px;
+  }
+
+  /* line 40, ../scss/tablet.scss */
+  .desktop_logo {
+    width: 35px;
+    height: 15px;
+    margin: 18px 10px 0 25px;
+  }
+
+  /* line 45, ../scss/tablet.scss */
+  .home_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 49, ../scss/tablet.scss */
+  .shop_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 53, ../scss/tablet.scss */
+  .about_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 57, ../scss/tablet.scss */
+  .contact_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 61, ../scss/tablet.scss */
+  .mobile_headerOn {
+    display: none;
+  }
+
+  /* line 64, ../scss/tablet.scss */
+  .item_show_block {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: absolute;
+    top: 0;
+  }
+
+  /* line 69, ../scss/tablet.scss */
+  .first_item {
+    display: grid;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 500px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 79, ../scss/tablet.scss */
+  .first_item_desktop {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 84, ../scss/tablet.scss */
+  .first_item_mobile {
+    display: none;
+  }
+
+  /* line 87, ../scss/tablet.scss */
+  .first_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 92, ../scss/tablet.scss */
+  .first_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 96, ../scss/tablet.scss */
+  .btn_block {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 102, ../scss/tablet.scss */
+  .btn_block .first_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 110, ../scss/tablet.scss */
+  .btn_block .first_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 116, ../scss/tablet.scss */
+  .arrows_block_first {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 123, ../scss/tablet.scss */
+  .first_item_selector_left {
+    margin: 20px 10px 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 128, ../scss/tablet.scss */
+  .first_item_selector_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 133, ../scss/tablet.scss */
+  .second_item_block {
+    display: none;
+  }
+
+  /* line 136, ../scss/tablet.scss */
+  .third_item_block {
+    display: none;
+  }
+
+  /* line 139, ../scss/tablet.scss */
+  .about_block {
+    margin-top: 250px;
+    position: relative;
+    bottom: 0;
+    height: 200px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: grid;
+    grid-template-areas: 'dark title light' 'dark description light';
+    grid-template-columns: 200px 400px 200px;
+    grid-template-rows: 50px 100px;
+  }
+
+  /* line 152, ../scss/tablet.scss */
+  .about_dark_img {
+    grid-area: dark;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 157, ../scss/tablet.scss */
+  .about_light_img {
+    grid-area: light;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 162, ../scss/tablet.scss */
+  .about_title {
+    grid-area: title;
+    font-size: 14px;
+    margin: 30px 20px 20px 20px;
+  }
+
+  /* line 167, ../scss/tablet.scss */
+  .about_description {
+    grid-area: description;
+    margin: 0 20px 20px 20px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
