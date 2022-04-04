@@ -99,24 +99,25 @@
   }
 
   /* line 65, ../scss/mobileSM.scss */
-  .first_item_block {
+  .first_item {
+    display: none;
     width: 100%;
     height: 100%;
   }
 
-  /* line 69, ../scss/mobileSM.scss */
+  /* line 70, ../scss/mobileSM.scss */
   .first_item_title {
     margin: 20px 0 0 20px;
     font-size: 24px;
   }
 
-  /* line 73, ../scss/mobileSM.scss */
+  /* line 74, ../scss/mobileSM.scss */
   .first_item_description {
     margin: 15px 0 10px 20px;
   }
 
-  /* line 76, ../scss/mobileSM.scss */
-  .btn_block {
+  /* line 77, ../scss/mobileSM.scss */
+  .btn_block_first {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -126,8 +127,8 @@
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  /* line 80, ../scss/mobileSM.scss */
-  .btn_block .first_item_button {
+  /* line 81, ../scss/mobileSM.scss */
+  .btn_block_first .first_item_button {
     background-color: white;
     font-size: 16px;
     width: 150px;
@@ -136,8 +137,8 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 87, ../scss/mobileSM.scss */
-  .btn_block .first_item_arrow_icon {
+  /* line 88, ../scss/mobileSM.scss */
+  .btn_block_first .first_item_arrow_icon {
     margin: 0 0 0 20px;
     width: 50px;
     -webkit-box-ordinal-group: 3;
@@ -145,12 +146,12 @@
             order: 2;
   }
 
-  /* line 93, ../scss/mobileSM.scss */
+  /* line 94, ../scss/mobileSM.scss */
   .first_item_desktop {
     display: none;
   }
 
-  /* line 96, ../scss/mobileSM.scss */
+  /* line 97, ../scss/mobileSM.scss */
   .first_item_mobile {
     display: block;
     width: 100%;
@@ -158,7 +159,7 @@
     z-index: -5;
   }
 
-  /* line 102, ../scss/mobileSM.scss */
+  /* line 103, ../scss/mobileSM.scss */
   .arrows_block_first {
     width: 65px;
     height: 40px;
@@ -168,30 +169,188 @@
     margin: 160px 0 0 0;
     background-color: black;
   }
-  /* line 110, ../scss/mobileSM.scss */
+  /* line 111, ../scss/mobileSM.scss */
   .arrows_block_first .first_item_selector_left {
     width: 15px;
     height: 15px;
     margin: 10px 5px 10px 10px;
   }
-  /* line 115, ../scss/mobileSM.scss */
+  /* line 116, ../scss/mobileSM.scss */
   .arrows_block_first .first_item_selector_right {
     width: 15px;
     height: 15px;
     margin: 10px 10px 10px 5px;
   }
 
-  /* line 121, ../scss/mobileSM.scss */
+  /* line 122, ../scss/mobileSM.scss */
   .second_item_block {
-    display: none;
-  }
-
-  /* line 124, ../scss/mobileSM.scss */
-  .third_item_block {
-    display: none;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   /* line 127, ../scss/mobileSM.scss */
+  .second_item_title {
+    margin: 20px 0 0 20px;
+    font-size: 24px;
+  }
+
+  /* line 131, ../scss/mobileSM.scss */
+  .second_item_description {
+    margin: 15px 0 10px 20px;
+  }
+
+  /* line 134, ../scss/mobileSM.scss */
+  .btn_block_second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 20px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 138, ../scss/mobileSM.scss */
+  .btn_block_second .second_item_button {
+    background-color: white;
+    font-size: 16px;
+    width: 150px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 145, ../scss/mobileSM.scss */
+  .btn_block_second .second_item_arrow_icon {
+    margin: 0 0 0 20px;
+    width: 50px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 151, ../scss/mobileSM.scss */
+  .second_item_desktop_img {
+    display: none;
+  }
+
+  /* line 154, ../scss/mobileSM.scss */
+  .second_item_mobile_img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    z-index: -5;
+  }
+
+  /* line 160, ../scss/mobileSM.scss */
+  .arrows_block_second {
+    width: 65px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 160px 0 0 0;
+    background-color: black;
+  }
+  /* line 168, ../scss/mobileSM.scss */
+  .arrows_block_second .second_item_selector_left {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 10px 10px;
+  }
+  /* line 173, ../scss/mobileSM.scss */
+  .arrows_block_second .second_item_selector_right {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px 10px 5px;
+  }
+
+  /* line 179, ../scss/mobileSM.scss */
+  .third_item_block {
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 184, ../scss/mobileSM.scss */
+  .third_item_title {
+    margin: 20px 0 0 20px;
+    font-size: 24px;
+  }
+
+  /* line 188, ../scss/mobileSM.scss */
+  .third_item_description {
+    margin: 15px 0 10px 20px;
+  }
+
+  /* line 191, ../scss/mobileSM.scss */
+  .btn_block_third {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 20px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 195, ../scss/mobileSM.scss */
+  .btn_block_third .third_item_button {
+    background-color: white;
+    font-size: 16px;
+    width: 150px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 202, ../scss/mobileSM.scss */
+  .btn_block_third .third_item_arrow_icon {
+    margin: 0 0 0 20px;
+    width: 50px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 208, ../scss/mobileSM.scss */
+  .third_item_desktop_img {
+    display: none;
+  }
+
+  /* line 211, ../scss/mobileSM.scss */
+  .third_item_mobile_img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    z-index: -5;
+  }
+
+  /* line 217, ../scss/mobileSM.scss */
+  .arrows_block_third {
+    width: 65px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 160px 0 0 0;
+    background-color: black;
+  }
+  /* line 225, ../scss/mobileSM.scss */
+  .arrows_block_third .third_item_selection_left {
+    width: 15px;
+    height: 15px;
+    margin: 10px 5px 10px 10px;
+  }
+  /* line 230, ../scss/mobileSM.scss */
+  .arrows_block_third .third_item_selection_right {
+    width: 15px;
+    height: 15px;
+    margin: 10px 10px 10px 5px;
+  }
+
+  /* line 236, ../scss/mobileSM.scss */
   .about_block {
     margin: 370px 0 0 0;
     -webkit-box-ordinal-group: 5;
@@ -207,7 +366,7 @@
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  /* line 134, ../scss/mobileSM.scss */
+  /* line 243, ../scss/mobileSM.scss */
   .about_block .about_title {
     margin: 20px 0 0 20px;
     font-size: 16px;
@@ -215,14 +374,14 @@
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 139, ../scss/mobileSM.scss */
+  /* line 248, ../scss/mobileSM.scss */
   .about_block .about_description {
     margin: 15px 0 10px 20px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  /* line 143, ../scss/mobileSM.scss */
+  /* line 252, ../scss/mobileSM.scss */
   .about_block .about_dark_img {
     margin: 0 0 20px 0;
     width: 320px;
@@ -231,7 +390,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 149, ../scss/mobileSM.scss */
+  /* line 258, ../scss/mobileSM.scss */
   .about_block .about_light_img {
     margin: 20px 0 0 0;
     width: 320px;
@@ -600,7 +759,7 @@
 
   /* line 69, ../scss/tablet.scss */
   .first_item {
-    display: grid;
+    display: none;
     grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
     grid-template-columns: 500px 300px;
     grid-template-rows: 100px 100px 50px 100px;
@@ -632,7 +791,7 @@
   }
 
   /* line 96, ../scss/tablet.scss */
-  .btn_block {
+  .btn_block_first {
     grid-area: btn;
     margin: 15px;
     display: -webkit-box;
@@ -645,7 +804,7 @@
             flex-flow: row nowrap;
   }
   /* line 102, ../scss/tablet.scss */
-  .btn_block .first_item_button {
+  .btn_block_first .first_item_button {
     background-color: white;
     font-size: 16px;
     margin-left: 15px;
@@ -656,7 +815,7 @@
             order: 1;
   }
   /* line 110, ../scss/tablet.scss */
-  .btn_block .first_item_arrow_icon {
+  .btn_block_first .first_item_arrow_icon {
     margin: 0 0 0 5px;
     width: 35px;
     -webkit-box-ordinal-group: 3;
@@ -687,17 +846,185 @@
     height: 15px;
   }
 
-  /* line 133, ../scss/tablet.scss */
+  /* line 134, ../scss/tablet.scss */
   .second_item_block {
+    display: grid;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 500px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 144, ../scss/tablet.scss */
+  .second_item_desktop_img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 149, ../scss/tablet.scss */
+  .second_item_mobile_img {
     display: none;
   }
 
-  /* line 136, ../scss/tablet.scss */
+  /* line 152, ../scss/tablet.scss */
+  .second_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 157, ../scss/tablet.scss */
+  .second_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 161, ../scss/tablet.scss */
+  .btn_block_second {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 167, ../scss/tablet.scss */
+  .btn_block_second .second_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 175, ../scss/tablet.scss */
+  .btn_block_second .second_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 181, ../scss/tablet.scss */
+  .arrows_block_second {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 188, ../scss/tablet.scss */
+  .second_item_selector_left {
+    margin: 20px 10px 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 193, ../scss/tablet.scss */
+  .second_item_selector_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 198, ../scss/tablet.scss */
   .third_item_block {
     display: none;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 724px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
   }
 
-  /* line 139, ../scss/tablet.scss */
+  /* line 208, ../scss/tablet.scss */
+  .third_item_desktop_img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 213, ../scss/tablet.scss */
+  .third_item_mobile_img {
+    display: none;
+  }
+
+  /* line 216, ../scss/tablet.scss */
+  .third_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 221, ../scss/tablet.scss */
+  .third_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 225, ../scss/tablet.scss */
+  .btn_block_third {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 231, ../scss/tablet.scss */
+  .btn_block_third .third_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 239, ../scss/tablet.scss */
+  .btn_block_third .third_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 245, ../scss/tablet.scss */
+  .arrows_block_third {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 252, ../scss/tablet.scss */
+  .third_item_selection_left {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 257, ../scss/tablet.scss */
+  .third_item_selection_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 262, ../scss/tablet.scss */
   .about_block {
     margin-top: 250px;
     position: relative;
@@ -712,28 +1039,876 @@
     grid-template-rows: 50px 100px;
   }
 
-  /* line 152, ../scss/tablet.scss */
+  /* line 275, ../scss/tablet.scss */
   .about_dark_img {
     grid-area: dark;
     width: 100%;
     height: 100%;
   }
 
-  /* line 157, ../scss/tablet.scss */
+  /* line 280, ../scss/tablet.scss */
   .about_light_img {
     grid-area: light;
     width: 100%;
     height: 100%;
   }
 
-  /* line 162, ../scss/tablet.scss */
+  /* line 285, ../scss/tablet.scss */
   .about_title {
     grid-area: title;
     font-size: 14px;
     margin: 30px 20px 20px 20px;
   }
 
-  /* line 167, ../scss/tablet.scss */
+  /* line 290, ../scss/tablet.scss */
+  .about_description {
+    grid-area: description;
+    margin: 0 20px 20px 20px;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  /* line 2, ../scss/laptop.scss */
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  /* line 7, ../scss/laptop.scss */
+  body {
+    display: grid;
+    grid-template-areas: "main";
+    grid-template-columns: 1024px;
+    grid-template-rows: 550px;
+  }
+
+  /* line 14, ../scss/laptop.scss */
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* line 15, ../scss/laptop.scss */
+  .main_block {
+    grid-area: main;
+    width: 100%;
+    height: 545px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    z-index: 0;
+  }
+
+  /* line 23, ../scss/laptop.scss */
+  .header_block {
+    width: 100%;
+    height: 100px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    z-index: 3;
+  }
+
+  /* line 30, ../scss/laptop.scss */
+  .mobile_headeroff {
+    display: none;
+  }
+
+  /* line 33, ../scss/laptop.scss */
+  .desktop_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    justify-items: space-around;
+    width: 400px;
+    height: 50px;
+  }
+
+  /* line 40, ../scss/laptop.scss */
+  .desktop_logo {
+    width: 35px;
+    height: 15px;
+    margin: 18px 10px 0 25px;
+  }
+
+  /* line 45, ../scss/laptop.scss */
+  .home_option {
+    margin: 18px;
+    font-size: 12px;
+    color: white;
+  }
+
+  /* line 50, ../scss/laptop.scss */
+  .shop_option {
+    margin: 18px;
+    font-size: 12px;
+    color: white;
+  }
+
+  /* line 55, ../scss/laptop.scss */
+  .about_option {
+    margin: 18px;
+    font-size: 12px;
+    color: white;
+  }
+
+  /* line 60, ../scss/laptop.scss */
+  .contact_option {
+    margin: 18px;
+    font-size: 12px;
+    color: white;
+  }
+
+  /* line 65, ../scss/laptop.scss */
+  .mobile_headerOn {
+    display: none;
+  }
+
+  /* line 68, ../scss/laptop.scss */
+  .item_show_block {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: absolute;
+    top: 0;
+  }
+
+  /* line 73, ../scss/laptop.scss */
+  .first_item {
+    display: grid;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 724px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 83, ../scss/laptop.scss */
+  .first_item_desktop {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 88, ../scss/laptop.scss */
+  .first_item_mobile {
+    display: none;
+  }
+
+  /* line 91, ../scss/laptop.scss */
+  .first_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 96, ../scss/laptop.scss */
+  .first_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 100, ../scss/laptop.scss */
+  .btn_block_first {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 106, ../scss/laptop.scss */
+  .btn_block_first .first_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 114, ../scss/laptop.scss */
+  .btn_block_first .first_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 120, ../scss/laptop.scss */
+  .arrows_block_first {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 127, ../scss/laptop.scss */
+  .first_item_selector_left {
+    margin: 20px 10px 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 132, ../scss/laptop.scss */
+  .first_item_selector_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 137, ../scss/laptop.scss */
+  .second_item_block {
+    display: none;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 724px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 147, ../scss/laptop.scss */
+  .second_item_desktop_img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 152, ../scss/laptop.scss */
+  .second_item_mobile_img {
+    display: none;
+  }
+
+  /* line 155, ../scss/laptop.scss */
+  .second_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 160, ../scss/laptop.scss */
+  .second_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 164, ../scss/laptop.scss */
+  .btn_block_second {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 170, ../scss/laptop.scss */
+  .btn_block_second .second_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 178, ../scss/laptop.scss */
+  .btn_block_second .second_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 184, ../scss/laptop.scss */
+  .arrows_block_second {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 191, ../scss/laptop.scss */
+  .second_item_selector_left {
+    margin: 20px 10px 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 196, ../scss/laptop.scss */
+  .second_item_selector_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 201, ../scss/laptop.scss */
+  .third_item_block {
+    display: none;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 724px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 211, ../scss/laptop.scss */
+  .third_item_desktop_img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 216, ../scss/laptop.scss */
+  .third_item_mobile_img {
+    display: none;
+  }
+
+  /* line 219, ../scss/laptop.scss */
+  .third_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 224, ../scss/laptop.scss */
+  .third_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 228, ../scss/laptop.scss */
+  .btn_block_third {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 234, ../scss/laptop.scss */
+  .btn_block_third .third_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 242, ../scss/laptop.scss */
+  .btn_block_third .third_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 248, ../scss/laptop.scss */
+  .arrows_block_third {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 255, ../scss/laptop.scss */
+  .third_item_selection_left {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 260, ../scss/laptop.scss */
+  .third_item_selection_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 265, ../scss/laptop.scss */
+  .about_block {
+    width: 100%;
+    margin-top: 180px;
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: grid;
+    grid-template-areas: 'dark title light' 'dark description light';
+    grid-template-columns: 312px 400px 312px;
+    grid-template-rows: 50px 100px;
+  }
+
+  /* line 279, ../scss/laptop.scss */
+  .about_dark_img {
+    grid-area: dark;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 284, ../scss/laptop.scss */
+  .about_light_img {
+    grid-area: light;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 289, ../scss/laptop.scss */
+  .about_title {
+    grid-area: title;
+    font-size: 14px;
+    margin: 30px 20px 20px 20px;
+  }
+
+  /* line 294, ../scss/laptop.scss */
+  .about_description {
+    grid-area: description;
+    margin: 0 20px 20px 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 2, ../scss/laptopL.scss */
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  /* line 7, ../scss/laptopL.scss */
+  body {
+    display: grid;
+    grid-template-areas: "main";
+    grid-template-columns: 1440px;
+    grid-template-rows: 550px;
+  }
+
+  /* line 14, ../scss/laptopL.scss */
+  img {
+    width: 25px;
+    height: 25px;
+  }
+
+  /* line 15, ../scss/laptopL.scss */
+  .main_block {
+    grid-area: main;
+    width: 100%;
+    height: 545px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    z-index: 0;
+  }
+
+  /* line 23, ../scss/laptopL.scss */
+  .header_block {
+    width: 100%;
+    height: 100px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: relative;
+    z-index: 3;
+  }
+
+  /* line 30, ../scss/laptopL.scss */
+  .mobile_headeroff {
+    display: none;
+  }
+
+  /* line 33, ../scss/laptopL.scss */
+  .desktop_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    justify-items: space-around;
+    width: 400px;
+    height: 50px;
+  }
+
+  /* line 40, ../scss/laptopL.scss */
+  .desktop_logo {
+    width: 35px;
+    height: 15px;
+    margin: 18px 10px 0 25px;
+  }
+
+  /* line 45, ../scss/laptopL.scss */
+  .home_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 49, ../scss/laptopL.scss */
+  .shop_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 53, ../scss/laptopL.scss */
+  .about_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 57, ../scss/laptopL.scss */
+  .contact_option {
+    margin: 18px;
+    font-size: 12px;
+  }
+
+  /* line 61, ../scss/laptopL.scss */
+  .mobile_headerOn {
+    display: none;
+  }
+
+  /* line 64, ../scss/laptopL.scss */
+  .item_show_block {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    position: absolute;
+    top: 0;
+  }
+
+  /* line 69, ../scss/laptopL.scss */
+  .first_item {
+    display: grid;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 924px 516px;
+    grid-template-rows: 150px 100px 50px 100px;
+  }
+
+  /* line 79, ../scss/laptopL.scss */
+  .first_item_desktop {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 84, ../scss/laptopL.scss */
+  .first_item_mobile {
+    display: none;
+  }
+
+  /* line 87, ../scss/laptopL.scss */
+  .first_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 92, ../scss/laptopL.scss */
+  .first_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 96, ../scss/laptopL.scss */
+  .btn_block {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 102, ../scss/laptopL.scss */
+  .btn_block .first_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 110, ../scss/laptopL.scss */
+  .btn_block .first_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 116, ../scss/laptopL.scss */
+  .arrows_block_first {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 123, ../scss/laptopL.scss */
+  .first_item_selector_left {
+    margin: 20px 10px 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 128, ../scss/laptopL.scss */
+  .first_item_selector_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 133, ../scss/laptopL.scss */
+  .second_item_block {
+    display: none;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 724px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 143, ../scss/laptopL.scss */
+  .second_item_desktop_img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 148, ../scss/laptopL.scss */
+  .second_item_mobile_img {
+    display: none;
+  }
+
+  /* line 151, ../scss/laptopL.scss */
+  .second_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 156, ../scss/laptopL.scss */
+  .second_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 160, ../scss/laptopL.scss */
+  .btn_block_second {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 166, ../scss/laptopL.scss */
+  .btn_block_second .second_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 174, ../scss/laptopL.scss */
+  .btn_block_second .second_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 180, ../scss/laptopL.scss */
+  .arrows_block_second {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 187, ../scss/laptopL.scss */
+  .second_item_selector_left {
+    margin: 20px 10px 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 192, ../scss/laptopL.scss */
+  .second_item_selector_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 197, ../scss/laptopL.scss */
+  .third_item_block {
+    display: none;
+    grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
+    grid-template-columns: 724px 300px;
+    grid-template-rows: 100px 100px 50px 100px;
+  }
+
+  /* line 207, ../scss/laptopL.scss */
+  .third_item_desktop_img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 212, ../scss/laptopL.scss */
+  .third_item_mobile_img {
+    display: none;
+  }
+
+  /* line 215, ../scss/laptopL.scss */
+  .third_item_title {
+    grid-area: title;
+    font-size: 24px;
+    margin: 50px 15px 15px 15px;
+  }
+
+  /* line 220, ../scss/laptopL.scss */
+  .third_item_description {
+    grid-area: description;
+    margin: 15px;
+  }
+
+  /* line 224, ../scss/laptopL.scss */
+  .btn_block_third {
+    grid-area: btn;
+    margin: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px 0 10px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+  }
+  /* line 230, ../scss/laptopL.scss */
+  .btn_block_third .third_item_button {
+    background-color: white;
+    font-size: 16px;
+    margin-left: 15px;
+    height: 30px;
+    border: none;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  /* line 238, ../scss/laptopL.scss */
+  .btn_block_third .third_item_arrow_icon {
+    margin: 0 0 0 5px;
+    width: 35px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 244, ../scss/laptopL.scss */
+  .arrows_block_third {
+    grid-area: selector;
+    background-color: black;
+    width: 85px;
+    height: 55px;
+    margin: 45px 0 0 0;
+  }
+
+  /* line 251, ../scss/laptopL.scss */
+  .third_item_selection_left {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 256, ../scss/laptopL.scss */
+  .third_item_selection_right {
+    margin: 20px 15px 15px 10px;
+    width: 15px;
+    height: 15px;
+  }
+
+  /* line 262, ../scss/laptopL.scss */
+  .about_block {
+    width: 100%;
+    margin-top: 252px;
+    position: relative;
+    bottom: 0;
+    height: 100px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    display: grid;
+    grid-template-areas: 'dark title light' 'dark description light';
+    grid-template-columns: 520px 400px 520px;
+    grid-template-rows: 50px 100px;
+  }
+
+  /* line 276, ../scss/laptopL.scss */
+  .about_dark_img {
+    grid-area: dark;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 281, ../scss/laptopL.scss */
+  .about_light_img {
+    grid-area: light;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 286, ../scss/laptopL.scss */
+  .about_title {
+    grid-area: title;
+    font-size: 14px;
+    margin: 30px 20px 20px 20px;
+  }
+
+  /* line 291, ../scss/laptopL.scss */
   .about_description {
     grid-area: description;
     margin: 0 20px 20px 20px;
