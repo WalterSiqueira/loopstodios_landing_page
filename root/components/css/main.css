@@ -50,7 +50,9 @@
   /* line 35, ../scss/mobileSM.scss */
   .mobile_headeroff {
     grid-area: center;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -84,9 +86,7 @@
   .mobile_headerOn {
     height: 100px;
     grid-area: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -504,7 +504,9 @@
   /* line 34, ../scss/mobileL.scss */
   .mobile_headeroff {
     grid-area: center;
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -538,9 +540,7 @@
   .mobile_headerOn {
     height: 100px;
     grid-area: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -623,7 +623,7 @@
   }
 
   /* line 106, ../scss/mobileL.scss */
-  .btn_block {
+  .btn_block_first {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -634,7 +634,7 @@
             flex-flow: row nowrap;
   }
   /* line 110, ../scss/mobileL.scss */
-  .btn_block .first_item_button {
+  .btn_block_first .first_item_button {
     background-color: white;
     font-size: 16px;
     width: 150px;
@@ -644,7 +644,7 @@
             order: 1;
   }
   /* line 117, ../scss/mobileL.scss */
-  .btn_block .first_item_arrow_icon {
+  .btn_block_first .first_item_arrow_icon {
     margin: 0 0 0 20px;
     width: 50px;
     -webkit-box-ordinal-group: 3;

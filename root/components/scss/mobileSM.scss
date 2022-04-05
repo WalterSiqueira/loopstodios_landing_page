@@ -34,7 +34,7 @@
     }
         .mobile_headeroff {
             grid-area: center;
-            display: none;
+            display: flex;
             flex-flow: row nowrap;
             .menu_icon {
                 width: 25px;
@@ -55,7 +55,7 @@
         .mobile_headerOn { 
             height: 100px;
             grid-area: center;
-            display: flex;
+            display: none;
             flex-flow: row nowrap;
             background-color: white;
         }
