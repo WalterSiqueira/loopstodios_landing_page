@@ -34,7 +34,7 @@
             flex-flow: column nowrap;
   }
 
-  /* line 24, ../scss/mobileSM.scss */
+  /* line 25, ../scss/mobileSM.scss */
   .header_block {
     z-index: 5;
     position: relative;
@@ -47,18 +47,16 @@
     grid-template-rows: 50px;
   }
 
-  /* line 34, ../scss/mobileSM.scss */
+  /* line 35, ../scss/mobileSM.scss */
   .mobile_headeroff {
     grid-area: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  /* line 38, ../scss/mobileSM.scss */
+  /* line 39, ../scss/mobileSM.scss */
   .mobile_headeroff .menu_icon {
     width: 25px;
     height: 25px;
@@ -67,7 +65,7 @@
             order: 1;
     margin: 10px;
   }
-  /* line 44, ../scss/mobileSM.scss */
+  /* line 45, ../scss/mobileSM.scss */
   .mobile_headeroff .logo_mobile {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -77,17 +75,71 @@
     height: 25px;
   }
 
-  /* line 51, ../scss/mobileSM.scss */
+  /* line 52, ../scss/mobileSM.scss */
   .desktop_header {
     display: none;
   }
 
-  /* line 54, ../scss/mobileSM.scss */
+  /* line 55, ../scss/mobileSM.scss */
   .mobile_headerOn {
-    display: none;
+    height: 100px;
+    grid-area: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    background-color: white;
   }
 
-  /* line 57, ../scss/mobileSM.scss */
+  /* line 62, ../scss/mobileSM.scss */
+  .close_icon_mobile {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 16px;
+    margin: 50px 10px 10px 10px;
+  }
+
+  /* line 67, ../scss/mobileSM.scss */
+  .home_option_mobile {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 16px;
+    margin: 50px 10px 10px 10px;
+  }
+
+  /* line 72, ../scss/mobileSM.scss */
+  .shop_option_mobile {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 16px;
+    margin: 50px 10px 10px 10px;
+  }
+
+  /* line 77, ../scss/mobileSM.scss */
+  .about_option_mobile {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    font-size: 16px;
+    margin: 50px 10px 10px 10px;
+  }
+
+  /* line 82, ../scss/mobileSM.scss */
+  .contact_option_mobile {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    font-size: 16px;
+    margin: 50px 10px 10px 10px;
+  }
+
+  /* line 87, ../scss/mobileSM.scss */
   .item_show_block {
     position: absolute;
     -webkit-box-ordinal-group: 3;
@@ -98,25 +150,25 @@
     height: 400px;
   }
 
-  /* line 65, ../scss/mobileSM.scss */
+  /* line 95, ../scss/mobileSM.scss */
   .first_item {
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
   }
 
-  /* line 70, ../scss/mobileSM.scss */
+  /* line 100, ../scss/mobileSM.scss */
   .first_item_title {
     margin: 20px 0 0 20px;
     font-size: 24px;
   }
 
-  /* line 74, ../scss/mobileSM.scss */
+  /* line 104, ../scss/mobileSM.scss */
   .first_item_description {
     margin: 15px 0 10px 20px;
   }
 
-  /* line 77, ../scss/mobileSM.scss */
+  /* line 107, ../scss/mobileSM.scss */
   .btn_block_first {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,7 +179,7 @@
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  /* line 81, ../scss/mobileSM.scss */
+  /* line 111, ../scss/mobileSM.scss */
   .btn_block_first .first_item_button {
     background-color: white;
     font-size: 16px;
@@ -137,7 +189,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 88, ../scss/mobileSM.scss */
+  /* line 118, ../scss/mobileSM.scss */
   .btn_block_first .first_item_arrow_icon {
     margin: 0 0 0 20px;
     width: 50px;
@@ -146,12 +198,12 @@
             order: 2;
   }
 
-  /* line 94, ../scss/mobileSM.scss */
+  /* line 124, ../scss/mobileSM.scss */
   .first_item_desktop {
     display: none;
   }
 
-  /* line 97, ../scss/mobileSM.scss */
+  /* line 127, ../scss/mobileSM.scss */
   .first_item_mobile {
     display: block;
     width: 100%;
@@ -159,7 +211,7 @@
     z-index: -5;
   }
 
-  /* line 103, ../scss/mobileSM.scss */
+  /* line 133, ../scss/mobileSM.scss */
   .arrows_block_first {
     width: 65px;
     height: 40px;
@@ -169,38 +221,38 @@
     margin: 160px 0 0 0;
     background-color: black;
   }
-  /* line 111, ../scss/mobileSM.scss */
+  /* line 141, ../scss/mobileSM.scss */
   .arrows_block_first .first_item_selector_left {
     width: 15px;
     height: 15px;
     margin: 10px 5px 10px 10px;
   }
-  /* line 116, ../scss/mobileSM.scss */
+  /* line 146, ../scss/mobileSM.scss */
   .arrows_block_first .first_item_selector_right {
     width: 15px;
     height: 15px;
     margin: 10px 10px 10px 5px;
   }
 
-  /* line 122, ../scss/mobileSM.scss */
+  /* line 152, ../scss/mobileSM.scss */
   .second_item_block {
-    display: block;
+    display: none;
     width: 100%;
     height: 100%;
   }
 
-  /* line 127, ../scss/mobileSM.scss */
+  /* line 157, ../scss/mobileSM.scss */
   .second_item_title {
     margin: 20px 0 0 20px;
     font-size: 24px;
   }
 
-  /* line 131, ../scss/mobileSM.scss */
+  /* line 161, ../scss/mobileSM.scss */
   .second_item_description {
     margin: 15px 0 10px 20px;
   }
 
-  /* line 134, ../scss/mobileSM.scss */
+  /* line 164, ../scss/mobileSM.scss */
   .btn_block_second {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -211,7 +263,7 @@
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  /* line 138, ../scss/mobileSM.scss */
+  /* line 168, ../scss/mobileSM.scss */
   .btn_block_second .second_item_button {
     background-color: white;
     font-size: 16px;
@@ -221,7 +273,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 145, ../scss/mobileSM.scss */
+  /* line 175, ../scss/mobileSM.scss */
   .btn_block_second .second_item_arrow_icon {
     margin: 0 0 0 20px;
     width: 50px;
@@ -230,12 +282,12 @@
             order: 2;
   }
 
-  /* line 151, ../scss/mobileSM.scss */
+  /* line 181, ../scss/mobileSM.scss */
   .second_item_desktop_img {
     display: none;
   }
 
-  /* line 154, ../scss/mobileSM.scss */
+  /* line 184, ../scss/mobileSM.scss */
   .second_item_mobile_img {
     display: block;
     width: 100%;
@@ -243,7 +295,7 @@
     z-index: -5;
   }
 
-  /* line 160, ../scss/mobileSM.scss */
+  /* line 190, ../scss/mobileSM.scss */
   .arrows_block_second {
     width: 65px;
     height: 40px;
@@ -253,38 +305,38 @@
     margin: 160px 0 0 0;
     background-color: black;
   }
-  /* line 168, ../scss/mobileSM.scss */
+  /* line 198, ../scss/mobileSM.scss */
   .arrows_block_second .second_item_selector_left {
     width: 15px;
     height: 15px;
     margin: 10px 5px 10px 10px;
   }
-  /* line 173, ../scss/mobileSM.scss */
+  /* line 203, ../scss/mobileSM.scss */
   .arrows_block_second .second_item_selector_right {
     width: 15px;
     height: 15px;
     margin: 10px 10px 10px 5px;
   }
 
-  /* line 179, ../scss/mobileSM.scss */
+  /* line 209, ../scss/mobileSM.scss */
   .third_item_block {
     display: none;
     width: 100%;
     height: 100%;
   }
 
-  /* line 184, ../scss/mobileSM.scss */
+  /* line 214, ../scss/mobileSM.scss */
   .third_item_title {
     margin: 20px 0 0 20px;
     font-size: 24px;
   }
 
-  /* line 188, ../scss/mobileSM.scss */
+  /* line 218, ../scss/mobileSM.scss */
   .third_item_description {
     margin: 15px 0 10px 20px;
   }
 
-  /* line 191, ../scss/mobileSM.scss */
+  /* line 221, ../scss/mobileSM.scss */
   .btn_block_third {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -295,7 +347,7 @@
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  /* line 195, ../scss/mobileSM.scss */
+  /* line 225, ../scss/mobileSM.scss */
   .btn_block_third .third_item_button {
     background-color: white;
     font-size: 16px;
@@ -305,7 +357,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 202, ../scss/mobileSM.scss */
+  /* line 232, ../scss/mobileSM.scss */
   .btn_block_third .third_item_arrow_icon {
     margin: 0 0 0 20px;
     width: 50px;
@@ -314,12 +366,12 @@
             order: 2;
   }
 
-  /* line 208, ../scss/mobileSM.scss */
+  /* line 238, ../scss/mobileSM.scss */
   .third_item_desktop_img {
     display: none;
   }
 
-  /* line 211, ../scss/mobileSM.scss */
+  /* line 241, ../scss/mobileSM.scss */
   .third_item_mobile_img {
     display: block;
     width: 100%;
@@ -327,7 +379,7 @@
     z-index: -5;
   }
 
-  /* line 217, ../scss/mobileSM.scss */
+  /* line 247, ../scss/mobileSM.scss */
   .arrows_block_third {
     width: 65px;
     height: 40px;
@@ -337,20 +389,20 @@
     margin: 160px 0 0 0;
     background-color: black;
   }
-  /* line 225, ../scss/mobileSM.scss */
+  /* line 255, ../scss/mobileSM.scss */
   .arrows_block_third .third_item_selection_left {
     width: 15px;
     height: 15px;
     margin: 10px 5px 10px 10px;
   }
-  /* line 230, ../scss/mobileSM.scss */
+  /* line 260, ../scss/mobileSM.scss */
   .arrows_block_third .third_item_selection_right {
     width: 15px;
     height: 15px;
     margin: 10px 10px 10px 5px;
   }
 
-  /* line 236, ../scss/mobileSM.scss */
+  /* line 266, ../scss/mobileSM.scss */
   .about_block {
     margin: 370px 0 0 0;
     -webkit-box-ordinal-group: 5;
@@ -366,7 +418,7 @@
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  /* line 243, ../scss/mobileSM.scss */
+  /* line 273, ../scss/mobileSM.scss */
   .about_block .about_title {
     margin: 20px 0 0 20px;
     font-size: 16px;
@@ -374,14 +426,14 @@
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 248, ../scss/mobileSM.scss */
+  /* line 278, ../scss/mobileSM.scss */
   .about_block .about_description {
     margin: 15px 0 10px 20px;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  /* line 252, ../scss/mobileSM.scss */
+  /* line 282, ../scss/mobileSM.scss */
   .about_block .about_dark_img {
     margin: 0 0 20px 0;
     width: 320px;
@@ -390,7 +442,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 258, ../scss/mobileSM.scss */
+  /* line 288, ../scss/mobileSM.scss */
   .about_block .about_light_img {
     margin: 20px 0 0 0;
     width: 320px;
@@ -452,9 +504,7 @@
   /* line 34, ../scss/mobileL.scss */
   .mobile_headeroff {
     grid-area: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -486,10 +536,64 @@
 
   /* line 54, ../scss/mobileL.scss */
   .mobile_headerOn {
-    display: none;
+    height: 100px;
+    grid-area: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    background-color: white;
   }
 
-  /* line 57, ../scss/mobileL.scss */
+  /* line 61, ../scss/mobileL.scss */
+  .close_icon_mobile {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    font-size: 18px;
+    margin: 50px 25px 25px 15px;
+  }
+
+  /* line 66, ../scss/mobileL.scss */
+  .home_option_mobile {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    font-size: 18px;
+    margin: 50px 15px 25px 15px;
+  }
+
+  /* line 71, ../scss/mobileL.scss */
+  .shop_option_mobile {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    font-size: 18px;
+    margin: 50px 25px 25px 25px;
+  }
+
+  /* line 76, ../scss/mobileL.scss */
+  .about_option_mobile {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    font-size: 18px;
+    margin: 50px 25px 25px 25px;
+  }
+
+  /* line 81, ../scss/mobileL.scss */
+  .contact_option_mobile {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    font-size: 18px;
+    margin: 50px 15px 25px 15px;
+  }
+
+  /* line 86, ../scss/mobileL.scss */
   .item_show_block {
     position: absolute;
     -webkit-box-ordinal-group: 3;
@@ -500,25 +604,25 @@
     height: 400px;
   }
 
-  /* line 65, ../scss/mobileL.scss */
+  /* line 94, ../scss/mobileL.scss */
   .first_item_block {
     width: 100%;
     height: 100%;
   }
 
-  /* line 69, ../scss/mobileL.scss */
+  /* line 98, ../scss/mobileL.scss */
   .first_item_title {
     margin: 20px 0 0 20px;
     font-size: 24px;
   }
 
-  /* line 73, ../scss/mobileL.scss */
+  /* line 102, ../scss/mobileL.scss */
   .first_item_description {
     margin: 15px 0 10px 20px;
     font-size: 14px;
   }
 
-  /* line 77, ../scss/mobileL.scss */
+  /* line 106, ../scss/mobileL.scss */
   .btn_block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,7 +633,7 @@
         -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
   }
-  /* line 81, ../scss/mobileL.scss */
+  /* line 110, ../scss/mobileL.scss */
   .btn_block .first_item_button {
     background-color: white;
     font-size: 16px;
@@ -539,7 +643,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 88, ../scss/mobileL.scss */
+  /* line 117, ../scss/mobileL.scss */
   .btn_block .first_item_arrow_icon {
     margin: 0 0 0 20px;
     width: 50px;
@@ -548,12 +652,12 @@
             order: 2;
   }
 
-  /* line 94, ../scss/mobileL.scss */
+  /* line 123, ../scss/mobileL.scss */
   .first_item_desktop {
     display: none;
   }
 
-  /* line 97, ../scss/mobileL.scss */
+  /* line 126, ../scss/mobileL.scss */
   .first_item_mobile {
     display: block;
     width: 100%;
@@ -561,7 +665,7 @@
     z-index: -5;
   }
 
-  /* line 103, ../scss/mobileL.scss */
+  /* line 132, ../scss/mobileL.scss */
   .arrows_block_first {
     width: 65px;
     height: 40px;
@@ -571,30 +675,30 @@
     margin: 160px 0 0 0;
     background-color: black;
   }
-  /* line 111, ../scss/mobileL.scss */
+  /* line 140, ../scss/mobileL.scss */
   .arrows_block_first .first_item_selector_left {
     width: 15px;
     height: 15px;
     margin: 10px 5px 10px 10px;
   }
-  /* line 116, ../scss/mobileL.scss */
+  /* line 145, ../scss/mobileL.scss */
   .arrows_block_first .first_item_selector_right {
     width: 15px;
     height: 15px;
     margin: 10px 10px 10px 5px;
   }
 
-  /* line 122, ../scss/mobileL.scss */
+  /* line 151, ../scss/mobileL.scss */
   .second_item_block {
     display: none;
   }
 
-  /* line 125, ../scss/mobileL.scss */
+  /* line 154, ../scss/mobileL.scss */
   .third_item_block {
     display: none;
   }
 
-  /* line 128, ../scss/mobileL.scss */
+  /* line 157, ../scss/mobileL.scss */
   .about_block {
     margin: 370px 0 0 0;
     -webkit-box-ordinal-group: 5;
@@ -610,7 +714,7 @@
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
   }
-  /* line 135, ../scss/mobileL.scss */
+  /* line 164, ../scss/mobileL.scss */
   .about_block .about_title {
     margin: 20px 0 0 20px;
     font-size: 18px;
@@ -618,7 +722,7 @@
         -ms-flex-order: 2;
             order: 2;
   }
-  /* line 140, ../scss/mobileL.scss */
+  /* line 169, ../scss/mobileL.scss */
   .about_block .about_description {
     margin: 15px 0 10px 20px;
     font-size: 14px;
@@ -626,7 +730,7 @@
         -ms-flex-order: 3;
             order: 3;
   }
-  /* line 145, ../scss/mobileL.scss */
+  /* line 174, ../scss/mobileL.scss */
   .about_block .about_dark_img {
     margin: 0 0 20px 0;
     width: 480px;
@@ -635,7 +739,7 @@
         -ms-flex-order: 1;
             order: 1;
   }
-  /* line 151, ../scss/mobileL.scss */
+  /* line 180, ../scss/mobileL.scss */
   .about_block .about_light_img {
     margin: 20px 0 0 0;
     width: 480px;

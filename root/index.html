@@ -17,9 +17,9 @@
 <body>
   <main class="main_block">
     <header class="header_block">
-      <div class="mobile_headeroff">
+      <div class="mobile_headeroff" id="headerOff">
         <img src="./images/logo.svg" class="logo_mobile"> 
-        <img src="./images/icon-hamburger.svg" class="menu_icon">
+        <img src="./images/icon-hamburger.svg" class="menu_icon" id="menubtn">
       </div>
       <div class="desktop_header">
         <img src="./images/logo.svg" class="desktop_logo">  
@@ -28,8 +28,8 @@
         <h2 class="about_option">About</h2>
         <h2 class="contact_option">Contact</h2>
       </div>
-      <div class="mobile_headerOn">
-        <img src="./images/icon-close.svg" class="close_icon_mobile">
+      <div class="mobile_headerOn" id="headerOn">
+        <img src="./images/icon-close.svg" class="close_icon_mobile" id="closeMenu">
         <h2 class="home_option_mobile">Home</h2>
         <h2 class="shop_option_mobile">Shop</h2>
         <h2 class="about_option_mobile">About</h2>
@@ -37,7 +37,7 @@
       </div>
     </header>
     <section class="item_show_block">
-      <div class="first_item">
+      <div class="first_item" id="first_block">
         <img src="./images/desktop-image-hero-1.jpg" class="first_item_desktop">
         <img src="./images/mobile-image-hero-1.jpg" class="first_item_mobile">
         <h1 class="first_item_title">Discover innovative ways to decorate</h1>
@@ -46,15 +46,15 @@
         Our experts combine form and function in bringing your vision to life. Create a room in your 
         own style with our collection and make your property a reflection of you and what you love.</p>
         <div class="arrows_block_first">
-          <img src="./images/icon-angle-left.svg" class="first_item_selector_left" id="left_arrow">
-          <img src="./images/icon-angle-right.svg" class="first_item_selector_right" id="right_arrow">
+          <img src="./images/icon-angle-left.svg" class="first_item_selector_left" id="left_arrow_first">
+          <img src="./images/icon-angle-right.svg" class="first_item_selector_right" id="right_arrow_first">
         </div>
         <div class="btn_block_first">
           <button class="first_item_button">Shop now</button> 
           <img src="./images/icon-arrow.svg" class="first_item_arrow_icon">
         </div>
       </div>
-      <div class="second_item_block"> 
+      <div class="second_item_block" id="second_block"> 
         <img src="./images/desktop-image-hero-2.jpg" class="second_item_desktop_img">
         <img src="./images/mobile-image-hero-2.jpg" class="second_item_mobile_img">
         <h1 class="second_item_title">We are available all across the globe</h1>
@@ -63,15 +63,15 @@
         Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
         store locator. Any questions? Don't hesitate to contact us today.</p>
         <div class="arrows_block_second">
-          <img src="./images/icon-angle-left.svg" class="second_item_selector_left">
-          <img src="./images/icon-angle-right.svg" class="second_item_selector_right">
+          <img src="./images/icon-angle-left.svg" class="second_item_selector_left" id="left_arrow_second">
+          <img src="./images/icon-angle-right.svg" class="second_item_selector_right" id="right_arrow_second">
         </div>
         <div class="btn_block_second">
           <button class="second_item_button">Shop now</button>
           <img src="./images/icon-arrow.svg" class="second_item_arrow_icon">
         </div>
       </div>
-      <div class="third_item_block">
+      <div class="third_item_block" id="third_block">
         <img src="./images/desktop-image-hero-3.jpg" class="third_item_desktop_img">
         <img src="./images/mobile-image-hero-3.jpg" class="third_item_mobile_img">
         <h1 class="third_item_title">Manufactured with the best materials</h1>
@@ -80,8 +80,8 @@
         to ensure that every product is made as perfect and as consistent as possible. With three decades of 
         experience in this industry, we understand what customers want for their home and office.</p>
         <div class="arrows_block_third">
-          <img src="./images/icon-angle-left.svg" class="third_item_selection_left">
-          <img src="./images/icon-angle-right.svg" class="third_item_selection_right">
+          <img src="./images/icon-angle-left.svg" class="third_item_selection_left" id="left_arrow_third">
+          <img src="./images/icon-angle-right.svg" class="third_item_selection_right" id="right_arrow_third">
         </div>
         <div class="btn_block_third">
           <button class="third_item_button">Shop now</button>
@@ -105,17 +105,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/WalterSiqueira">Walter Siqueira</a>.
   </div>
-  <script>
-      var leftA = document.getElementById('left_arrow');
-      var rightA = document.getElementById('right_arrow');
-      
-      leftA.addEventListener("click", function() {
-          console.log("ĺeft working")
-      });
-      rightA.addEventListener("click", function() {
-          console.log("right working");
-      });
-
-  </script>
+  <script src="./components/js/selector.js"></script>
+  <script src="./components/js/menu.js"></script>
 </body>
 </html>
