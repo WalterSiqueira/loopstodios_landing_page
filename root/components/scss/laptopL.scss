@@ -93,7 +93,7 @@
                 grid-area: description; 
                 margin: 15px;
             }
-            .btn_block {
+            .btn_block_first {
                 grid-area: btn;
                 margin: 15px;
                 display: flex;
@@ -137,8 +137,8 @@
                 'img description'
                 'img btn'
                 'img selector';
-            grid-template-columns: 724px 300px;
-            grid-template-rows: 100px 100px 50px 100px;
+            grid-template-columns: 924px 516px;
+            grid-template-rows: 150px 100px 50px 100px;
         }
             .second_item_desktop_img {
                 grid-area: img;
@@ -201,8 +201,8 @@
                 'img description'
                 'img btn'
                 'img selector';
-            grid-template-columns: 724px 300px;
-            grid-template-rows: 100px 100px 50px 100px;
+            grid-template-columns: 924px 516px;
+            grid-template-rows: 150px 100px 50px 100px;
         }
             .third_item_desktop_img {
                 grid-area: img;

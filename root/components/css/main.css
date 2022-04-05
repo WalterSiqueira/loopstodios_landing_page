@@ -1742,7 +1742,7 @@
   }
 
   /* line 96, ../scss/laptopL.scss */
-  .btn_block {
+  .btn_block_first {
     grid-area: btn;
     margin: 15px;
     display: -webkit-box;
@@ -1755,7 +1755,7 @@
             flex-flow: row nowrap;
   }
   /* line 102, ../scss/laptopL.scss */
-  .btn_block .first_item_button {
+  .btn_block_first .first_item_button {
     background-color: white;
     font-size: 16px;
     margin-left: 15px;
@@ -1766,7 +1766,7 @@
             order: 1;
   }
   /* line 110, ../scss/laptopL.scss */
-  .btn_block .first_item_arrow_icon {
+  .btn_block_first .first_item_arrow_icon {
     margin: 0 0 0 5px;
     width: 35px;
     -webkit-box-ordinal-group: 3;
@@ -1801,8 +1801,8 @@
   .second_item_block {
     display: none;
     grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
-    grid-template-columns: 724px 300px;
-    grid-template-rows: 100px 100px 50px 100px;
+    grid-template-columns: 924px 516px;
+    grid-template-rows: 150px 100px 50px 100px;
   }
 
   /* line 143, ../scss/laptopL.scss */
@@ -1890,8 +1890,8 @@
   .third_item_block {
     display: none;
     grid-template-areas: 'img title' 'img description' 'img btn' 'img selector';
-    grid-template-columns: 724px 300px;
-    grid-template-rows: 100px 100px 50px 100px;
+    grid-template-columns: 924px 516px;
+    grid-template-rows: 150px 100px 50px 100px;
   }
 
   /* line 207, ../scss/laptopL.scss */
