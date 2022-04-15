@@ -1,143 +1,619 @@
 @media screen and (max-width: 320px) {
-    *{
-      margin: 0;
-      padding: 0;
-      font-family: Poppins; 
-      font-size: 12px;
-    }
-    .root {
-      width: 100%;
-      height: 100%;
-    }
-      .MainBlock {
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-areas: 
-          '. head .'
-          '. cards .'
-          '. bottom .';
-        grid-template-columns: 10px 300px 10px;
-        grid-template-rows: 170px 600px 50px;
-      }
-        .head {
-          grid-area: head;
-          display: flex;
-          flex-flow: column wrap;
-          margin: 20px;
-          justify-items: center;
-          text-align: center;
-        }
-          .title {
-            margin: 10px 0 0 0;
-            font-size: 16px; 
-            font-weight: 400;
-          }
-          .sub {
-            margin: 10px 0 0 0;
-            font-size: 20px;
-            font-weight: 600;
-          }
-          .paragraph {
-            margin: 5px 27px 0 27px;
-            text-align: left;
-            font-size: 14px;
-            font-weight: 200;
-          }
-        .cardsBlock {
-          grid-area: cards;
-        }
-          .SupervisorBlock {
-            border-radius: 5px;
-            border-style: solid none none none;
-            border-color: hsl(180, 62%, 55%);
-            margin: 20px;
-            display: flex;
+  /* line 2, ../Assets/scss/mobileS.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+  }
+
+  /* line 8, ../Assets/scss/mobileS.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 12, ../Assets/scss/mobileS.scss */
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' '. cards .' '. bottom .';
+    grid-template-columns: 10px 300px 10px;
+    grid-template-rows: 180px 600px 50px;
+  }
+
+  /* line 23, ../Assets/scss/mobileS.scss */
+  .head {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-            justify-items: center;
-          }
-            .STitle {
-              font-size: 16px;
-              margin: 10px 20px 0 20px;
-            }
-            .SParagraph {
-              font-size: 14px;
-              margin: 10px 20px 0 20px; 
-            }
-            .SImg {
-              width: 50px;
-              height: 50px;
-              margin: 0 0 0 70%;
-            }
-          .TeambuilderBlock {
-            border-radius: 5px;
-            border-style: solid none none none;
-            border-color: hsl(0, 78%, 62%);
-            margin: 20px;
-            display: flex;
+    margin: 20px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* line 31, ../Assets/scss/mobileS.scss */
+  .title {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  /* line 36, ../Assets/scss/mobileS.scss */
+  .sub {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* line 41, ../Assets/scss/mobileS.scss */
+  .paragraph {
+    margin: 5px 27px 0 27px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  /* line 47, ../Assets/scss/mobileS.scss */
+  .cardsBlock {
+    grid-area: cards;
+  }
+
+  /* line 50, ../Assets/scss/mobileS.scss */
+  .SupervisorBlock {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #45d3d3;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-            justify-items: center;
-          }
-            .TbTitle {
-              font-size: 16px;
-              margin: 10px 20px 0 20px;
-            }
-            .TbParagraph {
-              font-size: 14px;
-              margin: 10px 20px 0 20px; 
-            }
-            .TbImg {
-              width: 50px;
-              height: 50px;
-              margin: 0 0 0 70%;
-            }
-          .KarmaBlock {
-            border-radius: 5px;
-            border-style: solid none none none;
-            border-color: hsl(34, 97%, 64%);
-            margin: 20px;
-            display: flex;
+    justify-items: center;
+  }
+
+  /* line 59, ../Assets/scss/mobileS.scss */
+  .STitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 63, ../Assets/scss/mobileS.scss */
+  .SParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 67, ../Assets/scss/mobileS.scss */
+  .SImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 72, ../Assets/scss/mobileS.scss */
+  .TeambuilderBlock {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #ea5353;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-            justify-items: center;
-          }
-            .KTitle {
-              font-size: 16px;
-              margin: 10px 20px 0 20px;
-            }
-            .KParagraph {
-              font-size: 14px;
-              margin: 10px 20px 0 20px; 
-            }
-            .KImg {
-              width: 50px;
-              height: 50px;
-              margin: 0 0 0 70%;
-            }
-          .Calculator {
-            border-radius: 5px;
-            border-style: solid none none none;
-            border-color: hsl(212, 86%, 64%);
-            margin: 20px;
-            display: flex;
+    justify-items: center;
+  }
+
+  /* line 81, ../Assets/scss/mobileS.scss */
+  .TbTitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 85, ../Assets/scss/mobileS.scss */
+  .TbParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 89, ../Assets/scss/mobileS.scss */
+  .TbImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 94, ../Assets/scss/mobileS.scss */
+  .KarmaBlock {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #fcaf4a;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-            justify-items: center;
-          }
-            .CTitle {
-              font-size: 16px;
-              margin: 10px 20px 0 20px;
-            }
-            .CParagraph {
-              font-size: 14px;
-              margin: 10px 20px 0 20px; 
-            }
-            .CImg {
-              width: 50px;
-              height: 50px;
-              margin: 0 0 0 70%;
-            }
-          .Attribution {
-            grid-area: bottom;
-            margin: 0 0 0 10px;
-            font-size: 14px;
-          }
+    justify-items: center;
+  }
+
+  /* line 103, ../Assets/scss/mobileS.scss */
+  .KTitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 107, ../Assets/scss/mobileS.scss */
+  .KParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 111, ../Assets/scss/mobileS.scss */
+  .KImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 116, ../Assets/scss/mobileS.scss */
+  .Calculator {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #549ef2;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    justify-items: center;
+  }
+
+  /* line 125, ../Assets/scss/mobileS.scss */
+  .CTitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 129, ../Assets/scss/mobileS.scss */
+  .CParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 133, ../Assets/scss/mobileS.scss */
+  .CImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 138, ../Assets/scss/mobileS.scss */
+  .Attribution {
+    grid-area: bottom;
+    margin: 0 0 0 10px;
+    font-size: 14px;
+  }
 }
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* line 2, ../Assets/scss/mobileML.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+  }
+
+  /* line 8, ../Assets/scss/mobileML.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 12, ../Assets/scss/mobileML.scss */
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' '. cards .' '. bottom .';
+    grid-template-columns: 20px 440px 20px;
+    grid-template-rows: 180px 600px 50px;
+  }
+
+  /* line 23, ../Assets/scss/mobileML.scss */
+  .head {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 20px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* line 31, ../Assets/scss/mobileML.scss */
+  .title {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  /* line 36, ../Assets/scss/mobileML.scss */
+  .sub {
+    margin: 10px 0 0 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  /* line 41, ../Assets/scss/mobileML.scss */
+  .paragraph {
+    margin: 5px 27px 0 27px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 200;
+  }
+
+  /* line 47, ../Assets/scss/mobileML.scss */
+  .cardsBlock {
+    grid-area: cards;
+  }
+
+  /* line 50, ../Assets/scss/mobileML.scss */
+  .SupervisorBlock {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #45d3d3;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    justify-items: center;
+  }
+
+  /* line 59, ../Assets/scss/mobileML.scss */
+  .STitle {
+    font-size: 18px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 63, ../Assets/scss/mobileML.scss */
+  .SParagraph {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 67, ../Assets/scss/mobileML.scss */
+  .SImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 85%;
+  }
+
+  /* line 72, ../Assets/scss/mobileML.scss */
+  .TeambuilderBlock {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #ea5353;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    justify-items: center;
+  }
+
+  /* line 81, ../Assets/scss/mobileML.scss */
+  .TbTitle {
+    font-size: 18px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 85, ../Assets/scss/mobileML.scss */
+  .TbParagraph {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 89, ../Assets/scss/mobileML.scss */
+  .TbImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 85%;
+  }
+
+  /* line 94, ../Assets/scss/mobileML.scss */
+  .KarmaBlock {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #fcaf4a;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    justify-items: center;
+  }
+
+  /* line 103, ../Assets/scss/mobileML.scss */
+  .KTitle {
+    font-size: 18px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 107, ../Assets/scss/mobileML.scss */
+  .KParagraph {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 111, ../Assets/scss/mobileML.scss */
+  .KImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 85%;
+  }
+
+  /* line 116, ../Assets/scss/mobileML.scss */
+  .Calculator {
+    border-radius: 5px;
+    border-style: solid none none none;
+    border-color: #549ef2;
+    margin: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    justify-items: center;
+  }
+
+  /* line 125, ../Assets/scss/mobileML.scss */
+  .CTitle {
+    font-size: 18px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 129, ../Assets/scss/mobileML.scss */
+  .CParagraph {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 133, ../Assets/scss/mobileML.scss */
+  .CImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 85%;
+  }
+
+  /* line 138, ../Assets/scss/mobileML.scss */
+  .Attribution {
+    grid-area: bottom;
+    margin: 0 0 0 20%;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  /* line 2, ../Assets/scss/tablet.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+  }
+
+  /* line 8, ../Assets/scss/tablet.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 12, ../Assets/scss/tablet.scss */
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' 'main main main' '. bottom .';
+    grid-template-columns: 200px 400px 200px;
+    grid-template-areas: 200px 600px 50px;
+  }
+
+  /* line 23, ../Assets/scss/tablet.scss */
+  .head {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 20px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* line 31, ../Assets/scss/tablet.scss */
+  .title {
+    margin: 10px 0 0 0;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  /* line 36, ../Assets/scss/tablet.scss */
+  .sub {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  /* line 41, ../Assets/scss/tablet.scss */
+  .paragraph {
+    margin: 5px 27px 0 27px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 200;
+  }
+
+  /* line 47, ../Assets/scss/tablet.scss */
+  .cardsBlock {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: '. . teambuilder . .' '. supervisor . calculator .' '. . karma . .';
+    grid-template-columns: 100px 200px 200px 200px 100px;
+    grid-template-rows: 100px 100px 100px;
+  }
+
+  /* line 57, ../Assets/scss/tablet.scss */
+  .SupervisorBlock {
+    grid-area: supervisor;
+    border-radius: 5px;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #45d3d3;
+  }
+
+  /* line 64, ../Assets/scss/tablet.scss */
+  .STitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 68, ../Assets/scss/tablet.scss */
+  .SParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 72, ../Assets/scss/tablet.scss */
+  .SImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 77, ../Assets/scss/tablet.scss */
+  .TeambuilderBlock {
+    grid-area: teambuilder;
+    border-radius: 5px;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #ea5353;
+  }
+
+  /* line 84, ../Assets/scss/tablet.scss */
+  .TbTitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 88, ../Assets/scss/tablet.scss */
+  .TbParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 92, ../Assets/scss/tablet.scss */
+  .TbImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 97, ../Assets/scss/tablet.scss */
+  .KarmaBlock {
+    grid-area: karma;
+    border-radius: 5px;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #fcaf4a;
+  }
+
+  /* line 104, ../Assets/scss/tablet.scss */
+  .KTitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 108, ../Assets/scss/tablet.scss */
+  .KParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 112, ../Assets/scss/tablet.scss */
+  .KImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 117, ../Assets/scss/tablet.scss */
+  .Calculator {
+    grid-area: calculator;
+    border-radius: 5px;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #549ef2;
+  }
+
+  /* line 124, ../Assets/scss/tablet.scss */
+  .CTitle {
+    font-size: 16px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 128, ../Assets/scss/tablet.scss */
+  .CParagraph {
+    font-size: 14px;
+    margin: 10px 20px 0 20px;
+  }
+
+  /* line 132, ../Assets/scss/tablet.scss */
+  .CImg {
+    width: 50px;
+    height: 50px;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 137, ../Assets/scss/tablet.scss */
+  .Attribution {
+    grid-area: bottom;
+    margin: 9% 0 0 15%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

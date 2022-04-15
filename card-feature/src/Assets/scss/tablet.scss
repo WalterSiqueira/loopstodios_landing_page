@@ -1,0 +1,142 @@
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Poppins; 
+      font-size: 12px;
+    }
+    .root {
+      width: 100%;
+      height: 100%;
+    }
+      .MainBlock {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: 
+          '. head .'
+          'main main main'
+          '. bottom .';
+        grid-template-columns: 200px 400px 200px;
+        grid-template-areas: 200px 600px 50px;
+      }
+        .head {
+          grid-area: head; 
+          display: flex;
+          flex-flow: column wrap;
+          margin: 20px;
+          justify-items: center;
+          text-align: center;
+        }
+          .title {
+            margin: 10px 0 0 0;
+            font-size: 22px; 
+            font-weight: 400;
+          }
+          .sub {
+            margin: 10px 0 0 0;
+            font-size: 24px;
+            font-weight: 600;
+          }
+          .paragraph {
+            margin: 5px 27px 0 27px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 200;
+          }
+        .cardsBlock {
+          grid-area: main;
+          display: grid;
+          grid-template-areas:
+            '. . teambuilder . .'
+            '. supervisor . calculator .'
+            '. . karma . .';
+          grid-template-columns: 100px 200px 200px 200px 100px ;
+          grid-template-rows: 100px 100px 100px;
+        }
+          .SupervisorBlock {
+              grid-area: supervisor;
+              border-radius: 5px;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(180, 62%, 55%);
+          }
+            .STitle {
+              font-size: 16px;
+              margin: 10px 20px 0 20px;
+            }
+            .SParagraph {
+              font-size: 14px;
+              margin: 10px 20px 0 20px; 
+            }
+            .SImg {
+              width: 50px;
+              height: 50px;
+              margin: 0 0 0 70%;
+            }
+          .TeambuilderBlock {
+              grid-area: teambuilder;
+              border-radius: 5px;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(0, 78%, 62%);
+          }
+            .TbTitle {
+              font-size: 16px;
+              margin: 10px 20px 0 20px;
+            }
+            .TbParagraph {
+              font-size: 14px;
+              margin: 10px 20px 0 20px; 
+            }
+            .TbImg {
+              width: 50px;
+              height: 50px;
+              margin: 0 0 0 70%;
+            }
+          .KarmaBlock {
+              grid-area: karma;
+              border-radius: 5px;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(34, 97%, 64%);
+          }
+            .KTitle {
+              font-size: 16px;
+              margin: 10px 20px 0 20px;
+            }
+            .KParagraph {
+              font-size: 14px;
+              margin: 10px 20px 0 20px; 
+            }
+            .KImg {
+              width: 50px;
+              height: 50px;
+              margin: 0 0 0 70%;
+            }
+          .Calculator {
+              grid-area: calculator;
+              border-radius: 5px;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(212, 86%, 64%);
+          }
+            .CTitle {
+              font-size: 16px;
+              margin: 10px 20px 0 20px;
+            }
+            .CParagraph {
+              font-size: 14px;
+              margin: 10px 20px 0 20px; 
+            }
+            .CImg {
+              width: 50px;
+              height: 50px;
+              margin: 0 0 0 70%;
+            }
+        .Attribution {
+            grid-area: bottom;
+            margin: 9% 0 0 15%;
+        }
+          
+}
