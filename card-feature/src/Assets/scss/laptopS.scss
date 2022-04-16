@@ -1,4 +1,4 @@
-@media screen and (min-width: 321px) and (max-width: 480px) {
+@media screen and (min-width: 801px) and (max-width: 1024px) {
     *{
       margin: 0;
       padding: 0;
@@ -15,68 +15,70 @@
         display: grid;
         grid-template-areas: 
           '. head .'
-          '. cards .'
+          '. main .'
           '. bottom .';
-        grid-template-columns: 0.2fr 4fr 0.2fr;
-        grid-template-rows: 2fr 6fr 0.5fr;
+        grid-template-columns: 1fr 8fr 1fr;
+        grid-template-areas: 2fr 6fr 2fr;
       }
         .head {
-          grid-area: head;
+          grid-area: head; 
           display: flex;
           flex-flow: column wrap;
-          margin: 5%;
+          margin: 3%;
           justify-items: center;
           text-align: center;
         }
           .title {
-            margin: 2% 0 0 0;
             font-size: 2em; 
             font-weight: 400;
           }
           .sub {
-            margin: 2% 0 0 0;
-            font-size: 2em;
+            margin: 1% 0 0 0;
+            font-size: 2.2em;
             font-weight: 600;
           }
           .paragraph {
             margin: 2% 5% 0 5%;
-            text-align: left;
-            font-size: 1.2em;
+            text-align: center;
+            font-size: 1.4em;
             font-weight: 200;
           }
         .cardsBlock {
-          grid-area: cards;
+          grid-area: main;
+          display: grid;
+          grid-template-areas:
+            '. . teambuilder . .'
+            '. supervisor . calculator .'
+            '. . karma . .';
+          grid-template-columns: 1fr 2fr 2fr 2fr 1fr ;
+          grid-template-rows: 1fr 1fr 1fr;
         }
           .SupervisorBlock {
-            border-radius: 1vh;
-            border-style: solid none none none;
-            border-color: hsl(180, 62%, 55%);
-            margin: 5%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-items: center;
+              grid-area: supervisor;
+              border-radius: 1vh;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(180, 62%, 55%);
           }
             .STitle {
               font-size: 1.6em;
               margin: 5% 0 0 10%;
             }
             .SParagraph {
-              font-size: 1.4em;
+              font-size: 14px;
               margin: 5% 0 0 10%; 
             }
             .SImg {
-              width: 13%;
-              height: 10%;
-              margin: 0 0 0 80%;
+              width: 25%;
+              height: 30%;
+              margin: 0 0 0 68%;
             }
           .TeambuilderBlock {
-            border-radius: 1vh;
-            border-style: solid none none none;
-            border-color: hsl(0, 78%, 62%);
-            margin: 5%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-items: center;
+              grid-area: teambuilder;
+              border-radius: 1vh;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(0, 78%, 62%);
           }
             .TbTitle {
               font-size: 1.6em;
@@ -87,18 +89,16 @@
               margin: 5% 0 0 10%; 
             }
             .TbImg {
-              width: 13%;
-              height: 10%;
-              margin: 0 0 0 80%;
+              width: 25%;
+              height: 30%;
+              margin: 0 0 0 68%;
             }
           .KarmaBlock {
-            border-radius: 1vh;
-            border-style: solid none none none;
-            border-color: hsl(34, 97%, 64%);
-            margin: 5%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-items: center;
+              grid-area: karma;
+              border-radius: 1vh; 
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(34, 97%, 64%);
           }
             .KTitle {
               font-size: 1.6em;
@@ -109,18 +109,16 @@
               margin: 5% 0 0 10%; 
             }
             .KImg {
-              width: 13%;
-              height: 10%;
-              margin: 0 0 0 80%;
+              width: 25%;
+              height: 30%;
+              margin: 0 0 0 68%;
             }
           .Calculator {
-            border-radius: 1vh;
-            border-style: solid none none none;
-            border-color: hsl(212, 86%, 64%);
-            margin: 5%;
-            display: flex;
-            flex-flow: column wrap;
-            justify-items: center;
+              grid-area: calculator;
+              border-radius: 1vh;
+              border-top: 5px;
+              border-style: solid none none none;
+              border-color: hsl(212, 86%, 64%);
           }
             .CTitle {
               font-size: 1.6em;
@@ -131,13 +129,13 @@
               margin: 5% 0 0 10%; 
             }
             .CImg {
-              width: 13%;
-              height: 10%;
-              margin: 0 0 0 80%;
+              width: 25%;
+              height: 30%;
+              margin: 0 0 0 68%;
             }
-          .Attribution {
+        .Attribution {
             grid-area: bottom;
-            margin: 0 0 0 20%;
-            font-size: 1.4em;
-          }
+            margin: 2% 0 0 33%;
+        }
+          
 }

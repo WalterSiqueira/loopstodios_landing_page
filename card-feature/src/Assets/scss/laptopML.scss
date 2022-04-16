@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 1025px) {
     *{
       margin: 0;
       padding: 0;
@@ -15,33 +15,32 @@
         display: grid;
         grid-template-areas: 
           '. head .'
-          'main main main'
+          '. main .'
           '. bottom .';
-        grid-template-columns: 2fr 4fr 2fr;
-        grid-template-areas: 2fr 6fr 0.5fr;
+        grid-template-columns: 2.2fr 10fr 2.2fr;
+        grid-template-areas: 2fr 6fr 2fr;
       }
         .head {
           grid-area: head; 
           display: flex;
           flex-flow: column wrap;
-          margin: 5%;
+          margin: 4%;
           justify-items: center;
           text-align: center;
         }
           .title {
-            margin: 2% 0 0 0;
             font-size: 2em; 
             font-weight: 400;
           }
           .sub {
-            margin: 2% 0 0 0;
-            font-size: 2em;
+            margin: 1% 0 0 0;
+            font-size: 2.2em;
             font-weight: 600;
           }
           .paragraph {
-            margin: 2% 5% 0 5%;
+            margin: 1% 5% 0 5%;
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.4em;
             font-weight: 200;
           }
         .cardsBlock {
@@ -51,7 +50,7 @@
             '. . teambuilder . .'
             '. supervisor . calculator .'
             '. . karma . .';
-          grid-template-columns: 1fr 2fr 2fr 2fr 1fr ;
+          grid-template-columns: 2fr 2fr 2fr 2fr 2fr ;
           grid-template-rows: 1fr 1fr 1fr;
         }
           .SupervisorBlock {
@@ -62,17 +61,17 @@
               border-color: hsl(180, 62%, 55%);
           }
             .STitle {
-              font-size: 1.4em;
-              margin: 5% 0 0 10%;
+              font-size: 1.6em;
+              margin: 5% 7% 0 10%;
             }
             .SParagraph {
               font-size: 1.2em;
-              margin: 5% 10% 0 10%; 
+              margin: 5% 7% 0 10%; 
             }
             .SImg {
               width: 25%;
               height: 30%;
-              margin: 0 0 0 68%;
+              margin: 0 0 0 70%;
             }
           .TeambuilderBlock {
               grid-area: teambuilder;
@@ -82,17 +81,17 @@
               border-color: hsl(0, 78%, 62%);
           }
             .TbTitle {
-              font-size: 1.4em;
-              margin: 5% 0 0 10%;
+              font-size: 1.6em;
+              margin: 5% 7% 0 10%;
             }
             .TbParagraph {
               font-size: 1.2em;
-              margin: 5% 10% 0 10%; 
+              margin: 5% 7% 0 10%;
             }
             .TbImg {
               width: 25%;
               height: 30%;
-              margin: 0 0 0 68%;
+              margin: 0 0 0 70%;
             }
           .KarmaBlock {
               grid-area: karma;
@@ -102,41 +101,41 @@
               border-color: hsl(34, 97%, 64%);
           }
             .KTitle {
-              font-size: 1.4em;
-              margin: 5% 0 0 10%;
+              font-size: 1.6em;
+              margin: 5% 7% 0 10%; 
             }
             .KParagraph {
-              font-size: 1.2em;
-              margin: 5% 10% 0 10%; 
+              font-size: 14px;
+              margin: 5% 7% 0 10%;
             }
             .KImg {
-              width: 25%;
-              height: 30%;
-              margin: 0 0 0 68%;
+              width: 50px;
+              height: 50px;
+              margin: 0 0 0 70%;
             }
           .Calculator {
               grid-area: calculator;
-              border-radius: 1vh;
+              border-radius: 5px;
               border-top: 5px;
               border-style: solid none none none;
               border-color: hsl(212, 86%, 64%);
           }
             .CTitle {
-              font-size: 1.4em;
-              margin: 5% 0 0 10%;
+              font-size: 1.6em;
+              margin: 5% 7% 0 10%;
             }
             .CParagraph {
               font-size: 1.2em;
-              margin: 5% 10% 0 10%; 
+              margin: 5% 7% 0 10%;
             }
             .CImg {
               width: 25%;
               height: 30%;
-              margin: 0 0 0 68%;
+              margin: 0 0 0 70%;
             }
         .Attribution {
             grid-area: bottom;
-            margin: 0 0 0 18%;
+            margin: 2% 0 0 36%;
         }
           
 }

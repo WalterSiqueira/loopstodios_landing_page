@@ -19,8 +19,8 @@
     height: 100%;
     display: grid;
     grid-template-areas: '. head .' '. cards .' '. bottom .';
-    grid-template-columns: 10px 300px 10px;
-    grid-template-rows: 180px 600px 50px;
+    grid-template-columns: 0.1fr 3fr 0.1fr;
+    grid-template-rows: 1fr 4fr 0.2fr;
   }
 
   /* line 23, ../Assets/scss/mobileS.scss */
@@ -33,30 +33,30 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    margin: 20px;
+    margin: 5%;
     justify-items: center;
     text-align: center;
   }
 
   /* line 31, ../Assets/scss/mobileS.scss */
   .title {
-    margin: 10px 0 0 0;
-    font-size: 20px;
+    margin: 2% 0 0 0;
+    font-size: 1.8em;
     font-weight: 400;
   }
 
   /* line 36, ../Assets/scss/mobileS.scss */
   .sub {
-    margin: 10px 0 0 0;
-    font-size: 20px;
+    margin: 2% 0 0 0;
+    font-size: 1.8em;
     font-weight: 600;
   }
 
   /* line 41, ../Assets/scss/mobileS.scss */
   .paragraph {
-    margin: 5px 27px 0 27px;
+    margin: 2% 10% 0 10%;
     text-align: left;
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 200;
   }
 
@@ -67,10 +67,10 @@
 
   /* line 50, ../Assets/scss/mobileS.scss */
   .SupervisorBlock {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #45d3d3;
-    margin: 20px;
+    margin: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -83,21 +83,21 @@
 
   /* line 59, ../Assets/scss/mobileS.scss */
   .STitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 63, ../Assets/scss/mobileS.scss */
   .SParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 67, ../Assets/scss/mobileS.scss */
   .SImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 70%;
+    width: 15%;
+    height: 15%;
+    margin: 0 0 0 65%;
   }
 
   /* line 72, ../Assets/scss/mobileS.scss */
@@ -105,7 +105,7 @@
     border-radius: 5px;
     border-style: solid none none none;
     border-color: #ea5353;
-    margin: 20px;
+    margin: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -118,29 +118,29 @@
 
   /* line 81, ../Assets/scss/mobileS.scss */
   .TbTitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 85, ../Assets/scss/mobileS.scss */
   .TbParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 89, ../Assets/scss/mobileS.scss */
   .TbImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 70%;
+    width: 15%;
+    height: 15%;
+    margin: 0 0 0 65%;
   }
 
   /* line 94, ../Assets/scss/mobileS.scss */
   .KarmaBlock {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #fcaf4a;
-    margin: 20px;
+    margin: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -153,29 +153,29 @@
 
   /* line 103, ../Assets/scss/mobileS.scss */
   .KTitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 107, ../Assets/scss/mobileS.scss */
   .KParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 111, ../Assets/scss/mobileS.scss */
   .KImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 70%;
+    width: 15%;
+    height: 15%;
+    margin: 0 0 0 65%;
   }
 
   /* line 116, ../Assets/scss/mobileS.scss */
   .Calculator {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #549ef2;
-    margin: 20px;
+    margin: 3%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -188,28 +188,27 @@
 
   /* line 125, ../Assets/scss/mobileS.scss */
   .CTitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 129, ../Assets/scss/mobileS.scss */
   .CParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 133, ../Assets/scss/mobileS.scss */
   .CImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 70%;
+    width: 15%;
+    height: 15%;
+    margin: 0 0 0 65%;
   }
 
   /* line 138, ../Assets/scss/mobileS.scss */
   .Attribution {
     grid-area: bottom;
-    margin: 0 0 0 10px;
-    font-size: 14px;
+    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 321px) and (max-width: 480px) {
@@ -233,8 +232,8 @@
     height: 100%;
     display: grid;
     grid-template-areas: '. head .' '. cards .' '. bottom .';
-    grid-template-columns: 20px 440px 20px;
-    grid-template-rows: 180px 600px 50px;
+    grid-template-columns: 0.2fr 4fr 0.2fr;
+    grid-template-rows: 2fr 6fr 0.5fr;
   }
 
   /* line 23, ../Assets/scss/mobileML.scss */
@@ -247,30 +246,30 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    margin: 20px;
+    margin: 5%;
     justify-items: center;
     text-align: center;
   }
 
   /* line 31, ../Assets/scss/mobileML.scss */
   .title {
-    margin: 10px 0 0 0;
-    font-size: 20px;
+    margin: 2% 0 0 0;
+    font-size: 2em;
     font-weight: 400;
   }
 
   /* line 36, ../Assets/scss/mobileML.scss */
   .sub {
-    margin: 10px 0 0 0;
-    font-size: 20px;
+    margin: 2% 0 0 0;
+    font-size: 2em;
     font-weight: 600;
   }
 
   /* line 41, ../Assets/scss/mobileML.scss */
   .paragraph {
-    margin: 5px 27px 0 27px;
+    margin: 2% 5% 0 5%;
     text-align: left;
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: 200;
   }
 
@@ -281,10 +280,10 @@
 
   /* line 50, ../Assets/scss/mobileML.scss */
   .SupervisorBlock {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #45d3d3;
-    margin: 20px;
+    margin: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -297,29 +296,29 @@
 
   /* line 59, ../Assets/scss/mobileML.scss */
   .STitle {
-    font-size: 18px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 63, ../Assets/scss/mobileML.scss */
   .SParagraph {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 67, ../Assets/scss/mobileML.scss */
   .SImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 85%;
+    width: 13%;
+    height: 10%;
+    margin: 0 0 0 80%;
   }
 
   /* line 72, ../Assets/scss/mobileML.scss */
   .TeambuilderBlock {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #ea5353;
-    margin: 20px;
+    margin: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -332,29 +331,29 @@
 
   /* line 81, ../Assets/scss/mobileML.scss */
   .TbTitle {
-    font-size: 18px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 85, ../Assets/scss/mobileML.scss */
   .TbParagraph {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 89, ../Assets/scss/mobileML.scss */
   .TbImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 85%;
+    width: 13%;
+    height: 10%;
+    margin: 0 0 0 80%;
   }
 
   /* line 94, ../Assets/scss/mobileML.scss */
   .KarmaBlock {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #fcaf4a;
-    margin: 20px;
+    margin: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -367,29 +366,29 @@
 
   /* line 103, ../Assets/scss/mobileML.scss */
   .KTitle {
-    font-size: 18px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 107, ../Assets/scss/mobileML.scss */
   .KParagraph {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 111, ../Assets/scss/mobileML.scss */
   .KImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 85%;
+    width: 13%;
+    height: 10%;
+    margin: 0 0 0 80%;
   }
 
   /* line 116, ../Assets/scss/mobileML.scss */
   .Calculator {
-    border-radius: 5px;
+    border-radius: 1vh;
     border-style: solid none none none;
     border-color: #549ef2;
-    margin: 20px;
+    margin: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -402,28 +401,28 @@
 
   /* line 125, ../Assets/scss/mobileML.scss */
   .CTitle {
-    font-size: 18px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 129, ../Assets/scss/mobileML.scss */
   .CParagraph {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 133, ../Assets/scss/mobileML.scss */
   .CImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 85%;
+    width: 13%;
+    height: 10%;
+    margin: 0 0 0 80%;
   }
 
   /* line 138, ../Assets/scss/mobileML.scss */
   .Attribution {
     grid-area: bottom;
     margin: 0 0 0 20%;
-    font-size: 14px;
+    font-size: 1.4em;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 800px) {
@@ -447,8 +446,8 @@
     height: 100%;
     display: grid;
     grid-template-areas: '. head .' 'main main main' '. bottom .';
-    grid-template-columns: 200px 400px 200px;
-    grid-template-areas: 200px 600px 50px;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas: 2fr 6fr 0.5fr;
   }
 
   /* line 23, ../Assets/scss/tablet.scss */
@@ -461,30 +460,30 @@
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    margin: 20px;
+    margin: 5%;
     justify-items: center;
     text-align: center;
   }
 
   /* line 31, ../Assets/scss/tablet.scss */
   .title {
-    margin: 10px 0 0 0;
-    font-size: 22px;
+    margin: 2% 0 0 0;
+    font-size: 2em;
     font-weight: 400;
   }
 
   /* line 36, ../Assets/scss/tablet.scss */
   .sub {
-    margin: 10px 0 0 0;
-    font-size: 24px;
+    margin: 2% 0 0 0;
+    font-size: 2em;
     font-weight: 600;
   }
 
   /* line 41, ../Assets/scss/tablet.scss */
   .paragraph {
-    margin: 5px 27px 0 27px;
+    margin: 2% 5% 0 5%;
     text-align: center;
-    font-size: 12px;
+    font-size: 1.2em;
     font-weight: 200;
   }
 
@@ -493,14 +492,14 @@
     grid-area: main;
     display: grid;
     grid-template-areas: '. . teambuilder . .' '. supervisor . calculator .' '. . karma . .';
-    grid-template-columns: 100px 200px 200px 200px 100px;
-    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
   }
 
   /* line 57, ../Assets/scss/tablet.scss */
   .SupervisorBlock {
     grid-area: supervisor;
-    border-radius: 5px;
+    border-radius: 1vh;
     border-top: 5px;
     border-style: solid none none none;
     border-color: #45d3d3;
@@ -508,27 +507,27 @@
 
   /* line 64, ../Assets/scss/tablet.scss */
   .STitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 68, ../Assets/scss/tablet.scss */
   .SParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.2em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 72, ../Assets/scss/tablet.scss */
   .SImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 70%;
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
   }
 
   /* line 77, ../Assets/scss/tablet.scss */
   .TeambuilderBlock {
     grid-area: teambuilder;
-    border-radius: 5px;
+    border-radius: 1vh;
     border-top: 5px;
     border-style: solid none none none;
     border-color: #ea5353;
@@ -536,27 +535,27 @@
 
   /* line 84, ../Assets/scss/tablet.scss */
   .TbTitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 88, ../Assets/scss/tablet.scss */
   .TbParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.2em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 92, ../Assets/scss/tablet.scss */
   .TbImg {
-    width: 50px;
-    height: 50px;
-    margin: 0 0 0 70%;
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
   }
 
   /* line 97, ../Assets/scss/tablet.scss */
   .KarmaBlock {
     grid-area: karma;
-    border-radius: 5px;
+    border-radius: 1vh;
     border-top: 5px;
     border-style: solid none none none;
     border-color: #fcaf4a;
@@ -564,24 +563,400 @@
 
   /* line 104, ../Assets/scss/tablet.scss */
   .KTitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
   }
 
   /* line 108, ../Assets/scss/tablet.scss */
   .KParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.2em;
+    margin: 5% 10% 0 10%;
   }
 
   /* line 112, ../Assets/scss/tablet.scss */
+  .KImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
+  }
+
+  /* line 117, ../Assets/scss/tablet.scss */
+  .Calculator {
+    grid-area: calculator;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #549ef2;
+  }
+
+  /* line 124, ../Assets/scss/tablet.scss */
+  .CTitle {
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 128, ../Assets/scss/tablet.scss */
+  .CParagraph {
+    font-size: 1.2em;
+    margin: 5% 10% 0 10%;
+  }
+
+  /* line 132, ../Assets/scss/tablet.scss */
+  .CImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
+  }
+
+  /* line 137, ../Assets/scss/tablet.scss */
+  .Attribution {
+    grid-area: bottom;
+    margin: 0 0 0 18%;
+  }
+}
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  /* line 2, ../Assets/scss/laptopS.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+  }
+
+  /* line 8, ../Assets/scss/laptopS.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 12, ../Assets/scss/laptopS.scss */
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' '. main .' '. bottom .';
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-areas: 2fr 6fr 2fr;
+  }
+
+  /* line 23, ../Assets/scss/laptopS.scss */
+  .head {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 3%;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* line 31, ../Assets/scss/laptopS.scss */
+  .title {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  /* line 35, ../Assets/scss/laptopS.scss */
+  .sub {
+    margin: 1% 0 0 0;
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  /* line 40, ../Assets/scss/laptopS.scss */
+  .paragraph {
+    margin: 2% 5% 0 5%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 200;
+  }
+
+  /* line 46, ../Assets/scss/laptopS.scss */
+  .cardsBlock {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: '. . teambuilder . .' '. supervisor . calculator .' '. . karma . .';
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  /* line 56, ../Assets/scss/laptopS.scss */
+  .SupervisorBlock {
+    grid-area: supervisor;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #45d3d3;
+  }
+
+  /* line 63, ../Assets/scss/laptopS.scss */
+  .STitle {
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 67, ../Assets/scss/laptopS.scss */
+  .SParagraph {
+    font-size: 14px;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 71, ../Assets/scss/laptopS.scss */
+  .SImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
+  }
+
+  /* line 76, ../Assets/scss/laptopS.scss */
+  .TeambuilderBlock {
+    grid-area: teambuilder;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #ea5353;
+  }
+
+  /* line 83, ../Assets/scss/laptopS.scss */
+  .TbTitle {
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 87, ../Assets/scss/laptopS.scss */
+  .TbParagraph {
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 91, ../Assets/scss/laptopS.scss */
+  .TbImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
+  }
+
+  /* line 96, ../Assets/scss/laptopS.scss */
+  .KarmaBlock {
+    grid-area: karma;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #fcaf4a;
+  }
+
+  /* line 103, ../Assets/scss/laptopS.scss */
+  .KTitle {
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 107, ../Assets/scss/laptopS.scss */
+  .KParagraph {
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 111, ../Assets/scss/laptopS.scss */
+  .KImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
+  }
+
+  /* line 116, ../Assets/scss/laptopS.scss */
+  .Calculator {
+    grid-area: calculator;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #549ef2;
+  }
+
+  /* line 123, ../Assets/scss/laptopS.scss */
+  .CTitle {
+    font-size: 1.6em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 127, ../Assets/scss/laptopS.scss */
+  .CParagraph {
+    font-size: 1.4em;
+    margin: 5% 0 0 10%;
+  }
+
+  /* line 131, ../Assets/scss/laptopS.scss */
+  .CImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 68%;
+  }
+
+  /* line 136, ../Assets/scss/laptopS.scss */
+  .Attribution {
+    grid-area: bottom;
+    margin: 2% 0 0 33%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  /* line 2, ../Assets/scss/laptopML.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+    font-size: 12px;
+  }
+
+  /* line 8, ../Assets/scss/laptopML.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 12, ../Assets/scss/laptopML.scss */
+  .MainBlock {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' '. main .' '. bottom .';
+    grid-template-columns: 2.2fr 10fr 2.2fr;
+    grid-template-areas: 2fr 6fr 2fr;
+  }
+
+  /* line 23, ../Assets/scss/laptopML.scss */
+  .head {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    margin: 4%;
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* line 31, ../Assets/scss/laptopML.scss */
+  .title {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  /* line 35, ../Assets/scss/laptopML.scss */
+  .sub {
+    margin: 1% 0 0 0;
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  /* line 40, ../Assets/scss/laptopML.scss */
+  .paragraph {
+    margin: 1% 5% 0 5%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 200;
+  }
+
+  /* line 46, ../Assets/scss/laptopML.scss */
+  .cardsBlock {
+    grid-area: main;
+    display: grid;
+    grid-template-areas: '. . teambuilder . .' '. supervisor . calculator .' '. . karma . .';
+    grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  /* line 56, ../Assets/scss/laptopML.scss */
+  .SupervisorBlock {
+    grid-area: supervisor;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #45d3d3;
+  }
+
+  /* line 63, ../Assets/scss/laptopML.scss */
+  .STitle {
+    font-size: 1.6em;
+    margin: 5% 7% 0 10%;
+  }
+
+  /* line 67, ../Assets/scss/laptopML.scss */
+  .SParagraph {
+    font-size: 1.2em;
+    margin: 5% 7% 0 10%;
+  }
+
+  /* line 71, ../Assets/scss/laptopML.scss */
+  .SImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 76, ../Assets/scss/laptopML.scss */
+  .TeambuilderBlock {
+    grid-area: teambuilder;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #ea5353;
+  }
+
+  /* line 83, ../Assets/scss/laptopML.scss */
+  .TbTitle {
+    font-size: 1.6em;
+    margin: 5% 7% 0 10%;
+  }
+
+  /* line 87, ../Assets/scss/laptopML.scss */
+  .TbParagraph {
+    font-size: 1.2em;
+    margin: 5% 7% 0 10%;
+  }
+
+  /* line 91, ../Assets/scss/laptopML.scss */
+  .TbImg {
+    width: 25%;
+    height: 30%;
+    margin: 0 0 0 70%;
+  }
+
+  /* line 96, ../Assets/scss/laptopML.scss */
+  .KarmaBlock {
+    grid-area: karma;
+    border-radius: 1vh;
+    border-top: 5px;
+    border-style: solid none none none;
+    border-color: #fcaf4a;
+  }
+
+  /* line 103, ../Assets/scss/laptopML.scss */
+  .KTitle {
+    font-size: 1.6em;
+    margin: 5% 7% 0 10%;
+  }
+
+  /* line 107, ../Assets/scss/laptopML.scss */
+  .KParagraph {
+    font-size: 14px;
+    margin: 5% 7% 0 10%;
+  }
+
+  /* line 111, ../Assets/scss/laptopML.scss */
   .KImg {
     width: 50px;
     height: 50px;
     margin: 0 0 0 70%;
   }
 
-  /* line 117, ../Assets/scss/tablet.scss */
+  /* line 116, ../Assets/scss/laptopML.scss */
   .Calculator {
     grid-area: calculator;
     border-radius: 5px;
@@ -590,29 +965,30 @@
     border-color: #549ef2;
   }
 
-  /* line 124, ../Assets/scss/tablet.scss */
+  /* line 123, ../Assets/scss/laptopML.scss */
   .CTitle {
-    font-size: 16px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.6em;
+    margin: 5% 7% 0 10%;
   }
 
-  /* line 128, ../Assets/scss/tablet.scss */
+  /* line 127, ../Assets/scss/laptopML.scss */
   .CParagraph {
-    font-size: 14px;
-    margin: 10px 20px 0 20px;
+    font-size: 1.2em;
+    margin: 5% 7% 0 10%;
   }
 
-  /* line 132, ../Assets/scss/tablet.scss */
+  /* line 131, ../Assets/scss/laptopML.scss */
   .CImg {
-    width: 50px;
-    height: 50px;
+    width: 25%;
+    height: 30%;
     margin: 0 0 0 70%;
   }
 
-  /* line 137, ../Assets/scss/tablet.scss */
+  /* line 136, ../Assets/scss/laptopML.scss */
   .Attribution {
     grid-area: bottom;
-    margin: 9% 0 0 15%;
+    margin: 2% 0 0 36%;
   }
 }
+
 /*# sourceMappingURL=App.css.map */
