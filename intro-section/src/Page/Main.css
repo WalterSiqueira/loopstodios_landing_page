@@ -1,0 +1,149 @@
+@media screen and (max-width: 320px) {
+  /* line 4, ../Assets/scss/mobileS.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Epilogue;
+  }
+
+  /* line 10, ../Assets/scss/mobileS.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 14, ../Assets/scss/mobileS.scss */
+  .main_block {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' '. content .' '. bottom .';
+    grid-template-columns: 10px 300px 10px;
+    grid-template-rows: 50px 410px 50px;
+  }
+
+  /* line 25, ../Assets/scss/mobileS.scss */
+  .head_block {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  /* line 31, ../Assets/scss/mobileS.scss */
+  .logo_head {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+  }
+
+  /* line 36, ../Assets/scss/mobileS.scss */
+  .menu_head {
+    width: 35px;
+    height: 25px;
+    margin: 10px;
+  }
+
+  /* line 41, ../Assets/scss/mobileS.scss */
+  .navigation_block {
+    display: none;
+  }
+
+  /* line 44, ../Assets/scss/mobileS.scss */
+  .content_block {
+    grid-area: content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 50, ../Assets/scss/mobileS.scss */
+  .desktopHero_img {
+    display: none;
+  }
+
+  /* line 53, ../Assets/scss/mobileS.scss */
+  .mobileHero_img {
+    width: 300px;
+    height: 200px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  /* line 58, ../Assets/scss/mobileS.scss */
+  .text_content {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 63, ../Assets/scss/mobileS.scss */
+  .title_content {
+    font-size: 26px;
+    margin: 0 0 5px 0;
+  }
+
+  /* line 67, ../Assets/scss/mobileS.scss */
+  .subP_content {
+    font-size: 18px;
+  }
+
+  /* line 70, ../Assets/scss/mobileS.scss */
+  .learnmore_content {
+    margin: 5% 30% 10% 40%;
+    width: 100px;
+    height: 40px;
+    border-radius: 3vw;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* line 79, ../Assets/scss/mobileS.scss */
+  .databiz_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 2%;
+  }
+
+  /* line 84, ../Assets/scss/mobileS.scss */
+  .audiophile_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 0;
+  }
+
+  /* line 89, ../Assets/scss/mobileS.scss */
+  .maker_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 0;
+  }
+
+  /* line 94, ../Assets/scss/mobileS.scss */
+  .meet_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 0;
+  }
+}
+
+/*# sourceMappingURL=Main.css.map */
