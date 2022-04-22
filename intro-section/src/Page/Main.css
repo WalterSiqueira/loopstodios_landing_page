@@ -99,14 +99,16 @@
   .title_content {
     font-size: 26px;
     margin: 0 0 5px 0;
+    font-weight: 700;
   }
 
-  /* line 67, ../Assets/scss/mobileS.scss */
+  /* line 68, ../Assets/scss/mobileS.scss */
   .subP_content {
     font-size: 18px;
+    font-weight: 500;
   }
 
-  /* line 70, ../Assets/scss/mobileS.scss */
+  /* line 72, ../Assets/scss/mobileS.scss */
   .learnmore_content {
     margin: 5% 30% 10% 40%;
     width: 100px;
@@ -117,32 +119,199 @@
     font-size: 14px;
   }
 
-  /* line 79, ../Assets/scss/mobileS.scss */
+  /* line 81, ../Assets/scss/mobileS.scss */
   .databiz_img {
     width: 50px;
     height: 30px;
     margin: 0 5% 0 2%;
   }
 
-  /* line 84, ../Assets/scss/mobileS.scss */
+  /* line 86, ../Assets/scss/mobileS.scss */
   .audiophile_img {
     width: 50px;
     height: 30px;
     margin: 0 5% 0 0;
   }
 
-  /* line 89, ../Assets/scss/mobileS.scss */
+  /* line 91, ../Assets/scss/mobileS.scss */
   .maker_img {
     width: 50px;
     height: 30px;
     margin: 0 5% 0 0;
   }
 
-  /* line 94, ../Assets/scss/mobileS.scss */
+  /* line 96, ../Assets/scss/mobileS.scss */
   .meet_img {
     width: 50px;
     height: 30px;
     margin: 0 5% 0 0;
+  }
+
+  /* line 101, ../Assets/scss/mobileS.scss */
+  .attribution {
+    grid-area: bottom;
+    width: 100%;
+    height: 100%;
+    margin: 10% 0 0 0;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* line 4, ../Assets/scss/mobileML.scss */
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: Epilogue;
+  }
+
+  /* line 10, ../Assets/scss/mobileML.scss */
+  .root {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* line 14, ../Assets/scss/mobileML.scss */
+  .main_block {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: '. head .' '. content .' '. bottom .';
+    grid-template-columns: 20px 440px 20px;
+    grid-template-rows: 50px 450px 20px;
+    grid-row-gap: 5%;
+  }
+
+  /* line 26, ../Assets/scss/mobileML.scss */
+  .head_block {
+    grid-area: head;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  /* line 32, ../Assets/scss/mobileML.scss */
+  .logo_head {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+  }
+
+  /* line 37, ../Assets/scss/mobileML.scss */
+  .menu_head {
+    width: 35px;
+    height: 25px;
+    margin: 10px;
+  }
+
+  /* line 42, ../Assets/scss/mobileML.scss */
+  .navigation_block {
+    display: none;
+  }
+
+  /* line 45, ../Assets/scss/mobileML.scss */
+  .content_block {
+    grid-area: content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 51, ../Assets/scss/mobileML.scss */
+  .desktopHero_img {
+    display: none;
+  }
+
+  /* line 54, ../Assets/scss/mobileML.scss */
+  .mobileHero_img {
+    width: 100%;
+    height: 200px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 0;
+  }
+
+  /* line 60, ../Assets/scss/mobileML.scss */
+  .text_content {
+    margin-top: 10px;
+    text-align: center;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  /* line 65, ../Assets/scss/mobileML.scss */
+  .title_content {
+    font-size: 26px;
+    margin: 0 0 5px 0;
+    font-weight: 700;
+  }
+
+  /* line 70, ../Assets/scss/mobileML.scss */
+  .subP_content {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  /* line 74, ../Assets/scss/mobileML.scss */
+  .learnmore_content {
+    margin: 5% 30% 10% 30%;
+    width: 100px;
+    height: 40px;
+    border-radius: 3vw;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* line 83, ../Assets/scss/mobileML.scss */
+  .databiz_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 5%;
+  }
+
+  /* line 88, ../Assets/scss/mobileML.scss */
+  .audiophile_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 0;
+  }
+
+  /* line 93, ../Assets/scss/mobileML.scss */
+  .maker_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 0;
+  }
+
+  /* line 98, ../Assets/scss/mobileML.scss */
+  .meet_img {
+    width: 50px;
+    height: 30px;
+    margin: 0 5% 0 0;
+  }
+
+  /* line 103, ../Assets/scss/mobileML.scss */
+  .attribution {
+    grid-area: bottom;
+    width: 100%;
+    height: 100%;
+    margin: 2% 0 0 16%;
   }
 }
 
