@@ -21,7 +21,9 @@ function Nav() {
             </div>
         </div>
         <div className='company_block'>
-          <span className='company_drop'>Features</span>
+          <span className='company_drop'>Company</span>
+          <img src={arrowDown} className='arrowDown' alt=''/>
+          <img src={arrowUp} className='arrowUp' alt=''/>
             <div className='content_company'>
               <p className='History'>History</p>
               <p className='OurTeam'>Our Team</p>
@@ -30,6 +32,8 @@ function Nav() {
         </div>
         <h2 className='careers'>Careers</h2>
         <h2 className='about'>About</h2>
+        <button className='loginbtn'>Login</button>
+        <button className='registerbtn'>Register</button>
         <img className='close' src={closeL} alt=''/>
       </nav>
     )
