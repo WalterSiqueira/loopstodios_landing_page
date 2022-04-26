@@ -8,7 +8,7 @@ function Main() {
       <main className='main_block'>
         <Head/>
         <Content/>
-        <Attribution/>
+        <Attribution/> 
       </main>
     )
 }

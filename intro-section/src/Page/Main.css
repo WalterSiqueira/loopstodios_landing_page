@@ -369,67 +369,184 @@
 
   /* line 37, ../Assets/scss/tablet.scss */
   .features_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 12%;
+    height: 25px;
     padding: 5% 0 0 0;
     margin: 0 30px 0 0;
   }
 
-  /* line 42, ../Assets/scss/tablet.scss */
+  /* line 46, ../Assets/scss/tablet.scss */
   .features_drop {
+    cursor: pointer;
     font-size: 18px;
   }
 
-  /* line 46, ../Assets/scss/tablet.scss */
+  /* line 51, ../Assets/scss/tablet.scss */
   .arrowUp {
+    width: 10%;
+    height: 40%;
     display: none;
-    margin: 0 0 0 5px;
+    margin: 6px 0 0 5px;
   }
 
-  /* line 50, ../Assets/scss/tablet.scss */
+  /* line 57, ../Assets/scss/tablet.scss */
   .arrowDown {
-    margin: 0 0 0 5px;
+    width: 10%;
+    height: 40%;
+    margin: 6px 0 0 5px;
   }
 
-  /* line 53, ../Assets/scss/tablet.scss */
+  /* line 62, ../Assets/scss/tablet.scss */
   .content_feature {
+    width: 9%;
+    background-color: white;
     display: none;
+    grid-template-areas: '. Timg todo .' '. Cimg calendar .' '. Rimg reminders .' '. Pimg planning .';
+    grid-template-columns: 10px 30px 80px 10px;
+    grid-template-rows: 32px 32px 32px 32px;
+    position: absolute;
+    left: 13%;
+    top: 11%;
   }
 
-  /* line 56, ../Assets/scss/tablet.scss */
+  /* line 77, ../Assets/scss/tablet.scss */
+  .todo_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Timg;
+  }
+
+  /* line 83, ../Assets/scss/tablet.scss */
+  .todo {
+    margin: 5px 0 0 0;
+    grid-area: todo;
+    font-size: 18px;
+  }
+
+  /* line 88, ../Assets/scss/tablet.scss */
+  .calendar_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Cimg;
+  }
+
+  /* line 93, ../Assets/scss/tablet.scss */
+  .calendar {
+    margin: 5px 0 0 0;
+    grid-area: calendar;
+    font-size: 18px;
+  }
+
+  /* line 98, ../Assets/scss/tablet.scss */
+  .reminders_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Rimg;
+  }
+
+  /* line 103, ../Assets/scss/tablet.scss */
+  .reminders {
+    margin: 5px 0 0 0;
+    grid-area: reminders;
+    font-size: 18px;
+  }
+
+  /* line 108, ../Assets/scss/tablet.scss */
+  .planning_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Pimg;
+  }
+
+  /* line 113, ../Assets/scss/tablet.scss */
+  .planning {
+    margin: 5px 0 0 0;
+    grid-area: planning;
+    font-size: 18px;
+  }
+
+  /* line 118, ../Assets/scss/tablet.scss */
   .close {
     display: none;
   }
 
-  /* line 59, ../Assets/scss/tablet.scss */
+  /* line 121, ../Assets/scss/tablet.scss */
   .company_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 14%;
+    height: 25px;
     padding: 5% 0 0 0;
-    margin: 0 30px 0 0;
+    margin: 0 40px 0 0;
   }
 
-  /* line 63, ../Assets/scss/tablet.scss */
+  /* line 129, ../Assets/scss/tablet.scss */
   .company_drop {
+    cursor: pointer;
     font-size: 18px;
   }
 
-  /* line 66, ../Assets/scss/tablet.scss */
+  /* line 133, ../Assets/scss/tablet.scss */
   .content_company {
+    width: 7%;
+    background-color: white;
     display: none;
+    grid-template-areas: '. History .' '. OurTeam .' '. Blog .';
+    grid-template-columns: 10px 80px 10px;
+    grid-template-rows: 32px 32px 32px;
+    position: absolute;
+    left: 33%;
+    top: 11%;
   }
 
-  /* line 69, ../Assets/scss/tablet.scss */
+  /* line 147, ../Assets/scss/tablet.scss */
+  .History {
+    margin-top: 10px;
+    font-size: 18px;
+    grid-area: History;
+  }
+
+  /* line 152, ../Assets/scss/tablet.scss */
+  .OurTeam {
+    margin-top: 5px;
+    font-size: 18px;
+    grid-area: OurTeam;
+  }
+
+  /* line 157, ../Assets/scss/tablet.scss */
+  .Blog {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    grid-area: Blog;
+  }
+
+  /* line 162, ../Assets/scss/tablet.scss */
   .careers {
     margin: 5% 30px 0 0;
     font-size: 18px;
     font-weight: 500;
   }
 
-  /* line 74, ../Assets/scss/tablet.scss */
+  /* line 167, ../Assets/scss/tablet.scss */
   .about {
     margin: 5% 90px 0 0;
     font-size: 18px;
     font-weight: 500;
   }
 
-  /* line 79, ../Assets/scss/tablet.scss */
+  /* line 172, ../Assets/scss/tablet.scss */
   .loginbtn {
     background-color: white;
     border: none;
@@ -437,7 +554,7 @@
     font-size: 18px;
   }
 
-  /* line 85, ../Assets/scss/tablet.scss */
+  /* line 178, ../Assets/scss/tablet.scss */
   .registerbtn {
     font-size: 18px;
     width: 15%;
@@ -449,19 +566,19 @@
     padding: 0;
   }
 
-  /* line 95, ../Assets/scss/tablet.scss */
+  /* line 188, ../Assets/scss/tablet.scss */
   .logo_head {
     width: 10%;
     height: 50%;
     margin: 3% 5% 5% 5%;
   }
 
-  /* line 100, ../Assets/scss/tablet.scss */
+  /* line 193, ../Assets/scss/tablet.scss */
   .menu_head {
     display: none;
   }
 
-  /* line 103, ../Assets/scss/tablet.scss */
+  /* line 196, ../Assets/scss/tablet.scss */
   .content_block {
     grid-area: content;
     display: grid;
@@ -470,7 +587,7 @@
     grid-template-rows: 4fr 4fr;
   }
 
-  /* line 112, ../Assets/scss/tablet.scss */
+  /* line 205, ../Assets/scss/tablet.scss */
   .text_content {
     grid-area: text;
     display: -webkit-box;
@@ -482,7 +599,7 @@
             flex-flow: row wrap;
   }
 
-  /* line 117, ../Assets/scss/tablet.scss */
+  /* line 210, ../Assets/scss/tablet.scss */
   .title_content {
     width: 80%;
     margin: 10% 0 0 10%;
@@ -490,7 +607,7 @@
     text-align: left;
   }
 
-  /* line 123, ../Assets/scss/tablet.scss */
+  /* line 216, ../Assets/scss/tablet.scss */
   .subP_content {
     width: 80%;
     margin: 2% 0 0 10%;
@@ -498,7 +615,7 @@
     text-align: left;
   }
 
-  /* line 129, ../Assets/scss/tablet.scss */
+  /* line 222, ../Assets/scss/tablet.scss */
   .learnmore_content {
     width: 50%;
     height: 10%;
@@ -510,52 +627,52 @@
     font-size: 18px;
   }
 
-  /* line 139, ../Assets/scss/tablet.scss */
+  /* line 232, ../Assets/scss/tablet.scss */
   .databiz_img {
     width: 22%;
     height: 10%;
     margin: 2% 2% 0 5%;
   }
 
-  /* line 144, ../Assets/scss/tablet.scss */
+  /* line 237, ../Assets/scss/tablet.scss */
   .audiophile_img {
     width: 22%;
     height: 10%;
     margin: 2% 2% 0 0;
   }
 
-  /* line 149, ../Assets/scss/tablet.scss */
+  /* line 242, ../Assets/scss/tablet.scss */
   .maker_img {
     width: 22%;
     height: 10%;
     margin: 2% 3% 0 0;
   }
 
-  /* line 154, ../Assets/scss/tablet.scss */
+  /* line 247, ../Assets/scss/tablet.scss */
   .meet_img {
     width: 22%;
     height: 10%;
     margin: 2% 0 0 0;
   }
 
-  /* line 159, ../Assets/scss/tablet.scss */
+  /* line 252, ../Assets/scss/tablet.scss */
   .image_content {
     grid-area: image;
   }
 
-  /* line 162, ../Assets/scss/tablet.scss */
+  /* line 255, ../Assets/scss/tablet.scss */
   .desktopHero_img {
     width: 85%;
     height: 100%;
     margin-left: 5%;
   }
 
-  /* line 168, ../Assets/scss/tablet.scss */
+  /* line 261, ../Assets/scss/tablet.scss */
   .mobileHero_img {
     display: none;
   }
 
-  /* line 171, ../Assets/scss/tablet.scss */
+  /* line 264, ../Assets/scss/tablet.scss */
   .attribution {
     grid-area: bottom;
     margin: 2% 0 0 30%;
@@ -616,67 +733,177 @@
 
   /* line 37, ../Assets/scss/laptopS.scss */
   .features_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 9%;
+    height: 25px;
     padding: 5% 0 0 0;
     margin: 0 30px 0 0;
   }
 
-  /* line 42, ../Assets/scss/laptopS.scss */
+  /* line 46, ../Assets/scss/laptopS.scss */
   .features_drop {
+    cursor: pointer;
     font-size: 18px;
   }
 
-  /* line 46, ../Assets/scss/laptopS.scss */
+  /* line 50, ../Assets/scss/laptopS.scss */
   .arrowUp {
     display: none;
-    margin: 0 0 0 5px;
-  }
-
-  /* line 50, ../Assets/scss/laptopS.scss */
-  .arrowDown {
-    margin: 0 0 0 5px;
-  }
-
-  /* line 53, ../Assets/scss/laptopS.scss */
-  .content_feature {
+    width: 10%;
+    height: 40%;
     display: none;
+    margin: 6px 0 0 5px;
   }
 
-  /* line 56, ../Assets/scss/laptopS.scss */
+  /* line 57, ../Assets/scss/laptopS.scss */
+  .arrowDown {
+    width: 10%;
+    height: 40%;
+    margin: 6px 0 0 5px;
+  }
+
+  /* line 62, ../Assets/scss/laptopS.scss */
+  .content_feature {
+    width: 13%;
+    background-color: white;
+    display: none;
+    grid-template-areas: '. Timg todo .' '. Cimg calendar .' '. Rimg reminders .' '. Pimg planning .';
+    grid-template-columns: 10px 30px 80px 10px;
+    grid-template-rows: 32px 32px 32px 32px;
+    position: absolute;
+    left: 13%;
+    top: 13%;
+  }
+
+  /* line 77, ../Assets/scss/laptopS.scss */
+  .todo_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Timg;
+  }
+
+  /* line 83, ../Assets/scss/laptopS.scss */
+  .todo {
+    margin: 5px 0 0 0;
+    grid-area: todo;
+    font-size: 18px;
+  }
+
+  /* line 88, ../Assets/scss/laptopS.scss */
+  .calendar_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Cimg;
+  }
+
+  /* line 93, ../Assets/scss/laptopS.scss */
+  .calendar {
+    margin: 5px 0 0 0;
+    grid-area: calendar;
+    font-size: 18px;
+  }
+
+  /* line 98, ../Assets/scss/laptopS.scss */
+  .reminders_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Rimg;
+  }
+
+  /* line 103, ../Assets/scss/laptopS.scss */
+  .reminders {
+    margin: 5px 0 0 0;
+    grid-area: reminders;
+    font-size: 18px;
+  }
+
+  /* line 108, ../Assets/scss/laptopS.scss */
+  .planning_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Pimg;
+  }
+
+  /* line 113, ../Assets/scss/laptopS.scss */
+  .planning {
+    margin: 5px 0 0 0;
+    grid-area: planning;
+    font-size: 18px;
+  }
+
+  /* line 118, ../Assets/scss/laptopS.scss */
   .close {
     display: none;
   }
 
-  /* line 59, ../Assets/scss/laptopS.scss */
+  /* line 121, ../Assets/scss/laptopS.scss */
   .company_block {
+    height: 25px;
     padding: 5% 0 0 0;
     margin: 0 30px 0 0;
   }
 
-  /* line 63, ../Assets/scss/laptopS.scss */
+  /* line 126, ../Assets/scss/laptopS.scss */
   .company_drop {
+    cursor: pointer;
     font-size: 18px;
   }
 
-  /* line 66, ../Assets/scss/laptopS.scss */
+  /* line 130, ../Assets/scss/laptopS.scss */
   .content_company {
+    width: 10%;
+    background-color: white;
     display: none;
+    grid-template-areas: '. History .' '. OurTeam .' '. Blog .';
+    grid-template-columns: 10px 80px 10px;
+    grid-template-rows: 32px 32px 32px;
+    position: absolute;
+    left: 29%;
+    top: 13%;
   }
 
-  /* line 69, ../Assets/scss/laptopS.scss */
+  /* line 144, ../Assets/scss/laptopS.scss */
   .careers {
     margin: 5% 30px 0 0;
     font-size: 18px;
     font-weight: 500;
   }
 
-  /* line 74, ../Assets/scss/laptopS.scss */
+  /* line 149, ../Assets/scss/laptopS.scss */
+  .History {
+    margin-top: 10px;
+    font-size: 18px;
+    grid-area: History;
+  }
+
+  /* line 154, ../Assets/scss/laptopS.scss */
+  .OurTeam {
+    margin-top: 5px;
+    font-size: 18px;
+    grid-area: OurTeam;
+  }
+
+  /* line 159, ../Assets/scss/laptopS.scss */
+  .Blog {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    grid-area: Blog;
+  }
+
+  /* line 164, ../Assets/scss/laptopS.scss */
   .about {
     margin: 5% 30% 0 0;
     font-size: 18px;
     font-weight: 500;
   }
 
-  /* line 79, ../Assets/scss/laptopS.scss */
+  /* line 169, ../Assets/scss/laptopS.scss */
   .loginbtn {
     background-color: white;
     border: none;
@@ -684,7 +911,7 @@
     font-size: 18px;
   }
 
-  /* line 85, ../Assets/scss/laptopS.scss */
+  /* line 175, ../Assets/scss/laptopS.scss */
   .registerbtn {
     font-size: 18px;
     width: 15%;
@@ -696,19 +923,19 @@
     padding: 0;
   }
 
-  /* line 95, ../Assets/scss/laptopS.scss */
+  /* line 185, ../Assets/scss/laptopS.scss */
   .logo_head {
     width: 10%;
     height: 50%;
     margin: 3% 5% 5% 5%;
   }
 
-  /* line 100, ../Assets/scss/laptopS.scss */
+  /* line 190, ../Assets/scss/laptopS.scss */
   .menu_head {
     display: none;
   }
 
-  /* line 103, ../Assets/scss/laptopS.scss */
+  /* line 193, ../Assets/scss/laptopS.scss */
   .content_block {
     grid-area: content;
     display: grid;
@@ -717,7 +944,7 @@
     grid-template-rows: 4fr 4fr;
   }
 
-  /* line 112, ../Assets/scss/laptopS.scss */
+  /* line 202, ../Assets/scss/laptopS.scss */
   .text_content {
     grid-area: text;
     display: -webkit-box;
@@ -729,7 +956,7 @@
             flex-flow: row wrap;
   }
 
-  /* line 117, ../Assets/scss/laptopS.scss */
+  /* line 207, ../Assets/scss/laptopS.scss */
   .title_content {
     width: 80%;
     margin: 10% 0 0 10%;
@@ -737,7 +964,7 @@
     text-align: left;
   }
 
-  /* line 123, ../Assets/scss/laptopS.scss */
+  /* line 213, ../Assets/scss/laptopS.scss */
   .subP_content {
     width: 80%;
     margin: 2% 0 0 10%;
@@ -745,7 +972,7 @@
     text-align: left;
   }
 
-  /* line 129, ../Assets/scss/laptopS.scss */
+  /* line 219, ../Assets/scss/laptopS.scss */
   .learnmore_content {
     width: 50%;
     height: 10%;
@@ -757,52 +984,52 @@
     font-size: 18px;
   }
 
-  /* line 139, ../Assets/scss/laptopS.scss */
+  /* line 229, ../Assets/scss/laptopS.scss */
   .databiz_img {
     width: 22%;
     height: 10%;
     margin: 5% 2% 0 5%;
   }
 
-  /* line 144, ../Assets/scss/laptopS.scss */
+  /* line 234, ../Assets/scss/laptopS.scss */
   .audiophile_img {
     width: 22%;
     height: 10%;
     margin: 5% 2% 0 0;
   }
 
-  /* line 149, ../Assets/scss/laptopS.scss */
+  /* line 239, ../Assets/scss/laptopS.scss */
   .maker_img {
     width: 22%;
     height: 10%;
     margin: 5% 3% 0 0;
   }
 
-  /* line 154, ../Assets/scss/laptopS.scss */
+  /* line 244, ../Assets/scss/laptopS.scss */
   .meet_img {
     width: 22%;
     height: 10%;
     margin: 5% 0 0 0;
   }
 
-  /* line 159, ../Assets/scss/laptopS.scss */
+  /* line 249, ../Assets/scss/laptopS.scss */
   .image_content {
     grid-area: image;
   }
 
-  /* line 162, ../Assets/scss/laptopS.scss */
+  /* line 252, ../Assets/scss/laptopS.scss */
   .desktopHero_img {
     width: 85%;
     height: 100%;
     margin-left: 5%;
   }
 
-  /* line 168, ../Assets/scss/laptopS.scss */
+  /* line 258, ../Assets/scss/laptopS.scss */
   .mobileHero_img {
     display: none;
   }
 
-  /* line 171, ../Assets/scss/laptopS.scss */
+  /* line 261, ../Assets/scss/laptopS.scss */
   .attribution {
     grid-area: bottom;
     margin: 2% 0 0 35%;
@@ -863,67 +1090,184 @@
 
   /* line 37, ../Assets/scss/laptopML.scss */
   .features_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 8%;
+    height: 25px;
     padding: 4% 0 0 0;
     margin: 0 30px 0 0;
   }
 
-  /* line 42, ../Assets/scss/laptopML.scss */
+  /* line 46, ../Assets/scss/laptopML.scss */
   .features_drop {
+    cursor: pointer;
     font-size: 18px;
   }
 
-  /* line 46, ../Assets/scss/laptopML.scss */
+  /* line 51, ../Assets/scss/laptopML.scss */
   .arrowUp {
+    width: 10%;
+    height: 40%;
     display: none;
-    margin: 0 0 0 5px;
+    margin: 6px 0 0 5px;
   }
 
-  /* line 50, ../Assets/scss/laptopML.scss */
+  /* line 57, ../Assets/scss/laptopML.scss */
   .arrowDown {
-    margin: 0 0 0 5px;
+    width: 10%;
+    height: 40%;
+    margin: 6px 0 0 5px;
   }
 
-  /* line 53, ../Assets/scss/laptopML.scss */
+  /* line 62, ../Assets/scss/laptopML.scss */
   .content_feature {
+    width: 9%;
+    background-color: white;
     display: none;
+    grid-template-areas: '. Timg todo .' '. Cimg calendar .' '. Rimg reminders .' '. Pimg planning .';
+    grid-template-columns: 10px 30px 80px 10px;
+    grid-template-rows: 32px 32px 32px 32px;
+    position: absolute;
+    left: 16%;
+    top: 13%;
   }
 
-  /* line 56, ../Assets/scss/laptopML.scss */
+  /* line 78, ../Assets/scss/laptopML.scss */
+  .todo_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Timg;
+  }
+
+  /* line 84, ../Assets/scss/laptopML.scss */
+  .todo {
+    margin: 5px 0 0 0;
+    grid-area: todo;
+    font-size: 18px;
+  }
+
+  /* line 89, ../Assets/scss/laptopML.scss */
+  .calendar_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Cimg;
+  }
+
+  /* line 94, ../Assets/scss/laptopML.scss */
+  .calendar {
+    margin: 5px 0 0 0;
+    grid-area: calendar;
+    font-size: 18px;
+  }
+
+  /* line 99, ../Assets/scss/laptopML.scss */
+  .reminders_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Rimg;
+  }
+
+  /* line 104, ../Assets/scss/laptopML.scss */
+  .reminders {
+    margin: 5px 0 0 0;
+    grid-area: reminders;
+    font-size: 18px;
+  }
+
+  /* line 109, ../Assets/scss/laptopML.scss */
+  .planning_img {
+    width: 60%;
+    margin: 5px;
+    grid-area: Pimg;
+  }
+
+  /* line 114, ../Assets/scss/laptopML.scss */
+  .planning {
+    margin: 5px 0 0 0;
+    grid-area: planning;
+    font-size: 18px;
+  }
+
+  /* line 120, ../Assets/scss/laptopML.scss */
   .close {
     display: none;
   }
 
-  /* line 59, ../Assets/scss/laptopML.scss */
+  /* line 123, ../Assets/scss/laptopML.scss */
   .company_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 12%;
+    height: 25px;
     padding: 4% 0 0 0;
-    margin: 0 30px 0 0;
+    margin: 0 10px 0 0;
   }
 
-  /* line 63, ../Assets/scss/laptopML.scss */
+  /* line 131, ../Assets/scss/laptopML.scss */
   .company_drop {
+    cursor: pointer;
     font-size: 18px;
   }
 
-  /* line 66, ../Assets/scss/laptopML.scss */
+  /* line 135, ../Assets/scss/laptopML.scss */
   .content_company {
+    width: 7%;
+    background-color: white;
     display: none;
+    grid-template-areas: '. History .' '. OurTeam .' '. Blog .';
+    grid-template-columns: 10px 80px 10px;
+    grid-template-rows: 32px 32px 32px;
+    position: absolute;
+    left: 28%;
+    top: 13%;
   }
 
-  /* line 69, ../Assets/scss/laptopML.scss */
+  /* line 149, ../Assets/scss/laptopML.scss */
+  .History {
+    margin-top: 10px;
+    font-size: 18px;
+    grid-area: History;
+  }
+
+  /* line 154, ../Assets/scss/laptopML.scss */
+  .OurTeam {
+    margin-top: 5px;
+    font-size: 18px;
+    grid-area: OurTeam;
+  }
+
+  /* line 159, ../Assets/scss/laptopML.scss */
+  .Blog {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    grid-area: Blog;
+  }
+
+  /* line 164, ../Assets/scss/laptopML.scss */
   .careers {
-    margin: 4% 30px 0 0;
+    margin: 4% 40px 0 0;
     font-size: 18px;
     font-weight: 500;
   }
 
-  /* line 74, ../Assets/scss/laptopML.scss */
+  /* line 169, ../Assets/scss/laptopML.scss */
   .about {
-    margin: 4% 40% 0 0;
+    margin: 4% 30% 0 0;
     font-size: 18px;
     font-weight: 500;
   }
 
-  /* line 79, ../Assets/scss/laptopML.scss */
+  /* line 174, ../Assets/scss/laptopML.scss */
   .loginbtn {
     background-color: white;
     border: none;
@@ -931,11 +1275,11 @@
     font-size: 18px;
   }
 
-  /* line 85, ../Assets/scss/laptopML.scss */
+  /* line 180, ../Assets/scss/laptopML.scss */
   .registerbtn {
     font-size: 18px;
     width: 15%;
-    height: 30%;
+    height: 35%;
     background-color: white;
     border: solid black;
     border-radius: 3vh;
@@ -943,19 +1287,19 @@
     padding: 0;
   }
 
-  /* line 95, ../Assets/scss/laptopML.scss */
+  /* line 190, ../Assets/scss/laptopML.scss */
   .logo_head {
     width: 10%;
     height: 50%;
     margin: 3% 5% 5% 5%;
   }
 
-  /* line 100, ../Assets/scss/laptopML.scss */
+  /* line 195, ../Assets/scss/laptopML.scss */
   .menu_head {
     display: none;
   }
 
-  /* line 103, ../Assets/scss/laptopML.scss */
+  /* line 198, ../Assets/scss/laptopML.scss */
   .content_block {
     grid-area: content;
     display: grid;
@@ -964,7 +1308,7 @@
     grid-template-rows: 4fr 4fr;
   }
 
-  /* line 112, ../Assets/scss/laptopML.scss */
+  /* line 207, ../Assets/scss/laptopML.scss */
   .text_content {
     grid-area: text;
     display: -webkit-box;
@@ -976,7 +1320,7 @@
             flex-flow: row wrap;
   }
 
-  /* line 117, ../Assets/scss/laptopML.scss */
+  /* line 212, ../Assets/scss/laptopML.scss */
   .title_content {
     width: 80%;
     margin: 10% 0 0 10%;
@@ -984,7 +1328,7 @@
     text-align: left;
   }
 
-  /* line 123, ../Assets/scss/laptopML.scss */
+  /* line 218, ../Assets/scss/laptopML.scss */
   .subP_content {
     width: 80%;
     margin: 2% 0 0 10%;
@@ -992,7 +1336,7 @@
     text-align: left;
   }
 
-  /* line 129, ../Assets/scss/laptopML.scss */
+  /* line 224, ../Assets/scss/laptopML.scss */
   .learnmore_content {
     width: 50%;
     height: 10%;
@@ -1004,52 +1348,52 @@
     font-size: 18px;
   }
 
-  /* line 139, ../Assets/scss/laptopML.scss */
+  /* line 234, ../Assets/scss/laptopML.scss */
   .databiz_img {
     width: 22%;
     height: 10%;
     margin: 5% 2% 0 5%;
   }
 
-  /* line 144, ../Assets/scss/laptopML.scss */
+  /* line 239, ../Assets/scss/laptopML.scss */
   .audiophile_img {
     width: 22%;
     height: 10%;
     margin: 5% 2% 0 0;
   }
 
-  /* line 149, ../Assets/scss/laptopML.scss */
+  /* line 244, ../Assets/scss/laptopML.scss */
   .maker_img {
     width: 22%;
     height: 10%;
     margin: 5% 3% 0 0;
   }
 
-  /* line 154, ../Assets/scss/laptopML.scss */
+  /* line 249, ../Assets/scss/laptopML.scss */
   .meet_img {
     width: 22%;
     height: 10%;
     margin: 5% 0 0 0;
   }
 
-  /* line 159, ../Assets/scss/laptopML.scss */
+  /* line 254, ../Assets/scss/laptopML.scss */
   .image_content {
     grid-area: image;
   }
 
-  /* line 162, ../Assets/scss/laptopML.scss */
+  /* line 257, ../Assets/scss/laptopML.scss */
   .desktopHero_img {
-    width: 85%;
+    width: 70%;
     height: 100%;
-    margin-left: 5%;
+    margin-left: 10%;
   }
 
-  /* line 168, ../Assets/scss/laptopML.scss */
+  /* line 263, ../Assets/scss/laptopML.scss */
   .mobileHero_img {
     display: none;
   }
 
-  /* line 171, ../Assets/scss/laptopML.scss */
+  /* line 266, ../Assets/scss/laptopML.scss */
   .attribution {
     grid-area: bottom;
     margin: 2% 0 0 43%;

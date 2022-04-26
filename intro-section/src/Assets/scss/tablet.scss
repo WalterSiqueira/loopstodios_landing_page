@@ -35,37 +35,130 @@
                     flex-flow: row wrap;
                 }
                     .features_block {
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: 12%;
+                        height: 25px;
                         padding: 5% 0 0 0;
                         margin: 0 30px 0 0;
 
                     }
                         .features_drop {
+                            cursor: pointer;
                             font-size: 18px;
                             
                         }
                         .arrowUp {
+                            width:10%;
+                            height: 40%;
                             display: none;
-                            margin: 0 0 0 5px;
+                            margin: 6px 0 0 5px;
                         }
                         .arrowDown {
-                            margin: 0 0 0 5px; 
+                            width:10%;
+                            height: 40%;
+                            margin: 6px 0 0 5px; 
                         }
                         .content_feature {
+                            width: 9%;
+                            background-color: white;
                             display: none;
+                            grid-template-areas: 
+                                '. Timg todo .'
+                                '. Cimg calendar .'
+                                '. Rimg reminders .'
+                                '. Pimg planning .';
+                            grid-template-columns: 10px 30px 80px 10px;
+                            grid-template-rows: 32px 32px 32px 32px;
+                            position: absolute;
+                            left: 13%;
+                            top: 11%;
                         }
+                            .todo_img {
+                                width: 60%;
+                                margin: 5px;
+                                grid-area: Timg;
+                                
+                            }
+                            .todo {
+                                margin: 5px 0 0 0;
+                                grid-area: todo;    
+                                font-size: 18px;
+                            }
+                            .calendar_img {
+                                width: 60%;
+                                margin: 5px;
+                                grid-area: Cimg;
+                            }
+                            .calendar {
+                                margin: 5px 0 0 0;
+                                grid-area: calendar;
+                                font-size: 18px;
+                            }
+                            .reminders_img {
+                                width: 60%;
+                                margin: 5px;
+                                grid-area: Rimg;
+                            }
+                            .reminders {
+                                margin: 5px 0 0 0;
+                                grid-area: reminders;
+                                font-size: 18px;
+                            }
+                            .planning_img {
+                                width: 60%;
+                                margin: 5px;
+                                grid-area: Pimg;
+                            }
+                            .planning {
+                                margin: 5px 0 0 0;
+                                grid-area: planning;
+                                font-size: 18px;
+                            }
                         .close {
                             display: none;
                         }
                     .company_block {
+                        display: flex;
+                        flex-flow: row wrap;
+                        width: 14%;
+                        height: 25px;
                         padding: 5% 0 0 0;
-                        margin: 0 30px 0 0;
+                        margin: 0 40px 0 0;
                     }
                         .company_drop {
+                            cursor: pointer;
                             font-size: 18px;
                         }
                         .content_company {
+                            width: 7%;
+                            background-color: white;
                             display: none;
+                            grid-template-areas: 
+                                '. History .'
+                                '. OurTeam .'
+                                '. Blog .';
+                            grid-template-columns: 10px 80px 10px;
+                            grid-template-rows: 32px 32px 32px;
+                            position: absolute;
+                            left: 33%;
+                            top: 11%;
                         }
+                            .History {
+                                margin-top: 10px;
+                                font-size: 18px;
+                                grid-area: History;
+                            }
+                            .OurTeam {
+                                margin-top: 5px;
+                                font-size: 18px;
+                                grid-area: OurTeam;
+                            }
+                            .Blog {
+                                margin: 0 0 10px 0;
+                                font-size: 18px;
+                                grid-area: Blog;
+                            }
                     .careers {
                         margin: 5% 30px 0 0;
                         font-size: 18px;

@@ -7,7 +7,7 @@ function Head() {
     return (
       <header className='head_block'>
         <img src={logo} className='logo_head'alt=''/>
-        <img src={menu} className='menu_head' alt=''/>
+        <img src={menu} className='menu_head' id='menu' alt=''/>
         <Nav/>
       </header>
     )
