@@ -14,6 +14,7 @@ function Nav() {
     const arrowD = useRef();
     const arrowUtwo = useRef();
     const arrowDtwo = useRef();
+    const menu = useRef();
     function showhide() {  
       if (show === false) {
         ref.current.style.display = 'grid'; 
@@ -45,7 +46,7 @@ function Nav() {
       }
     }
     return (
-      <nav className='navigation_block'>
+      <nav className='navigation_block' ref={menu}>
         <div className='features_block'>
           <span className='features_drop'  onClick={showhide}  id='feature_drop'>Features</span>
           <img src={arrowDown} className='arrowDown' ref={arrowD} id='arrowDown' alt=''/>
