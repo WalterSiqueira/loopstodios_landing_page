@@ -1,6 +1,6 @@
 import React from 'react';
 import {ThirdSection, H3Third, Paragraph} from './third_style.js';
-import {Input, Button} from '../first_section/first_style.js';
+import {Input, Button} from './third_style.js';
 export function ThirdSectionBlock() {
     return (
         <ThirdSection>

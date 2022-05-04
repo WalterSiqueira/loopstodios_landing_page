@@ -4,7 +4,7 @@ import email from '../../Assets/images/icon-email.svg';
 import phone from '../../Assets/images/icon-phone.svg';
 
 export const Footer = styled.div `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
         background-color: hsl(243, 87%, 12%);
         width: 100%;
         height: 800px;
@@ -28,26 +28,95 @@ export const Footer = styled.div `
         grid-template-rows: 20px 100px 30px 30px 50px 30px 30px 30px 50px 30px 30px 30px 20px;
         grid-row-gap: 20px;
     }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        background-color: hsl(243, 87%, 12%);
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-areas: 
+            'logo logo . . '
+            'PIcon phone about contactus'
+            'EIcon email jobs  terms'
+            ' .  . press privacy'
+            ' .  . blog  .';
+        grid-template-columns: 60px 220px 100px 100px;
+        grid-template-rows: 100px 50px 50px 50px 50px;
+        grid-gap: 20px;
+        padding: 40px;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
+        background-color: hsl(243, 87%, 12%);
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-areas: 
+            '. . . . . .'
+            '. logo logo . . .'
+            '. PIcon phone about contactus .'
+            '. EIcon email jobs  terms .'
+            '. .  . press privacy .'
+            '. .  . blog  . .'
+            '. . . . . .';
+        grid-template-columns: 20px 60px 321px 100px 100px 20px;
+        grid-template-rows: 20px 100px 50px 50px 50px 50px 20px;
+        grid-gap: 10px;
+    }
 `;
 
 export const Emailtext = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
         grid-area: email;
         font-size:14px;
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: email;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
+        grid-area: email;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const Phonetext = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
         grid-area: phone;
         font-size:14px;
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: phone;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
+        grid-area: phone;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const AboutUs = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: about;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: about;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: about;
         font-size:18px;
         color: white;
@@ -55,7 +124,19 @@ export const AboutUs = styled.p `
     }
 `;
 export const Jobs = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: jobs;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: jobs;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: jobs;
         font-size:18px;
         color: white;
@@ -63,7 +144,19 @@ export const Jobs = styled.p `
     }
 `;
 export const Press = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: press;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: press;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: press;
         font-size:18px;
         color: white;
@@ -71,7 +164,19 @@ export const Press = styled.p `
     }
 `;
 export const Blog = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: blog;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: blog;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: blog;
         font-size:18px;
         color: white;
@@ -79,7 +184,19 @@ export const Blog = styled.p `
     }
 `;
 export const ContactUs = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: contactus;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: contactus;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: contactus;
         font-size:18px;
         color: white;
@@ -87,7 +204,19 @@ export const ContactUs = styled.p `
     }
 `;
 export const Terms = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: terms;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: terms;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: terms;
         font-size:18px;
         color: white;
@@ -95,7 +224,19 @@ export const Terms = styled.p `
     }
 `;
 export const Privacy = styled.p `
-    @media screen and (max-width: 320px) {
+    @media screen and (max-width: 480px) {
+        grid-area: privacy;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 481px) and (max-width: 800px) {
+        grid-area: privacy;
+        font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: privacy;
         font-size:18px;
         color: white;
@@ -118,7 +259,7 @@ export const EmailImg = styled.img.attrs({
     grid-area: EIcon;
     width: 50%;
     height: 70%;
-    margin: 10% 10% 10% 0%;
+    margin: 10% 10% 10% 0%; 
 `;
 export const PhoneImg = styled.img.attrs({
     src: `${phone}`
@@ -127,5 +268,5 @@ export const PhoneImg = styled.img.attrs({
     grid-area: PIcon;
     width: 50%;
     height: 80%;
-    margin: 10% 10% 10% 0%;
+    margin: 10% 10% 10% 0%; 
 `;
