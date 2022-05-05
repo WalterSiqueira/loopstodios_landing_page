@@ -35,6 +35,19 @@ export const FirstSection = styled.div `
         grid-row-gap: 10px;
         margin: 1%;
     }
+    @media screen and (min-width: 1025px) {
+        width: 100%;
+        height: 250px;
+        display: grid;
+        grid-template-areas: 
+            'title title . illustone'
+            'sub sub . illustone'
+            'input button . illustone';
+        grid-template-columns: 480px 480px 10px 480px;
+        grid-template-rows: 100px 100px 50px ;
+        grid-row-gap: 10px;
+        margin: 1%;
+    }
 `;
 export const IllustImg = styled.img.attrs({
     src: `${illustration1}`
@@ -49,6 +62,11 @@ export const IllustImg = styled.img.attrs({
         height: 100%;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
+        grid-area: illustone;
+        width: 100%;
+        height: 100%;
+    }
+    @media screen and (min-width: 1025px) {
         grid-area: illustone;
         width: 100%;
         height: 100%;
@@ -70,6 +88,12 @@ export const H2 = styled.h2 `
         font-family: open-sans;
         font-size: 30px;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: title;
+        font-family: open-sans;
+        font-size: 40px;
+    }
+    
 `;
 export const H3 = styled.h3 `
     @media screen and (max-width: 480px) {
@@ -85,6 +109,11 @@ export const H3 = styled.h3 `
         grid-area: sub;
         font-family: open-sans;
         font-size: 18px;
+    }
+    @media screen and (min-width: 1025px) {
+        grid-area: sub;
+        font-family: open-sans;
+        font-size: 22px;
     }
 `;
 export const Input = styled.input `
@@ -103,6 +132,13 @@ export const Input = styled.input `
         border: solid black 1px;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
+        grid-area: input;
+        width: 90%;
+        height: 50%;
+        text-align: left;
+        border: solid black 1px;
+    }
+    @media screen and (min-width: 1025px) {
         grid-area: input;
         width: 90%;
         height: 50%;
@@ -129,6 +165,15 @@ export const Button = styled.button `
         margin-left: 10%;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
+        grid-area: button;
+        width: 80%;
+        height: 55%;
+        background-color: blue;
+        color: white;
+        border: solid blue;
+        margin-left: 10%;
+    }
+    @media screen and (min-width: 1025px) {
         grid-area: button;
         width: 80%;
         height: 55%;

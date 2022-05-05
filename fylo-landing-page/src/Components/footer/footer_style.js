@@ -61,6 +61,23 @@ export const Footer = styled.div `
         grid-template-rows: 20px 100px 50px 50px 50px 50px 20px;
         grid-gap: 10px;
     }
+    @media screen and (min-width: 1025px) {
+        background-color: hsl(243, 87%, 12%);
+        width: 100%;
+        height: 400px;
+        display: grid;
+        grid-template-areas: 
+            '. . . . . .'
+            '. logo logo . . .'
+            '. PIcon phone about contactus .'
+            '. EIcon email jobs  terms .'
+            '. .  . press privacy .'
+            '. .  . blog  . .'
+            '. . . . . .';
+        grid-template-columns: 154px 194px 455px 234px 234px 154px;
+        grid-template-rows: 20px 100px 50px 50px 50px 50px 20px;
+        grid-gap: 10px;
+    }
 `;
 
 export const Emailtext = styled.p `
@@ -79,6 +96,12 @@ export const Emailtext = styled.p `
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: email;
         font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 1025px) {
+        grid-area: email;
+        font-size:20px;
         color: white;
         font-weight: 400;
     }
@@ -102,6 +125,12 @@ export const Phonetext = styled.p `
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: phone;
+        font-size:20px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const AboutUs = styled.p `
     @media screen and (max-width: 480px) {
@@ -119,6 +148,12 @@ export const AboutUs = styled.p `
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: about;
         font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 1025px) {
+        grid-area: about;
+        font-size:20px;
         color: white;
         font-weight: 400;
     }
@@ -142,6 +177,12 @@ export const Jobs = styled.p `
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: jobs;
+        font-size:20px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const Press = styled.p `
     @media screen and (max-width: 480px) {
@@ -159,6 +200,12 @@ export const Press = styled.p `
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: press;
         font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 1025px) {
+        grid-area: press;
+        font-size:20px;
         color: white;
         font-weight: 400;
     }
@@ -182,6 +229,12 @@ export const Blog = styled.p `
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: blog;
+        font-size:20px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const ContactUs = styled.p `
     @media screen and (max-width: 480px) {
@@ -199,6 +252,12 @@ export const ContactUs = styled.p `
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: contactus;
         font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 1025px) {
+        grid-area: contactus;
+        font-size:20px;
         color: white;
         font-weight: 400;
     }
@@ -222,6 +281,12 @@ export const Terms = styled.p `
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: terms;
+        font-size:20px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const Privacy = styled.p `
     @media screen and (max-width: 480px) {
@@ -239,6 +304,12 @@ export const Privacy = styled.p `
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: privacy;
         font-size:18px;
+        color: white;
+        font-weight: 400;
+    }
+    @media screen and (min-width: 1025px) {
+        grid-area: privacy;
+        font-size:20px;
         color: white;
         font-weight: 400;
     }
@@ -267,6 +338,6 @@ export const PhoneImg = styled.img.attrs({
 `
     grid-area: PIcon;
     width: 50%;
-    height: 80%;
+    height: 70%;
     margin: 10% 10% 10% 0%; 
 `;

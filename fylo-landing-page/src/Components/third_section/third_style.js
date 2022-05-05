@@ -35,6 +35,18 @@ export const ThirdSection = styled.div `
         grid-template-rows: 50px 100px;
         grid-row-gap: 5px;
     }
+    @media screen and (min-width: 1025px) {
+        width: 100%;
+        height: 200px;
+        background-color: hsl(238, 22%, 44%);
+        display: grid;
+        grid-template-areas: 
+            'title . input'
+            'sub . button';
+        grid-template-columns: 720px 10px 720px ;
+        grid-template-rows: 50px 100px;
+        grid-row-gap: 5px;
+    }
 `;
 export const H3Third = styled.h3 `
     @media screen and (max-width: 480px) {
@@ -55,6 +67,12 @@ export const H3Third = styled.h3 `
         color: white;
         font-weight: 400;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: title;
+        font-size: 22px;
+        color: white;
+        font-weight: 400;
+    }
 `;
 export const Paragraph = styled.p `
     @media screen and (max-width: 480px) {
@@ -71,9 +89,9 @@ export const Paragraph = styled.p `
         margin: 0;
 
     }
-    @media screen and (min-width: 801px) and (max-width: 1024px) {
+    @media screen and (min-width: 1025px) {
         grid-area: sub;
-        font-size: 18px;
+        font-size: 20px;
         color: white;
         font-weight: 400;
         margin: 0;
@@ -104,6 +122,14 @@ export const Input = styled.input `
         border: solid black 1px;
         margin: 10px 0 0 0;
     }
+    @media screen and (min-width: 1025px) {
+        grid-area: input;
+        width: 90%;
+        height: 50%;
+        text-align: left;
+        border: solid black 1px;
+        margin: 20px 0 0 0;
+    }
 `;
 export const Button = styled.button `
     @media screen and (max-width: 480px) {
@@ -124,6 +150,15 @@ export const Button = styled.button `
         margin: 0;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
+        grid-area: button;
+        width: 50%;
+        height: 30%;
+        background-color: blue;
+        color: white;
+        border: solid blue;
+        margin: 0;
+    }
+    @media screen and (min-width: 1025px) {
         grid-area: button;
         width: 50%;
         height: 30%;
