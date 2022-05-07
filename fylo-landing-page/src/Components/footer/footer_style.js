@@ -7,7 +7,7 @@ export const Footer = styled.div `
     @media screen and (max-width: 480px) {
         background-color: hsl(243, 87%, 12%);
         width: 100%;
-        height: 800px;
+        height: 100%;
         display: grid;
         grid-template-areas: 
             '. . . .'
@@ -24,14 +24,14 @@ export const Footer = styled.div `
             '. terms . .'
             '. privacy . .'
             '. . . .';
-        grid-template-columns: 30px 90px 170px 30px;
-        grid-template-rows: 20px 100px 30px 30px 50px 30px 30px 30px 50px 30px 30px 30px 20px;
-        grid-row-gap: 20px;
+        grid-template-columns: 0.3fr 0.9fr 1fr 0.3fr;
+        grid-template-rows: 0.1fr 1fr 0.2fr 0.2fr 0.3fr 0.2fr 0.2fr 0.2fr 0.3fr 0.2fr 0.2fr 0.2fr 0.1fr;
+        grid-row-gap: 0.8%;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         background-color: hsl(243, 87%, 12%);
         width: 100%;
-        height: 400px;
+        height: 55%;
         display: grid;
         grid-template-areas: 
             'logo logo . . '
@@ -39,15 +39,14 @@ export const Footer = styled.div `
             'EIcon email jobs  terms'
             ' .  . press privacy'
             ' .  . blog  .';
-        grid-template-columns: 60px 220px 100px 100px;
-        grid-template-rows: 100px 50px 50px 50px 50px;
-        grid-gap: 20px;
-        padding: 40px;
+        grid-template-columns: 0.6fr 2fr 1fr 1fr;
+        grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-gap: 1%;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         background-color: hsl(243, 87%, 12%);
         width: 100%;
-        height: 400px;
+        height: 55%;
         display: grid;
         grid-template-areas: 
             '. . . . . .'
@@ -57,14 +56,14 @@ export const Footer = styled.div `
             '. .  . press privacy .'
             '. .  . blog  . .'
             '. . . . . .';
-        grid-template-columns: 20px 60px 321px 100px 100px 20px;
-        grid-template-rows: 20px 100px 50px 50px 50px 50px 20px;
-        grid-gap: 10px;
+        grid-template-columns: 0.2fr 0.6fr 3fr 1fr 1fr 0.2fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+        grid-gap: 2%;
     }
     @media screen and (min-width: 1025px) {
         background-color: hsl(243, 87%, 12%);
         width: 100%;
-        height: 400px;
+        height: 55%;
         display: grid;
         grid-template-areas: 
             '. . . . . .'
@@ -74,34 +73,34 @@ export const Footer = styled.div `
             '. .  . press privacy .'
             '. .  . blog  . .'
             '. . . . . .';
-        grid-template-columns: 154px 194px 455px 234px 234px 154px;
-        grid-template-rows: 20px 100px 50px 50px 50px 50px 20px;
-        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 4fr 2fr 2fr 1fr;
+        grid-template-rows: 0.2fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.2fr;
+        grid-gap: 2%;
     }
 `;
 
 export const Emailtext = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: email;
-        font-size:14px;
+        font-size:1.2em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: email;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: email;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: email;
-        font-size:20px;
+        font-size: 1.8em;
         color: white;
         font-weight: 400;
     }
@@ -109,25 +108,25 @@ export const Emailtext = styled.p `
 export const Phonetext = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: phone;
-        font-size:14px;
+        font-size: 1.2em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: phone;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: phone;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: phone;
-        font-size:20px;
+        font-size:1.8em;
         color: white;
         font-weight: 400;
     }
@@ -135,25 +134,25 @@ export const Phonetext = styled.p `
 export const AboutUs = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: about;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: about;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: about;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: about;
-        font-size:20px;
+        font-size:1.8em;
         color: white;
         font-weight: 400;
     }
@@ -161,25 +160,25 @@ export const AboutUs = styled.p `
 export const Jobs = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: jobs;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: jobs;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: jobs;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: jobs;
-        font-size:20px;
+        font-size: 1.8em;
         color: white;
         font-weight: 400;
     }
@@ -187,25 +186,25 @@ export const Jobs = styled.p `
 export const Press = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: press;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: press;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: press;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: press;
-        font-size:20px;
+        font-size: 1.8em;
         color: white;
         font-weight: 400;
     }
@@ -213,25 +212,25 @@ export const Press = styled.p `
 export const Blog = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: blog;
-        font-size:18px;
+        font-size: 1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: blog;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: blog;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: blog;
-        font-size:20px;
+        font-size:1.8em;
         color: white;
         font-weight: 400;
     }
@@ -239,25 +238,25 @@ export const Blog = styled.p `
 export const ContactUs = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: contactus;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: contactus;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: contactus;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: contactus;
-        font-size:20px;
+        font-size:1.8em;
         color: white;
         font-weight: 400;
     }
@@ -265,25 +264,25 @@ export const ContactUs = styled.p `
 export const Terms = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: terms;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: terms;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: terms;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: terms;
-        font-size:20px;
+        font-size:1.8em;
         color: white;
         font-weight: 400;
     }
@@ -291,25 +290,25 @@ export const Terms = styled.p `
 export const Privacy = styled.p `
     @media screen and (max-width: 480px) {
         grid-area: privacy;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 481px) and (max-width: 800px) {
         grid-area: privacy;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 801px) and (max-width: 1024px) {
         grid-area: privacy;
-        font-size:18px;
+        font-size:1.4em;
         color: white;
         font-weight: 400;
     }
     @media screen and (min-width: 1025px) {
         grid-area: privacy;
-        font-size:20px;
+        font-size:1.8em;
         color: white;
         font-weight: 400;
     }
