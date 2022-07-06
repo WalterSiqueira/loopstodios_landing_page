@@ -48,12 +48,12 @@ export function Mother() {
                 </ul>
             </section>
             <section className="contact">
-                <img src={linkedin} width="50px" height="50px"/>
-                <h2>my linkedin</h2>
-                <img src={twitter} width="50px" height="50px"/>
-                <h2>my twitter</h2>
-                <img src={email} width="50px" height="50px"/>
-                <h2>walterbarbozasiqueira@gmail.com</h2>
+                <img src={linkedin} className="iconL" width="50px" height="50px"/>
+                <h2 className="linkedin"><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/walter-siqueira">https://www.linkedin.com/in/walter-siqueira</a></h2>
+                <img src={twitter} className="iconT" width="50px" height="50px"/>
+                <h2 className="twitter"><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Walter__BS">https://twitter.com/Walter__BS</a></h2>
+                <img src={email} className="iconE" width="50px" height="50px"/>
+                <h2 className="email">walterbarbozasiqueira@gmail.com</h2>
             </section>
         </main>
     )
