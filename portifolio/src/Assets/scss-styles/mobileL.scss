@@ -1,0 +1,217 @@
+@media screen and (min-width: 321px) and (max-width: 480px) {
+    body {
+        background-color: black;
+    }
+    .mainDiv {
+        background-color: white;
+        display: grid;
+        grid-template-areas:  
+            "presentation"
+            "changer"
+            "navigation";
+        grid-template-columns: 3fr;
+        grid-template-rows:  2fr 1fr 0.5fr;
+    }
+        .menublock {
+            grid-area: navigation;
+            height: auto;
+            display: grid;
+            grid-template-areas: 
+                "contacts projects about tech";
+            grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr;
+            grid-template-rows: 0.5fr;
+            background-color: black;
+        }
+            .contactsbtn {
+                grid-area: contacts;
+                background-color: black;
+                color: white;
+                border: solid 1px white;
+                font-size: 1.2em;
+            }
+            .projectsbtn {
+                grid-area: projects;
+                background-color: black;
+                color: white;
+                border: none;
+                border: solid 1px white;
+                font-size: 1.2em;
+            }
+            .aboutbtn {
+                grid-area: about;
+                background-color: black;
+                color: white;
+                border: none;
+                border: solid 1px white;
+                font-size: 1.2em;
+            }
+            .techbtn {
+                grid-area: tech;
+                background-color: black;
+                color: white;
+                border: none;
+                border: solid 1px white;
+                font-size: 1.2em;
+            }
+        .Presentation {
+            width: 100%;
+            height: 100%;
+            grid-area: presentation;
+            display: grid;
+            grid-template-areas: 
+                ". . ."
+                ". pic ."
+                ". name ."
+                ". job ."
+                ". . .";
+            grid-template-columns: 0.5fr 2fr 0.5fr;
+            grid-template-rows: 0.1fr 1fr 0.3fr 0.3fr 0.1fr;
+        }
+            .profile_pic {
+                grid-area: pic;
+                width: 100%;
+                height: 100%;
+            }
+            .name { 
+                grid-area: name;
+                text-align: center;
+                font-size: 2em;
+            }
+            .job {
+                grid-area: job;
+                text-align: center;
+                color: red;
+                font-size: 1.8em;
+            }
+        .about {
+            display: grid;
+            grid-template-areas: 
+                ". title ."
+                ". text .";
+            grid-template-columns: 0.1fr 2fr 0.1fr;
+            grid-template-rows: 0.3fr 1fr;
+            width: 100%;
+            height: 100%;
+            grid-area: changer;
+        }
+            .title_about {
+                grid-area: title;
+                color: red;
+                font-size: 1.6em;
+            }
+            .description {
+                grid-area: text;
+                font-size: 1.2em;
+            }
+            .welcome {
+                grid-area: text;
+                margin-top: 50%;
+                font-size: 1.3em;
+            }
+        .projects {
+            display: none;
+            grid-template-areas: 
+                ". . . ."
+                ". fylo calc ."
+                ". snap card ."
+                ". . . .";
+            grid-template-columns: 0.1fr 2fr 2fr 0.1fr;
+            grid-template-rows: 0.1fr 1fr 1fr 0.1fr;
+            grid-area: changer;
+        }
+            .card {
+                grid-area: card;
+                width: 100%;
+                height: 100%;
+            }
+            .calc {
+                grid-area: calc;
+                width: 100%;
+                height: 100%;
+            }
+            .fylo {
+                grid-area: fylo;
+                width: 100%;
+                height: 100%;
+            }
+            .snap {
+                grid-area: snap;
+                width: 100%;
+                height: 100%;
+            }
+        .technology {
+            display: none;
+            grid-template-areas: 
+                ". . ."
+                ". title ."
+                ". styles ."
+                ". logic ."
+                ". . .";
+            grid-template-columns: 0.1fr 2fr 0.1fr;
+            grid-template-rows: 0.1fr 0.4fr 0.8fr 0.8fr 0.1fr;
+            grid-area: changer;
+        }
+            .title_tech {
+                grid-area: title;
+                color: red;
+                font-size: 1.6em;
+            }
+            .stylelist {
+                grid-area: styles;
+            }
+                li {
+                    font-size: 1.2em;
+                }
+            .logiclist {
+                grid-area: logic;
+            }
+        .contact {
+            display: none;
+            grid-template-areas:
+                '. . . .'
+                '. iconL linkedin .'
+                '. iconT twitter .'
+                '. iconE email .'
+                '. . . .';
+            grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
+            grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+            grid-area: changer;
+        }
+            .iconL {
+                grid-area: iconL;
+                width: 35%;
+                height: 40%;
+                margin: 10% 0 0 40%;
+            }
+            .iconT {
+                grid-area: iconT;
+                width: 35%;
+                height: 40%;
+                margin: 10% 0 0 40%;
+            }
+            .iconE {
+                grid-area: iconE;
+                width: 35%;
+                height: 40%;
+                margin: 10% 0 0 40%;
+            }
+            .linkedin {
+                grid-area: linkedin;
+                width: 100%;
+                height: 100%;
+                font-size: 1.2em;
+            }
+            .twitter {
+                grid-area: twitter;
+                width: 100%;
+                height: 100%;
+                font-size: 1.2em;
+            }
+            .email {
+                grid-area: email;
+                width: 100%;
+                height: 100%;
+                font-size: 1.2em;
+            }
+
+}
