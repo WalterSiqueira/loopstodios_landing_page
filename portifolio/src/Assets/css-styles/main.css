@@ -143,9 +143,9 @@
 
   .contact {
     display: none;
-    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. . . .';
+    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. iconG github .' '. . . .';
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-area: changer; }
 
   .iconL {
@@ -166,23 +166,35 @@
     height: 30%;
     margin: 30% 0 0 30%; }
 
+  .iconG {
+    grid-area: iconG;
+    width: 50%;
+    height: 30%;
+    margin: 30% 0 0 30%; }
+
   .linkedin {
     grid-area: linkedin;
     width: 100%;
     height: 100%;
-    font-size: 1em; }
+    font-size: 0.8em; }
 
   .twitter {
     grid-area: twitter;
     width: 100%;
     height: 100%;
-    font-size: 1em; }
+    font-size: 0.8em; }
 
   .email {
     grid-area: email;
     width: 100%;
     height: 100%;
-    font-size: 1em; } }
+    font-size: 0.8em; }
+
+  .github {
+    grid-area: github;
+    width: 100%;
+    height: 100%;
+    font-size: 0.8em; } }
 @media screen and (min-width: 321px) and (max-width: 480px) {
   body {
     background-color: black; }
@@ -332,9 +344,9 @@
 
   .contact {
     display: none;
-    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. . . .';
+    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. iconG github .' '. . . .';
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-area: changer; }
 
   .iconL {
@@ -355,6 +367,12 @@
     height: 40%;
     margin: 10% 0 0 40%; }
 
+  .iconG {
+    grid-area: iconG;
+    width: 35%;
+    height: 40%;
+    margin: 10% 0 0 40%; }
+
   .linkedin {
     grid-area: linkedin;
     width: 100%;
@@ -369,6 +387,12 @@
 
   .email {
     grid-area: email;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em; }
+
+  .github {
+    grid-area: github;
     width: 100%;
     height: 100%;
     font-size: 1.2em; } }
@@ -521,9 +545,9 @@
 
   .contact {
     display: grid;
-    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. . . .';
+    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. iconG github .' '. . . .';
     grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-area: changer; }
 
   .iconL {
@@ -544,6 +568,12 @@
     height: 40%;
     margin: 10% 0 0 40%; }
 
+  .iconG {
+    grid-area: iconG;
+    width: 35%;
+    height: 40%;
+    margin: 10% 0 0 40%; }
+
   .linkedin {
     grid-area: linkedin;
     width: 100%;
@@ -558,6 +588,12 @@
 
   .email {
     grid-area: email;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em; }
+
+  .github {
+    grid-area: github;
     width: 100%;
     height: 100%;
     font-size: 1.2em; } }
@@ -710,9 +746,9 @@
 
   .contact {
     display: none;
-    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. . . .';
+    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. iconG github .' '. . . .';
     grid-template-columns: 0.1fr 0.5fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-area: changer; }
 
   .iconL {
@@ -733,6 +769,12 @@
     height: 40%;
     margin: 10% 0 0 20%; }
 
+  .iconG {
+    grid-area: iconG;
+    width: 8vw;
+    height: 40%;
+    margin: 10% 0 0 20%; }
+
   .linkedin {
     grid-area: linkedin;
     width: 100%;
@@ -742,15 +784,24 @@
 
   .twitter {
     grid-area: twitter;
-    width: 100%;
-    height: 100%;
-    font-size: 1.4em; }
+    width: auto;
+    height: auto;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%; }
 
   .email {
     grid-area: email;
+    width: auto;
+    height: auto;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%; }
+
+  .github {
+    grid-area: github;
     width: 100%;
     height: 100%;
-    font-size: 1.4em; } }
+    font-size: 1.4em;
+    margin: 5% 0 0 10%; } }
 @media screen and (min-width: 1025px) {
   body {
     background-color: black; }
@@ -901,9 +952,9 @@
 
   .contact {
     display: none;
-    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. . . .';
+    grid-template-areas: '. . . .' '. iconL linkedin .' '. iconT twitter .' '. iconE email .' '. iconG github .' '. . . .';
     grid-template-columns: 0.1fr 0.5fr 1fr 0.1fr;
-    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
     grid-area: changer; }
 
   .iconL {
@@ -924,6 +975,12 @@
     height: 40%;
     margin: 10% 0 0 20%; }
 
+  .iconG {
+    grid-area: iconG;
+    width: 8vw;
+    height: 40%;
+    margin: 10% 0 0 20%; }
+
   .linkedin {
     grid-area: linkedin;
     width: 100%;
@@ -935,12 +992,21 @@
     grid-area: twitter;
     width: 100%;
     height: 100%;
-    font-size: 1.4em; }
+    font-size: 1.4em;
+    margin: 5% 0 0 10%; }
 
   .email {
     grid-area: email;
     width: 100%;
     height: 100%;
-    font-size: 1.4em; } }
+    font-size: 1.4em;
+    margin: 5% 0 0 10%; }
+
+  .github {
+    grid-area: github;
+    width: 100%;
+    height: 100%;
+    font-size: 1.4em;
+    margin: 5% 0 0 10%; } }
 
 /*# sourceMappingURL=main.css.map */

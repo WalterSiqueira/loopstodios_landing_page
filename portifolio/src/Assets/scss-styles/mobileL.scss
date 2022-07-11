@@ -172,9 +172,10 @@
                 '. iconL linkedin .'
                 '. iconT twitter .'
                 '. iconE email .'
+                '. iconG github .'
                 '. . . .';
             grid-template-columns: 0.1fr 1fr 1fr 0.1fr;
-            grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr;
+            grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
             grid-area: changer;
         }
             .iconL {
@@ -195,6 +196,12 @@
                 height: 40%;
                 margin: 10% 0 0 40%;
             }
+            .iconG {
+                grid-area: iconG;
+                width: 35%;
+                height: 40%;
+                margin: 10% 0 0 40%;
+            }
             .linkedin {
                 grid-area: linkedin;
                 width: 100%;
@@ -209,6 +216,12 @@
             }
             .email {
                 grid-area: email;
+                width: 100%;
+                height: 100%;
+                font-size: 1.2em;
+            }
+            .github {
+                grid-area: github;
                 width: 100%;
                 height: 100%;
                 font-size: 1.2em;
