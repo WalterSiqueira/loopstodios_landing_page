@@ -1,8 +1,8 @@
 import React from 'react';
-
+import {Nav} from '../Nav/nav.js';
 export function Main() {
     
     return (
-      <h1>hello World</h1>  
+        <Nav/>
     )
 }
