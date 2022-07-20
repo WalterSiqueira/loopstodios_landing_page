@@ -1,0 +1,51 @@
+@media screen and (max-width: 320px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    .navBlock {
+        width: 100%;
+        height: 5vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: grid;
+        background-color: transparent;
+        grid-template-areas: 
+            'logo . . menu';
+        grid-template-columns: 2fr 1fr 1fr 0.7fr;
+        grid-template-rows: auto;
+    }
+        .options {
+            display: none;
+        }
+        .close {
+            display: none;
+        }
+        .logo {
+            grid-area: logo;
+            width: 100%;
+            height: 70%;
+            margin: 5% 0 0 10%;
+        }
+        .menu {
+            grid-area: menu;
+            width: 60%;
+            height: 60%;
+            margin: 15% 0 0 10%;
+        }
+    .navBlock_Active {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        grid-template-areas: 
+            'logo . . menu'
+            'options options options options';
+        grid-template-columns: 2fr 1fr 1fr 0.7fr;
+    }
+}
