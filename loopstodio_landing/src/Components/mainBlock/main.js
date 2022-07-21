@@ -1,8 +1,12 @@
 import React from 'react';
 import {Nav} from '../Nav/nav.js';
+import { Immersive } from '../ImmersiveSec/immersive.js';
 export function Main() {
     
     return (
-        <Nav/>
+        <main>
+            <Nav/>
+            <Immersive/>
+        </main>
     )
 }

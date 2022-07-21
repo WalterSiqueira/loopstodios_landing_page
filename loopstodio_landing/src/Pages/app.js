@@ -4,8 +4,6 @@ import main from '../Assets/css-style/main.css';
 export function App() {
 
     return (
-        <Main className="mainBlock">
-
-        </Main>
+        <Main className="mainBlock"/>
     )
 }
