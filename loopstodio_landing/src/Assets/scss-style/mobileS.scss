@@ -4,6 +4,7 @@
         margin: 0;
         padding: 0;
         border: 0;
+        font-family: Font Awesome;
     }
     .root {
         display: grid;
@@ -13,7 +14,7 @@
             'creations'
             'footer';
         grid-template-columns: 100%;
-        grid-template-rows: 4fr 4fr 8fr 1fr;
+        grid-template-rows: 0.5fr 1fr 8fr 1fr;
     }
 
         .navBlock {
@@ -110,10 +111,9 @@
             grid-area: immersive;
             grid-template-areas: 
                 '. . .'
-                '. title .'
-                '. . .';
+                '. title .';
             grid-template-columns: 0.1fr 2fr 0.1fr;
-            grid-template-rows: 0.1fr 2fr 0.1fr;
+            grid-template-rows: 0.3fr 0.3fr;
             background-image: url('../images/mobile/image-hero.jpg');
             background-size: 100%;
             background-repeat: no-repeat;
@@ -122,9 +122,38 @@
                 grid-area: title;
                 border-color: white;
                 border-width: 4px 4px 4px 4px;
-                margin: 50% 0 70% 0;
                 color: white;
                 text-align: left;
-                font-size: 2.5em;
+                font-size: 2.2em;
+                width: 100%;
+                height: 100%;
+            }
+        .interactive_block {
+            display: grid;
+            grid-area: interactive;
+            grid-template-areas: 
+                '. . .'
+                '. img .'
+                '. title .'
+                '. intro .'
+                '. . .';
+            grid-template-columns: 0.1fr 2fr 0.1fr;
+            grid-template-rows: 0.1fr 2fr 0.7fr 0.5fr 0.1fr;
+            grid-row-gap: 5px;
+        }
+            .interactive_image {
+                grid-area: img;
+                width: 100%;
+                height: 100%;
+            }
+            .int_title {
+                grid-area: title;
+                font-size: 2em;
+                text-align: center;
+            }
+            .introduction {
+                grid-area: intro;
+                text-align: center;
+                margin: 0 5% 0 5%;
             }
     }
