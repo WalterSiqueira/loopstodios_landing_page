@@ -15,7 +15,7 @@
             'creations'
             'footer';
         grid-template-columns: 100%;
-        grid-template-rows: 0.4fr 0.5fr 0.7fr 0.4fr;
+        grid-template-rows: 1.4fr 0.3fr 2fr 0.3fr;
     }
         .navBlock {
             width: 100%;
@@ -112,56 +112,56 @@
             grid-template-areas: 
                 '. . .'
                 '. img .'
-                '. title .'
-                '. intro .'
                 '. . .';
-            grid-template-columns: 0.1fr 2fr 0.1fr;
-            grid-template-rows: 0.1fr 2fr 0.7fr 0.5fr 0.1fr;
+            grid-template-columns: 0.1fr 1fr 0.8fr;
+            grid-template-rows: 0.3fr 1fr 0.3fr;
             grid-row-gap: 5px;
+            position: relative;
         }
             .interactive_image {
                 grid-area: img;
                 width: 100%;
                 height: 100%;
             }
-            .int_title {
-                grid-area: title;
-                font-size: 2em;
-                text-align: center;
+            .text_block { 
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 45%;
+                height: 60%;
+                margin: 0 10% 0 0;
+                background-color: white;
             }
-            .introduction {
-                grid-area: intro;
-                text-align: center;
-                margin: 0 5% 0 5%;
-            }
+                .int_title {
+                    font-size: 2.2em;
+                    text-align: center;
+                }
+                .introduction {
+                    text-align: center;
+                    margin: 0 5% 0 5%;
+                    font-size: 1em;
+                }
         .creationsBlock {
             display: grid;
             width: 100%;
             height: 100%;
             grid-area: creations;
             grid-template-areas: 
-                ' title '
-                ' deep '
-                ' arcade '
-                ' soccer '
-                ' grid '
-                ' above '
-                ' borealis '
-                ' curiosity '
-                ' fisheye '
-                ' button ';
-            grid-template-columns: 1fr ;
-            grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
-            grid-row-gap: 10px;
+                '. title title . button .'
+                '. deep arcade soccer grid .'
+                '. above borealis curiosity fisheye .'; 
+            grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr ;
+            grid-template-rows: 0.5fr 1.2fr 1.7fr;
+            grid-gap: 10px;
         }
             .creations_title {
                 grid-area: title;
-                margin: 20% 0 0 25%;
-                font-size: 1.8em;
+                margin: 20% 0 0 0;
+                font-size: 2.2em;
             }
             .deepearth_block {
                 grid-area: deep;
-                background-image: url('../../Assets/images/mobile/image-deep-earth.jpg');
+                background-image: url('../../Assets/images/desktop/image-deep-earth.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -170,13 +170,13 @@
 
             }
                 .title_deep {
-                    margin: 13% 0 0 10%;
+                    margin: 120% 0 0 10%;
                     padding: 0 50% 0 0;
                     font-size: 2em;
                 }
             .arcade_block {
                 grid-area: arcade;
-                background-image: url('../../Assets/images/mobile/image-night-arcade.jpg');
+                background-image: url('../../Assets/images/desktop/image-night-arcade.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -184,14 +184,14 @@
                 color: white;
             }
                 .title_arcade {
-                    margin: 13% 0 0 10%;
+                    margin: 120% 0 0 10%;
                     padding: 0 50% 0 0;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .soccer_block {
                 grid-area: soccer;
-                background-image: url('../../Assets/images/mobile/image-soccer-team.jpg');
+                background-image: url('../../Assets/images/desktop/image-soccer-team.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -199,14 +199,14 @@
                 color: white;
             }
                 .title_soccer {
-                    margin: 13% 0 0 10%;
+                    margin: 120% 0 0 10%;
                     padding: 0 50% 0 0;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .grid_block {
                 grid-area: grid;
-                background-image: url('../../Assets/images/mobile/image-grid.jpg');
+                background-image: url('../../Assets/images/desktop/image-grid.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -215,14 +215,14 @@
             }
                 
                 .title_grid {
-                    margin: 13% 0 0 10%;
+                    margin: 120% 0 0 10%;
                     padding: 0 50% 0 0;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .above_block {
                 grid-area: above;
-                background-image: url('../../Assets/images/mobile/image-from-above.jpg');
+                background-image: url('../../Assets/images/desktop/image-from-above.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -230,14 +230,13 @@
                 color: white;
             }
                 .title_above {
-                    margin: 13% 0 0 10%;
-                    padding: 0 50% 0 0;
+                    margin: 120% 0 0 10%;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .borealis_block {
                 grid-area: borealis;
-                background-image: url('../../Assets/images/mobile/image-pocket-borealis.jpg');
+                background-image: url('../../Assets/images/desktop/image-pocket-borealis.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -245,14 +244,14 @@
                 color: white;
             }
                 .title_borealis {
-                    margin: 13% 0 0 10%;
+                    margin: 120% 0 0 10%;
                     padding: 0 50% 0 0;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .curiosity_block {
                 grid-area: curiosity;
-                background-image: url( '../../Assets/images/mobile/image-curiosity.jpg');
+                background-image: url( '../../Assets/images/desktop/image-curiosity.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -260,14 +259,14 @@
                 color: white;
             }
                 .title_curiosity {
-                    margin: 13% 0 0 10%;
+                    margin: 120% 0 0 10%;
                     padding: 0 50% 0 0;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .fisheye_block {
                 grid-area: fisheye;
-                background-image: url('../../Assets/images/mobile/image-fisheye.jpg');
+                background-image: url('../../Assets/images/desktop/image-fisheye.jpg');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 width: 100%;
@@ -275,14 +274,13 @@
                 color: white;
             }
                 .title_fisheye {
-                    margin: 13% 0 0 10%;
-                    padding: 0 50% 0 0;
+                    margin: 120% 0 0 10%;
                     font-size: 2em;
                     color: hsl(0, 0%, 100%);
                 }
             .SeeAll_btn {
                 grid-area: button;
-                margin: 20% 30% 20% 30%;
+                margin: 40% 10% 20% 10%;
                 background-color: transparent;
                 border-color: black;
                 border: 2px solid black;
@@ -292,19 +290,15 @@
                 grid-area: footer;
                 background-color: black;
                 grid-template-areas: 
-                    '.'
-                    'logo'
-                    'options'
-                    'media'
-                    'rights'
-                    '.';
-                grid-template-columns: 1fr ;
-                grid-template-rows: 0.1fr  0.5fr 1fr 0.7fr 0.3fr 0.1fr;
+                    '. logo . media .'
+                    '. options . rights .';
+                grid-template-columns: 0.1fr 3fr 0.5fr 3fr 0.1fr;
+                grid-template-rows:  0.3fr  0.3fr;
                 grid-row-gap: 10px;
             }
                 .footer_logo {
                     grid-area: logo;
-                    margin: 7% 0 0 22%;
+                    margin: 5% 0 0 2%;
                 }
                 .options_footer {
                     display: grid;
@@ -312,13 +306,11 @@
                     height: 100%;
                     grid-area: options;
                     grid-template-areas: 
-                        '. about .'
-                        '. careers .'
-                        '. events .'
-                        '. products .'
-                        '. support .';
-                    grid-template-columns: 0.3fr 1fr 0.3fr;
-                    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+                        ' about careers events products support ';
+                    grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+                    grid-template-rows: 1fr;
+                    grid-column-gap: 2vw;
+                    margin: 5% 0 0 1%;
                 }
                     .about_F {
                         grid-area: about;

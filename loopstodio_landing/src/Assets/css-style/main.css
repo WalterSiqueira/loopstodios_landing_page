@@ -1,4 +1,4 @@
-@media screen and (min-width: 481px) and (max-width: 800px) {
+@media screen and (min-width: 801px) and (max-width: 1024px) {
   * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@
     height: fit-content;
     grid-template-areas: 'immersive' 'interactive' 'creations' 'footer';
     grid-template-columns: 100%;
-    grid-template-rows: 0.4fr 0.5fr 0.7fr 0.4fr; }
+    grid-template-rows: 1.4fr 0.3fr 2fr 0.3fr; }
 
   .navBlock {
     width: 100%;
@@ -101,44 +101,53 @@
   .interactive_block {
     display: grid;
     grid-area: interactive;
-    grid-template-areas: '. . .' '. img .' '. title .' '. intro .' '. . .';
-    grid-template-columns: 0.1fr 2fr 0.1fr;
-    grid-template-rows: 0.1fr 2fr 0.7fr 0.5fr 0.1fr;
-    grid-row-gap: 5px; }
+    grid-template-areas: '. . .' '. img .' '. . .';
+    grid-template-columns: 0.1fr 1fr 0.8fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    grid-row-gap: 5px;
+    position: relative; }
 
   .interactive_image {
     grid-area: img;
     width: 100%;
     height: 100%; }
 
+  .text_block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    height: 60%;
+    margin: 0 10% 0 0;
+    background-color: white; }
+
   .int_title {
-    grid-area: title;
-    font-size: 2em;
+    font-size: 2.2em;
     text-align: center; }
 
   .introduction {
-    grid-area: intro;
     text-align: center;
-    margin: 0 5% 0 5%; }
+    margin: 0 5% 0 5%;
+    font-size: 1em; }
 
   .creationsBlock {
     display: grid;
     width: 100%;
     height: 100%;
     grid-area: creations;
-    grid-template-areas: ' title ' ' deep ' ' arcade ' ' soccer ' ' grid ' ' above ' ' borealis ' ' curiosity ' ' fisheye ' ' button ';
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
-    grid-row-gap: 10px; }
+    grid-template-areas: '. title title . button .' '. deep arcade soccer grid .' '. above borealis curiosity fisheye .';
+    grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.5fr 1.2fr 1.7fr;
+    grid-gap: 10px; }
 
   .creations_title {
     grid-area: title;
-    margin: 20% 0 0 25%;
-    font-size: 1.8em; }
+    margin: 20% 0 0 0;
+    font-size: 2.2em; }
 
   .deepearth_block {
     grid-area: deep;
-    background-image: url("../../Assets/images/mobile/image-deep-earth.jpg");
+    background-image: url("../../Assets/images/desktop/image-deep-earth.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -146,13 +155,13 @@
     color: white; }
 
   .title_deep {
-    margin: 13% 0 0 10%;
+    margin: 120% 0 0 10%;
     padding: 0 50% 0 0;
     font-size: 2em; }
 
   .arcade_block {
     grid-area: arcade;
-    background-image: url("../../Assets/images/mobile/image-night-arcade.jpg");
+    background-image: url("../../Assets/images/desktop/image-night-arcade.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -160,14 +169,14 @@
     color: white; }
 
   .title_arcade {
-    margin: 13% 0 0 10%;
+    margin: 120% 0 0 10%;
     padding: 0 50% 0 0;
     font-size: 2em;
     color: white; }
 
   .soccer_block {
     grid-area: soccer;
-    background-image: url("../../Assets/images/mobile/image-soccer-team.jpg");
+    background-image: url("../../Assets/images/desktop/image-soccer-team.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -175,14 +184,14 @@
     color: white; }
 
   .title_soccer {
-    margin: 13% 0 0 10%;
+    margin: 120% 0 0 10%;
     padding: 0 50% 0 0;
     font-size: 2em;
     color: white; }
 
   .grid_block {
     grid-area: grid;
-    background-image: url("../../Assets/images/mobile/image-grid.jpg");
+    background-image: url("../../Assets/images/desktop/image-grid.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -190,14 +199,14 @@
     color: white; }
 
   .title_grid {
-    margin: 13% 0 0 10%;
+    margin: 120% 0 0 10%;
     padding: 0 50% 0 0;
     font-size: 2em;
     color: white; }
 
   .above_block {
     grid-area: above;
-    background-image: url("../../Assets/images/mobile/image-from-above.jpg");
+    background-image: url("../../Assets/images/desktop/image-from-above.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -205,14 +214,13 @@
     color: white; }
 
   .title_above {
-    margin: 13% 0 0 10%;
-    padding: 0 50% 0 0;
+    margin: 120% 0 0 10%;
     font-size: 2em;
     color: white; }
 
   .borealis_block {
     grid-area: borealis;
-    background-image: url("../../Assets/images/mobile/image-pocket-borealis.jpg");
+    background-image: url("../../Assets/images/desktop/image-pocket-borealis.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -220,14 +228,14 @@
     color: white; }
 
   .title_borealis {
-    margin: 13% 0 0 10%;
+    margin: 120% 0 0 10%;
     padding: 0 50% 0 0;
     font-size: 2em;
     color: white; }
 
   .curiosity_block {
     grid-area: curiosity;
-    background-image: url("../../Assets/images/mobile/image-curiosity.jpg");
+    background-image: url("../../Assets/images/desktop/image-curiosity.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -235,14 +243,14 @@
     color: white; }
 
   .title_curiosity {
-    margin: 13% 0 0 10%;
+    margin: 120% 0 0 10%;
     padding: 0 50% 0 0;
     font-size: 2em;
     color: white; }
 
   .fisheye_block {
     grid-area: fisheye;
-    background-image: url("../../Assets/images/mobile/image-fisheye.jpg");
+    background-image: url("../../Assets/images/desktop/image-fisheye.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     width: 100%;
@@ -250,14 +258,13 @@
     color: white; }
 
   .title_fisheye {
-    margin: 13% 0 0 10%;
-    padding: 0 50% 0 0;
+    margin: 120% 0 0 10%;
     font-size: 2em;
     color: white; }
 
   .SeeAll_btn {
     grid-area: button;
-    margin: 20% 30% 20% 30%;
+    margin: 40% 10% 20% 10%;
     background-color: transparent;
     border-color: black;
     border: 2px solid black; }
@@ -266,23 +273,375 @@
     display: grid;
     grid-area: footer;
     background-color: black;
-    grid-template-areas: '.' 'logo' 'options' 'media' 'rights' '.';
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr  0.5fr 1fr 0.7fr 0.3fr 0.1fr;
+    grid-template-areas: '. logo . media .' '. options . rights .';
+    grid-template-columns: 0.1fr 3fr 0.5fr 3fr 0.1fr;
+    grid-template-rows: 0.3fr  0.3fr;
     grid-row-gap: 10px; }
 
   .footer_logo {
     grid-area: logo;
-    margin: 7% 0 0 22%; }
+    margin: 5% 0 0 2%; }
 
   .options_footer {
     display: grid;
     width: 100%;
     height: 100%;
     grid-area: options;
-    grid-template-areas: '. about .' '. careers .' '. events .' '. products .' '. support .';
-    grid-template-columns: 0.3fr 1fr 0.3fr;
-    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr; }
+    grid-template-areas: ' about careers events products support ';
+    grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2vw;
+    margin: 5% 0 0 1%; }
+
+  .about_F {
+    grid-area: about;
+    color: white;
+    text-align: center; }
+
+  .careers_F {
+    grid-area: careers;
+    color: white;
+    text-align: center; }
+
+  .events_F {
+    grid-area: events;
+    color: white;
+    text-align: center; }
+
+  .products_F {
+    grid-area: products;
+    color: white;
+    text-align: center; }
+
+  .support_F {
+    grid-area: support;
+    color: white;
+    text-align: center; }
+
+  .media_footer {
+    grid-area: media;
+    display: grid;
+    grid-template-areas: '. . . . . .' '. facebook twitter pinterest instagram .' '. . . . . .';
+    grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.1fr;
+    margin-top: 5%; }
+
+  .facebook {
+    grid-area: facebook;
+    margin: 20% 0 0 35%; }
+
+  .twitter {
+    grid-area: twitter;
+    margin: 20% 0 0 35%; }
+
+  .pinterest {
+    grid-area: pinterest;
+    margin: 20% 0 0 35%; }
+
+  .instagram {
+    grid-area: instagram;
+    margin: 20% 0 0 35%; }
+
+  .rights {
+    grid-area: rights;
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 5% 0 0 0; } }
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Font Awesome; }
+
+  .mainBlock {
+    display: grid;
+    width: fit-content;
+    height: fit-content;
+    grid-template-areas: 'immersive' 'interactive' 'creations' 'footer';
+    grid-template-columns: 100%;
+    grid-template-rows: 1.4fr 0.3fr 2fr 0.3fr; }
+
+  .navBlock {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: grid;
+    background-color: transparent;
+    grid-template-areas: 'logo .  options';
+    grid-template-columns: 1fr 1fr  2fr;
+    grid-template-rows: 10vh; }
+
+  .logo {
+    grid-area: logo;
+    width: 100%;
+    height: 70%;
+    margin: 5% 0 0 10%; }
+
+  .menu {
+    display: none; }
+
+  .close {
+    display: none; }
+
+  .options {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-area: options;
+    grid-template-areas: 'about careers events products support';
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-column-gap: 1vw; }
+
+  .about {
+    grid-area: about;
+    color: white;
+    margin: 28% 0 0 0;
+    font-size: 1.4em; }
+
+  .careers {
+    grid-area: careers;
+    color: white;
+    margin: 24% 0 0 0;
+    font-size: 1.4em; }
+
+  .events {
+    grid-area: events;
+    color: white;
+    margin: 25% 0 0 0;
+    font-size: 1.4em; }
+
+  .products {
+    grid-area: products;
+    color: white;
+    margin: 20% 0 0 0;
+    font-size: 1.4em; }
+
+  .support {
+    grid-area: support;
+    color: white;
+    margin: 20% 0 0 0;
+    font-size: 1.4em; }
+
+  .immersive_block {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-area: immersive;
+    grid-template-areas: '. . .' '. title .';
+    grid-template-columns: 0.1fr 1fr 0.7fr;
+    grid-template-rows: 0.4fr 0.2fr;
+    background-image: url("../images/mobile/image-hero.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat; }
+
+  .title {
+    grid-area: title;
+    border: 2px solid white;
+    color: white;
+    text-align: left;
+    font-size: 2.2em;
+    width: 100%;
+    height: 100%; }
+
+  .interactive_block {
+    display: grid;
+    grid-area: interactive;
+    grid-template-areas: '. . .' '. img .' '. . .';
+    grid-template-columns: 0.1fr 1fr 0.8fr;
+    grid-template-rows: 0.3fr 1fr 0.3fr;
+    grid-row-gap: 5px;
+    position: relative; }
+
+  .interactive_image {
+    grid-area: img;
+    width: 100%;
+    height: 100%; }
+
+  .text_block {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    height: 60%;
+    margin: 0 10% 0 0;
+    background-color: white; }
+
+  .int_title {
+    font-size: 2.2em;
+    text-align: center; }
+
+  .introduction {
+    text-align: center;
+    margin: 0 5% 0 5%;
+    font-size: 1em; }
+
+  .creationsBlock {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-area: creations;
+    grid-template-areas: '. title title . button .' '. deep arcade soccer grid .' '. above borealis curiosity fisheye .';
+    grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 0.5fr 1.2fr 1.7fr;
+    grid-gap: 10px; }
+
+  .creations_title {
+    grid-area: title;
+    margin: 20% 0 0 0;
+    font-size: 2.2em; }
+
+  .deepearth_block {
+    grid-area: deep;
+    background-image: url("../../Assets/images/desktop/image-deep-earth.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_deep {
+    margin: 120% 0 0 10%;
+    padding: 0 50% 0 0;
+    font-size: 2em; }
+
+  .arcade_block {
+    grid-area: arcade;
+    background-image: url("../../Assets/images/desktop/image-night-arcade.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_arcade {
+    margin: 120% 0 0 10%;
+    padding: 0 50% 0 0;
+    font-size: 2em;
+    color: white; }
+
+  .soccer_block {
+    grid-area: soccer;
+    background-image: url("../../Assets/images/desktop/image-soccer-team.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_soccer {
+    margin: 120% 0 0 10%;
+    padding: 0 50% 0 0;
+    font-size: 2em;
+    color: white; }
+
+  .grid_block {
+    grid-area: grid;
+    background-image: url("../../Assets/images/desktop/image-grid.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_grid {
+    margin: 120% 0 0 10%;
+    padding: 0 50% 0 0;
+    font-size: 2em;
+    color: white; }
+
+  .above_block {
+    grid-area: above;
+    background-image: url("../../Assets/images/desktop/image-from-above.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_above {
+    margin: 120% 0 0 10%;
+    font-size: 2em;
+    color: white; }
+
+  .borealis_block {
+    grid-area: borealis;
+    background-image: url("../../Assets/images/desktop/image-pocket-borealis.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_borealis {
+    margin: 120% 0 0 10%;
+    padding: 0 50% 0 0;
+    font-size: 2em;
+    color: white; }
+
+  .curiosity_block {
+    grid-area: curiosity;
+    background-image: url("../../Assets/images/desktop/image-curiosity.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_curiosity {
+    margin: 120% 0 0 10%;
+    padding: 0 50% 0 0;
+    font-size: 2em;
+    color: white; }
+
+  .fisheye_block {
+    grid-area: fisheye;
+    background-image: url("../../Assets/images/desktop/image-fisheye.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: white; }
+
+  .title_fisheye {
+    margin: 120% 0 0 10%;
+    font-size: 2em;
+    color: white; }
+
+  .SeeAll_btn {
+    grid-area: button;
+    margin: 40% 10% 20% 10%;
+    background-color: transparent;
+    border-color: black;
+    border: 2px solid black; }
+
+  .footerBlock {
+    display: grid;
+    grid-area: footer;
+    background-color: black;
+    grid-template-areas: '. logo . media .' '. options . rights .';
+    grid-template-columns: 0.1fr 3fr 0.5fr 3fr 0.1fr;
+    grid-template-rows: 0.3fr  0.3fr;
+    grid-row-gap: 10px; }
+
+  .footer_logo {
+    grid-area: logo;
+    margin: 5% 0 0 2%; }
+
+  .options_footer {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-area: options;
+    grid-template-areas: ' about careers events products support ';
+    grid-template-columns: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 2vw;
+    margin: 5% 0 0 1%; }
 
   .about_F {
     grid-area: about;
@@ -464,9 +823,9 @@
   .interactive_block {
     display: grid;
     grid-area: interactive;
-    grid-template-areas: '. . .' '. img .' '. title .' '. intro .' '. . .';
+    grid-template-areas: '. . .' '. img .' '. text .' '. . .';
     grid-template-columns: 0.1fr 2fr 0.1fr;
-    grid-template-rows: 0.1fr 2fr 0.7fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
     grid-row-gap: 5px; }
 
   .interactive_image {
@@ -474,15 +833,19 @@
     width: 100%;
     height: 100%; }
 
+  .text_block {
+    grid-area: text;
+    width: 100%;
+    height: 100%; }
+
   .int_title {
-    grid-area: title;
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    margin: 5% 0 0 0; }
 
   .introduction {
-    grid-area: intro;
     text-align: center;
-    margin: 0 5% 0 5%; }
+    margin: 10% 5% 0 5%; }
 
   .creationsBlock {
     display: grid;
@@ -827,9 +1190,9 @@
   .interactive_block {
     display: grid;
     grid-area: interactive;
-    grid-template-areas: '. . .' '. img .' '. title .' '. intro .' '. . .';
+    grid-template-areas: '. . .' '. img .' '. text .' '. . .';
     grid-template-columns: 0.1fr 2fr 0.1fr;
-    grid-template-rows: 0.1fr 2fr 0.7fr 0.5fr 0.1fr;
+    grid-template-rows: 0.1fr 2fr 1fr 0.1fr;
     grid-row-gap: 5px; }
 
   .interactive_image {
@@ -837,15 +1200,19 @@
     width: 100%;
     height: 100%; }
 
+  .text_block {
+    grid-area: text;
+    width: 100%;
+    height: 100%; }
+
   .int_title {
-    grid-area: title;
     font-size: 2em;
-    text-align: center; }
+    text-align: center;
+    margin: 5% 0 0 0; }
 
   .introduction {
-    grid-area: intro;
     text-align: center;
-    margin: 0 5% 0 5%; }
+    margin: 10% 5% 0 5%; }
 
   .creationsBlock {
     display: grid;
