@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [github repository](https://github.com/WalterSiqueira/loopstodios_landing_page)
-- Live Site URL: [vercel]()
+- Live Site URL: [vercel](https://loopstodios-landing-page.vercel.app)
 
 ## My process
 
